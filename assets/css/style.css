@@ -66,43 +66,11 @@ h6 {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  padding: 0;
-  font-size: 15px;
-  height: 50px;
-  transition: all 0.5s;
-  background: rgba(26, 24, 22, 0.8);
-  z-index: 996;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#topbar.topbar-transparent {
-  background: transparent;
-}
-
-#topbar.topbar-scrolled {
-  top: -50px;
-}
-
-#topbar i {
-  color: #ffb03b;
-  line-height: 0;
-}
-
-#topbar i span {
-  color: #fff;
-  font-style: normal;
-  padding-left: 5px;
-}
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 50px;
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
@@ -116,7 +84,7 @@ h6 {
 
 #header.header-scrolled {
   top: 0;
-  background: rgba(26, 24, 22, 0.85);
+  background: rgba(26, 24, 22, 1);
 }
 
 #header .logo h1 {
@@ -1197,16 +1165,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Chefs
+# jutges
 --------------------------------------------------------------*/
-.chefs {
-  background: url("../img/chefs-bg.jpg") center center no-repeat;
+.jutges {
+  background: url("../img/jutges-bg.jpg") center center no-repeat;
   background-size: cover;
   padding: 60px 0;
   position: relative;
 }
 
-.chefs::before {
+.jutges::before {
   content: "";
   position: absolute;
   left: 0;
@@ -1217,22 +1185,22 @@ section {
   z-index: 9;
 }
 
-.chefs .container {
+.jutges .container {
   position: relative;
   z-index: 10;
 }
 
-.chefs .member {
+.jutges .member {
   text-align: center;
   margin-bottom: 80px;
   position: relative;
 }
 
-.chefs .member .pic {
+.jutges .member .pic {
   overflow: hidden;
 }
 
-.chefs .member .member-info {
+.jutges .member .member-info {
   position: absolute;
   bottom: -80px;
   left: 20px;
@@ -1245,7 +1213,7 @@ section {
   transition: max-height 0.5s ease-in-out;
 }
 
-.chefs .member h4 {
+.jutges .member h4 {
   font-weight: 500;
   margin-bottom: 10px;
   font-size: 16px;
@@ -1255,7 +1223,7 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.chefs .member h4::after {
+.jutges .member h4::after {
   content: "";
   position: absolute;
   display: block;
@@ -1266,38 +1234,38 @@ section {
   left: calc(50% - 25px);
 }
 
-.chefs .member span {
+.jutges .member span {
   font-style: italic;
   display: block;
   font-size: 13px;
 }
 
-.chefs .member .social {
+.jutges .member .social {
   margin-top: 15px;
 }
 
-.chefs .member .social a {
+.jutges .member .social a {
   transition: color 0.3s;
   color: #7a7368;
 }
 
-.chefs .member .social a:hover {
+.jutges .member .social a:hover {
   color: #ffb03b;
 }
 
-.chefs .member .social i {
+.jutges .member .social i {
   font-size: 16px;
   margin: 0 2px;
 }
 
 @media (max-width: 992px) {
-  .chefs .member {
+  .jutges .member {
     margin-bottom: 110px;
   }
 }
 
 @media (min-width: 1024px) {
-  .chefs {
+  .jutges {
     background-attachment: fixed;
   }
 }
