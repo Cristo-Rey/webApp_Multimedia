@@ -175,26 +175,26 @@
   });
 
   /**
-   * Menu isotope and filter
+   * supermercats isotope and filter
    */
   window.addEventListener('load', () => {
-    let menuContainer = select('.menu-container');
-    if (menuContainer) {
-      let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: '.menu-item',
+    let supermercatsContainer = select('.supermercats-container');
+    if (supermercatsContainer) {
+      let supermercatsIsotope = new Isotope(supermercatsContainer, {
+        itemSelector: '.supermercats-item',
         layoutMode: 'fitRows'
       });
 
-      let menuFilters = select('#menu-flters li', true);
+      let supermercatsFilters = select('#supermercats-flters li', true);
 
-      on('click', '#menu-flters li', function(e) {
+      on('click', '#supermercats-flters li', function(e) {
         e.preventDefault();
-        menuFilters.forEach(function(el) {
+        supermercatsFilters.forEach(function(el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
 
-        menuIsotope.arrange({
+        supermercatsIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
 
@@ -206,7 +206,7 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.events-slider', {
+  new Swiper('.ressenyes-slider', {
     speed: 600,
     loop: true,
     autoplay: {

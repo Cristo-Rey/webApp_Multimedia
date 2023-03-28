@@ -186,10 +186,10 @@ proto.on = function( eventName, listener ) {
   if ( !eventName || !listener ) {
     return;
   }
-  // set events hash
-  var events = this._events = this._events || {};
+  // set ressenyes hash
+  var ressenyes = this._ressenyes = this._ressenyes || {};
   // set listeners array
-  var listeners = events[ eventName ] = events[ eventName ] || [];
+  var listeners = ressenyes[ eventName ] = ressenyes[ eventName ] || [];
   // only add once
   if ( listeners.indexOf( listener ) == -1 ) {
     listeners.push( listener );
@@ -205,10 +205,10 @@ proto.once = function( eventName, listener ) {
   // add event
   this.on( eventName, listener );
   // set once flag
-  // set onceEvents hash
-  var onceEvents = this._onceEvents = this._onceEvents || {};
+  // set onceressenyes hash
+  var onceressenyes = this._onceressenyes = this._onceressenyes || {};
   // set onceListeners object
-  var onceListeners = onceEvents[ eventName ] = onceEvents[ eventName ] || {};
+  var onceListeners = onceressenyes[ eventName ] = onceressenyes[ eventName ] || {};
   // set flag
   onceListeners[ listener ] = true;
 
@@ -216,7 +216,7 @@ proto.once = function( eventName, listener ) {
 };
 
 proto.off = function( eventName, listener ) {
-  var listeners = this._events && this._events[ eventName ];
+  var listeners = this._ressenyes && this._ressenyes[ eventName ];
   if ( !listeners || !listeners.length ) {
     return;
   }
@@ -229,7 +229,7 @@ proto.off = function( eventName, listener ) {
 };
 
 proto.emitEvent = function( eventName, args ) {
-  var listeners = this._events && this._events[ eventName ];
+  var listeners = this._ressenyes && this._ressenyes[ eventName ];
   if ( !listeners || !listeners.length ) {
     return;
   }
@@ -237,7 +237,7 @@ proto.emitEvent = function( eventName, args ) {
   listeners = listeners.slice(0);
   args = args || [];
   // once stuff
-  var onceListeners = this._onceEvents && this._onceEvents[ eventName ];
+  var onceListeners = this._onceressenyes && this._onceressenyes[ eventName ];
 
   for ( var i=0; i < listeners.length; i++ ) {
     var listener = listeners[i]
@@ -257,8 +257,8 @@ proto.emitEvent = function( eventName, args ) {
 };
 
 proto.allOff = function() {
-  delete this._events;
-  delete this._onceEvents;
+  delete this._ressenyes;
+  delete this._onceressenyes;
 };
 
 return EvEmitter;
@@ -1126,7 +1126,7 @@ proto.enableTransition = function(/* style */) {
   this.element.addEventListener( transitionEndEvent, this, false );
 };
 
-// ----- events ----- //
+// ----- ressenyes ----- //
 
 proto.onwebkitTransitionEnd = function( event ) {
   this.ontransitionend( event );
@@ -1142,7 +1142,7 @@ var dashedVendorProperties = {
 };
 
 proto.ontransitionend = function( event ) {
-  // disregard bubbled events from children
+  // disregard bubbled ressenyes from children
   if ( event.target !== this.element ) {
     return;
   }
@@ -1669,7 +1669,7 @@ proto._getItemLayoutPosition = function( /* item */ ) {
 
 /**
  * iterate over array and position each item
- * Reason being - separating this logic prevents 'layout invalidation'
+ * Reason being - separating this logic prressenyes 'layout invalidation'
  * thx @paul_irish
  * @param {Array} queue
  */
@@ -1759,7 +1759,7 @@ proto._setContainerMeasure = function( measure, isWidth ) {
 };
 
 /**
- * emit eventComplete on a collection of items events
+ * emit eventComplete on a collection of items ressenyes
  * @param {String} eventName
  * @param {Array} items - Outlayer.Items
  */
@@ -1790,7 +1790,7 @@ proto._emitCompleteOnItems = function( eventName, items ) {
 };
 
 /**
- * emits events via EvEmitter and jQuery events
+ * emits ressenyes via EvEmitter and jQuery ressenyes
  * @param {String} type - name of event
  * @param {Event} event - original event
  * @param {Array} args - extra arguments
@@ -3149,7 +3149,7 @@ var trim = String.prototype.trim ?
   // listen for layoutComplete, hideComplete and revealComplete
   // to trigger arrangeComplete
   proto._bindArrangeComplete = function() {
-    // listen for 3 events to trigger arrangeComplete
+    // listen for 3 ressenyes to trigger arrangeComplete
     var isLayoutComplete, isHideComplete, isRevealComplete;
     var _this = this;
     function arrangeParallelCallback() {

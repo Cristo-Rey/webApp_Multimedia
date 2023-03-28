@@ -333,14 +333,14 @@ const getNextActiveElement = (list, activeElement, shouldGetNext, isCycleAllowed
 const namespaceRegex = /[^.]*(?=\..*)\.|.*/;
 const stripNameRegex = /\..*/;
 const stripUidRegex = /::\d+$/;
-const eventRegistry = {}; // Events storage
+const eventRegistry = {}; // ressenyes storage
 
 let uidEvent = 1;
-const customEvents = {
+const customressenyes = {
   mouseenter: 'mouseover',
   mouseleave: 'mouseout'
 };
-const nativeEvents = new Set(['click', 'dblclick', 'mouseup', 'mousedown', 'contextmenu', 'mousewheel', 'DOMMouseScroll', 'mouseover', 'mouseout', 'mousemove', 'selectstart', 'selectend', 'keydown', 'keypress', 'keyup', 'orientationchange', 'touchstart', 'touchmove', 'touchend', 'touchcancel', 'pointerdown', 'pointermove', 'pointerup', 'pointerleave', 'pointercancel', 'gesturestart', 'gesturechange', 'gestureend', 'focus', 'blur', 'change', 'reset', 'select', 'submit', 'focusin', 'focusout', 'load', 'unload', 'beforeunload', 'resize', 'move', 'DOMContentLoaded', 'readystatechange', 'error', 'abort', 'scroll']);
+const nativeressenyes = new Set(['click', 'dblclick', 'mouseup', 'mousedown', 'contextsupermercats', 'mousewheel', 'DOMMouseScroll', 'mouseover', 'mouseout', 'mousemove', 'selectstart', 'selectend', 'keydown', 'keypress', 'keyup', 'orientationchange', 'touchstart', 'touchmove', 'touchend', 'touchcancel', 'pointerdown', 'pointermove', 'pointerup', 'pointerleave', 'pointercancel', 'gesturestart', 'gesturechange', 'gestureend', 'focus', 'blur', 'change', 'reset', 'select', 'submit', 'focusin', 'focusout', 'load', 'unload', 'beforeunload', 'resize', 'move', 'DOMContentLoaded', 'readystatechange', 'error', 'abort', 'scroll']);
 /**
  * Private methods
  */
@@ -349,7 +349,7 @@ function makeEventUid(element, uid) {
   return uid && `${uid}::${uidEvent++}` || element.uidEvent || uidEvent++;
 }
 
-function getElementEvents(element) {
+function getElementressenyes(element) {
   const uid = makeEventUid(element);
   element.uidEvent = uid;
   eventRegistry[uid] = eventRegistry[uid] || {};
@@ -396,8 +396,8 @@ function bootstrapDelegationHandler(element, selector, fn) {
   };
 }
 
-function findHandler(events, callable, delegationSelector = null) {
-  return Object.values(events).find(event => event.callable === callable && event.delegationSelector === delegationSelector);
+function findHandler(ressenyes, callable, delegationSelector = null) {
+  return Object.values(ressenyes).find(event => event.callable === callable && event.delegationSelector === delegationSelector);
 }
 
 function normalizeParameters(originalTypeEvent, handler, delegationFunction) {
@@ -406,7 +406,7 @@ function normalizeParameters(originalTypeEvent, handler, delegationFunction) {
   const callable = isDelegated ? delegationFunction : handler || delegationFunction;
   let typeEvent = getTypeEvent(originalTypeEvent);
 
-  if (!nativeEvents.has(typeEvent)) {
+  if (!nativeressenyes.has(typeEvent)) {
     typeEvent = originalTypeEvent;
   }
 
@@ -419,9 +419,9 @@ function addHandler(element, originalTypeEvent, handler, delegationFunction, one
   }
 
   let [isDelegated, callable, typeEvent] = normalizeParameters(originalTypeEvent, handler, delegationFunction); // in case of mouseenter or mouseleave wrap the handler within a function that checks for its DOM position
-  // this prevents the handler from being dispatched the same way as mouseover or mouseout does
+  // this prressenyes the handler from being dispatched the same way as mouseover or mouseout does
 
-  if (originalTypeEvent in customEvents) {
+  if (originalTypeEvent in customressenyes) {
     const wrapFunction = fn => {
       return function (event) {
         if (!event.relatedTarget || event.relatedTarget !== event.delegateTarget && !event.delegateTarget.contains(event.relatedTarget)) {
@@ -433,8 +433,8 @@ function addHandler(element, originalTypeEvent, handler, delegationFunction, one
     callable = wrapFunction(callable);
   }
 
-  const events = getElementEvents(element);
-  const handlers = events[typeEvent] || (events[typeEvent] = {});
+  const ressenyes = getElementressenyes(element);
+  const handlers = ressenyes[typeEvent] || (ressenyes[typeEvent] = {});
   const previousFunction = findHandler(handlers, callable, isDelegated ? handler : null);
 
   if (previousFunction) {
@@ -452,32 +452,32 @@ function addHandler(element, originalTypeEvent, handler, delegationFunction, one
   element.addEventListener(typeEvent, fn, isDelegated);
 }
 
-function removeHandler(element, events, typeEvent, handler, delegationSelector) {
-  const fn = findHandler(events[typeEvent], handler, delegationSelector);
+function removeHandler(element, ressenyes, typeEvent, handler, delegationSelector) {
+  const fn = findHandler(ressenyes[typeEvent], handler, delegationSelector);
 
   if (!fn) {
     return;
   }
 
   element.removeEventListener(typeEvent, fn, Boolean(delegationSelector));
-  delete events[typeEvent][fn.uidEvent];
+  delete ressenyes[typeEvent][fn.uidEvent];
 }
 
-function removeNamespacedHandlers(element, events, typeEvent, namespace) {
-  const storeElementEvent = events[typeEvent] || {};
+function removeNamespacedHandlers(element, ressenyes, typeEvent, namespace) {
+  const storeElementEvent = ressenyes[typeEvent] || {};
 
   for (const handlerKey of Object.keys(storeElementEvent)) {
     if (handlerKey.includes(namespace)) {
       const event = storeElementEvent[handlerKey];
-      removeHandler(element, events, typeEvent, event.callable, event.delegationSelector);
+      removeHandler(element, ressenyes, typeEvent, event.callable, event.delegationSelector);
     }
   }
 }
 
 function getTypeEvent(event) {
-  // allow to get the native events from namespaced events ('click.bs.button' --> 'click')
+  // allow to get the native ressenyes from namespaced ressenyes ('click.bs.button' --> 'click')
   event = event.replace(stripNameRegex, '');
-  return customEvents[event] || event;
+  return customressenyes[event] || event;
 }
 
 const EventHandler = {
@@ -496,8 +496,8 @@ const EventHandler = {
 
     const [isDelegated, callable, typeEvent] = normalizeParameters(originalTypeEvent, handler, delegationFunction);
     const inNamespace = typeEvent !== originalTypeEvent;
-    const events = getElementEvents(element);
-    const storeElementEvent = events[typeEvent] || {};
+    const ressenyes = getElementressenyes(element);
+    const storeElementEvent = ressenyes[typeEvent] || {};
     const isNamespace = originalTypeEvent.startsWith('.');
 
     if (typeof callable !== 'undefined') {
@@ -506,13 +506,13 @@ const EventHandler = {
         return;
       }
 
-      removeHandler(element, events, typeEvent, callable, isDelegated ? handler : null);
+      removeHandler(element, ressenyes, typeEvent, callable, isDelegated ? handler : null);
       return;
     }
 
     if (isNamespace) {
-      for (const elementEvent of Object.keys(events)) {
-        removeNamespacedHandlers(element, events, elementEvent, originalTypeEvent.slice(1));
+      for (const elementEvent of Object.keys(ressenyes)) {
+        removeNamespacedHandlers(element, ressenyes, elementEvent, originalTypeEvent.slice(1));
       }
     }
 
@@ -521,7 +521,7 @@ const EventHandler = {
 
       if (!inNamespace || originalTypeEvent.includes(handlerKey)) {
         const event = storeElementEvent[keyHandlers];
-        removeHandler(element, events, typeEvent, event.callable, event.delegationSelector);
+        removeHandler(element, ressenyes, typeEvent, event.callable, event.delegationSelector);
       }
     }
   },
@@ -1136,9 +1136,9 @@ class Swipe extends Config {
 
     this._config = this._getConfig(config);
     this._deltaX = 0;
-    this._supportPointerEvents = Boolean(window.PointerEvent);
+    this._supportPointerressenyes = Boolean(window.PointerEvent);
 
-    this._initEvents();
+    this._initressenyes();
   } // Getters
 
 
@@ -1161,7 +1161,7 @@ class Swipe extends Config {
 
 
   _start(event) {
-    if (!this._supportPointerEvents) {
+    if (!this._supportPointerressenyes) {
       this._deltaX = event.touches[0].clientX;
       return;
     }
@@ -1202,8 +1202,8 @@ class Swipe extends Config {
     execute(direction > 0 ? this._config.rightCallback : this._config.leftCallback);
   }
 
-  _initEvents() {
-    if (this._supportPointerEvents) {
+  _initressenyes() {
+    if (this._supportPointerressenyes) {
       EventHandler.on(this._element, EVENT_POINTERDOWN, event => this._start(event));
       EventHandler.on(this._element, EVENT_POINTERUP, event => this._end(event));
 
@@ -1216,7 +1216,7 @@ class Swipe extends Config {
   }
 
   _eventIsPointerPenTouch(event) {
-    return this._supportPointerEvents && (event.pointerType === POINTER_TYPE_PEN || event.pointerType === POINTER_TYPE_TOUCH);
+    return this._supportPointerressenyes && (event.pointerType === POINTER_TYPE_PEN || event.pointerType === POINTER_TYPE_TOUCH);
   } // Static
 
 
@@ -1242,7 +1242,7 @@ const EVENT_KEY$8 = `.${DATA_KEY$8}`;
 const DATA_API_KEY$5 = '.data-api';
 const ARROW_LEFT_KEY$1 = 'ArrowLeft';
 const ARROW_RIGHT_KEY$1 = 'ArrowRight';
-const TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat events to fire after touch
+const TOUCHEVENT_COMPAT_WAIT = 500; // Time for mouse compat ressenyes to fire after touch
 
 const ORDER_NEXT = 'next';
 const ORDER_PREV = 'prev';
@@ -1433,12 +1433,12 @@ class Carousel extends BaseComponent {
       if (this._config.pause !== 'hover') {
         return;
       } // If it's a touch-enabled device, mouseenter/leave are fired as
-      // part of the mouse compatibility events on first tap - the carousel
+      // part of the mouse compatibility ressenyes on first tap - the carousel
       // would stop cycling until user tapped out of it;
       // here, we listen for touchend, explicitly pause the carousel
       // (as if it's the second time we tap on it, mouseenter compat event
       // is NOT fired) and after a timeout (to allow for mouse compatibility
-      // events to fire) we explicitly restart cycling
+      // ressenyes to fire) we explicitly restart cycling
 
 
       this.pause();
@@ -1999,10 +1999,10 @@ const CLASS_NAME_DROPUP_CENTER = 'dropup-center';
 const CLASS_NAME_DROPDOWN_CENTER = 'dropdown-center';
 const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]:not(.disabled):not(:disabled)';
 const SELECTOR_DATA_TOGGLE_SHOWN = `${SELECTOR_DATA_TOGGLE$3}.${CLASS_NAME_SHOW$6}`;
-const SELECTOR_MENU = '.dropdown-menu';
+const SELECTOR_supermercats = '.dropdown-supermercats';
 const SELECTOR_NAVBAR = '.navbar';
 const SELECTOR_NAVBAR_NAV = '.navbar-nav';
-const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
+const SELECTOR_VISIBLE_ITEMS = '.dropdown-supermercats .dropdown-item:not(.disabled):not(:disabled)';
 const PLACEMENT_TOP = isRTL() ? 'top-end' : 'top-start';
 const PLACEMENT_TOPEND = isRTL() ? 'top-start' : 'top-end';
 const PLACEMENT_BOTTOM = isRTL() ? 'bottom-end' : 'bottom-start';
@@ -2038,7 +2038,7 @@ class Dropdown extends BaseComponent {
     this._parent = this._element.parentNode; // dropdown wrapper
     // todo: v6 revert #37011 & change markup https://getbootstrap.com/docs/5.2/forms/input-group/
 
-    this._menu = SelectorEngine.next(this._element, SELECTOR_MENU)[0] || SelectorEngine.prev(this._element, SELECTOR_MENU)[0] || SelectorEngine.findOne(SELECTOR_MENU, this._parent);
+    this._supermercats = SelectorEngine.next(this._element, SELECTOR_supermercats)[0] || SelectorEngine.prev(this._element, SELECTOR_supermercats)[0] || SelectorEngine.findOne(SELECTOR_supermercats, this._parent);
     this._inNavbar = this._detectNavbar();
   } // Getters
 
@@ -2090,7 +2090,7 @@ class Dropdown extends BaseComponent {
 
     this._element.setAttribute('aria-expanded', true);
 
-    this._menu.classList.add(CLASS_NAME_SHOW$6);
+    this._supermercats.classList.add(CLASS_NAME_SHOW$6);
 
     this._element.classList.add(CLASS_NAME_SHOW$6);
 
@@ -2145,13 +2145,13 @@ class Dropdown extends BaseComponent {
       this._popper.destroy();
     }
 
-    this._menu.classList.remove(CLASS_NAME_SHOW$6);
+    this._supermercats.classList.remove(CLASS_NAME_SHOW$6);
 
     this._element.classList.remove(CLASS_NAME_SHOW$6);
 
     this._element.setAttribute('aria-expanded', 'false');
 
-    Manipulator.removeDataAttribute(this._menu, 'popper');
+    Manipulator.removeDataAttribute(this._supermercats, 'popper');
     EventHandler.trigger(this._element, EVENT_HIDDEN$5, relatedTarget);
   }
 
@@ -2183,11 +2183,11 @@ class Dropdown extends BaseComponent {
 
     const popperConfig = this._getPopperConfig();
 
-    this._popper = Popper.createPopper(referenceElement, this._menu, popperConfig);
+    this._popper = Popper.createPopper(referenceElement, this._supermercats, popperConfig);
   }
 
   _isShown() {
-    return this._menu.classList.contains(CLASS_NAME_SHOW$6);
+    return this._supermercats.classList.contains(CLASS_NAME_SHOW$6);
   }
 
   _getPlacement() {
@@ -2210,7 +2210,7 @@ class Dropdown extends BaseComponent {
     } // We need to trim the value because custom properties can also include spaces
 
 
-    const isEnd = getComputedStyle(this._menu).getPropertyValue('--bs-position').trim() === 'end';
+    const isEnd = getComputedStyle(this._supermercats).getPropertyValue('--bs-position').trim() === 'end';
 
     if (parentDropdown.classList.contains(CLASS_NAME_DROPUP)) {
       return isEnd ? PLACEMENT_TOPEND : PLACEMENT_TOP;
@@ -2256,7 +2256,7 @@ class Dropdown extends BaseComponent {
     }; // Disable Popper if we have a static display or Dropdown is in Navbar
 
     if (this._inNavbar || this._config.display === 'static') {
-      Manipulator.setDataAttribute(this._menu, 'popper', 'static'); // todo:v6 remove
+      Manipulator.setDataAttribute(this._supermercats, 'popper', 'static'); // todo:v6 remove
 
       defaultBsPopperConfig.modifiers = [{
         name: 'applyStyles',
@@ -2269,11 +2269,11 @@ class Dropdown extends BaseComponent {
     };
   }
 
-  _selectMenuItem({
+  _selectsupermercatsItem({
     key,
     target
   }) {
-    const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._menu).filter(element => isVisible(element));
+    const items = SelectorEngine.find(SELECTOR_VISIBLE_ITEMS, this._supermercats).filter(element => isVisible(element));
 
     if (!items.length) {
       return;
@@ -2301,7 +2301,7 @@ class Dropdown extends BaseComponent {
     });
   }
 
-  static clearMenus(event) {
+  static clearsupermercatss(event) {
     if (event.button === RIGHT_MOUSE_BUTTON || event.type === 'keyup' && event.key !== TAB_KEY$1) {
       return;
     }
@@ -2316,14 +2316,14 @@ class Dropdown extends BaseComponent {
       }
 
       const composedPath = event.composedPath();
-      const isMenuTarget = composedPath.includes(context._menu);
+      const issupermercatsTarget = composedPath.includes(context._supermercats);
 
-      if (composedPath.includes(context._element) || context._config.autoClose === 'inside' && !isMenuTarget || context._config.autoClose === 'outside' && isMenuTarget) {
+      if (composedPath.includes(context._element) || context._config.autoClose === 'inside' && !issupermercatsTarget || context._config.autoClose === 'outside' && issupermercatsTarget) {
         continue;
-      } // Tab navigation through the dropdown menu or events from contained inputs shouldn't close the menu
+      } // Tab navigation through the dropdown supermercats or ressenyes from contained inputs shouldn't close the supermercats
 
 
-      if (context._menu.contains(event.target) && (event.type === 'keyup' && event.key === TAB_KEY$1 || /input|select|option|textarea|form/i.test(event.target.tagName))) {
+      if (context._supermercats.contains(event.target) && (event.type === 'keyup' && event.key === TAB_KEY$1 || /input|select|option|textarea|form/i.test(event.target.tagName))) {
         continue;
       }
 
@@ -2363,7 +2363,7 @@ class Dropdown extends BaseComponent {
       event.stopPropagation();
       instance.show();
 
-      instance._selectMenuItem(event);
+      instance._selectsupermercatsItem(event);
 
       return;
     }
@@ -2383,9 +2383,9 @@ class Dropdown extends BaseComponent {
 
 
 EventHandler.on(document, EVENT_KEYDOWN_DATA_API, SELECTOR_DATA_TOGGLE$3, Dropdown.dataApiKeydownHandler);
-EventHandler.on(document, EVENT_KEYDOWN_DATA_API, SELECTOR_MENU, Dropdown.dataApiKeydownHandler);
-EventHandler.on(document, EVENT_CLICK_DATA_API$3, Dropdown.clearMenus);
-EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearMenus);
+EventHandler.on(document, EVENT_KEYDOWN_DATA_API, SELECTOR_supermercats, Dropdown.dataApiKeydownHandler);
+EventHandler.on(document, EVENT_CLICK_DATA_API$3, Dropdown.clearsupermercatss);
+EventHandler.on(document, EVENT_KEYUP_DATA_API, Dropdown.clearsupermercatss);
 EventHandler.on(document, EVENT_CLICK_DATA_API$3, SELECTOR_DATA_TOGGLE$3, function (event) {
   event.preventDefault();
   Dropdown.getOrCreateInstance(this).toggle();
@@ -4423,7 +4423,7 @@ const DefaultType$1 = {
 
 class ScrollSpy extends BaseComponent {
   constructor(element, config) {
-    super(element, config); // this._element is the observablesContainer and config.target the menu links wrapper
+    super(element, config); // this._element is the observablesContainer and config.target the supermercats links wrapper
 
     this._targetLinks = new Map();
     this._observableSections = new Map();
@@ -4693,7 +4693,7 @@ const CLASS_NAME_FADE$1 = 'fade';
 const CLASS_NAME_SHOW$1 = 'show';
 const CLASS_DROPDOWN = 'dropdown';
 const SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle';
-const SELECTOR_DROPDOWN_MENU = '.dropdown-menu';
+const SELECTOR_DROPDOWN_supermercats = '.dropdown-supermercats';
 const NOT_SELECTOR_DROPDOWN_TOGGLE = ':not(.dropdown-toggle)';
 const SELECTOR_TAB_PANEL = '.list-group, .nav, [role="tablist"]';
 const SELECTOR_OUTER = '.nav-item, .list-group-item';
@@ -4828,7 +4828,7 @@ class Tab extends BaseComponent {
 
     if (nextActiveElement) {
       nextActiveElement.focus({
-        preventScroll: true
+        prressenyescroll: true
       });
       Tab.getOrCreateInstance(nextActiveElement).show();
     }
@@ -4904,7 +4904,7 @@ class Tab extends BaseComponent {
     };
 
     toggle(SELECTOR_DROPDOWN_TOGGLE, CLASS_NAME_ACTIVE);
-    toggle(SELECTOR_DROPDOWN_MENU, CLASS_NAME_SHOW$1);
+    toggle(SELECTOR_DROPDOWN_supermercats, CLASS_NAME_SHOW$1);
     outerElem.setAttribute('aria-expanded', open);
   }
 

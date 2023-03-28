@@ -108,7 +108,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Book a table button Menu
+# Book a table button supermercats
 --------------------------------------------------------------*/
 .book-a-table-btn {
   background: #ffb03b;
@@ -137,7 +137,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+# Navigation supermercats
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
@@ -473,7 +473,7 @@ h6 {
   cursor: pointer;
 }
 
-#hero .btn-menu,
+#hero .btn-supermercats,
 #hero .btn-book {
   font-weight: 600;
   font-size: 13px;
@@ -490,7 +490,7 @@ h6 {
   border: 2px solid #ffb03b;
 }
 
-#hero .btn-menu:hover,
+#hero .btn-supermercats:hover,
 #hero .btn-book:hover {
   background: #ffb03b;
   color: #fff;
@@ -818,9 +818,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Menu Section
+# supermercats Section
 --------------------------------------------------------------*/
-.menu #menu-flters {
+.supermercats #supermercats-flters {
   padding: 0;
   margin: 0 auto 0 auto;
   list-style: none;
@@ -828,7 +828,7 @@ section {
   border-radius: 50px;
 }
 
-.menu #menu-flters li {
+.supermercats #supermercats-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -843,17 +843,17 @@ section {
   border-radius: 50px;
 }
 
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
+.supermercats #supermercats-flters li:hover,
+.supermercats #supermercats-flters li.filter-active {
   color: #fff;
   background: #ffb03b;
 }
 
-.menu #menu-flters li:last-child {
+.supermercats #supermercats-flters li:last-child {
   margin-right: 0;
 }
 
-.menu .menu-content {
+.supermercats .supermercats-content {
   margin-top: 30px;
   overflow: hidden;
   display: flex;
@@ -861,7 +861,7 @@ section {
   position: relative;
 }
 
-.menu .menu-content::after {
+.supermercats .supermercats-content::after {
   content: "......................................................................" "...................................................................." "....................................................................";
   position: absolute;
   left: 20px;
@@ -872,7 +872,7 @@ section {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.menu .menu-content a {
+.supermercats .supermercats-content a {
   padding-right: 10px;
   background: #fff;
   position: relative;
@@ -881,7 +881,7 @@ section {
   color: #ff9b08;
 }
 
-.menu .menu-content span {
+.supermercats .supermercats-content span {
   background: #fff;
   position: relative;
   z-index: 3;
@@ -889,7 +889,7 @@ section {
   font-weight: 600;
 }
 
-.menu .menu-ingredients {
+.supermercats .supermercats-ingredients {
   font-style: italic;
   font-size: 14px;
   font-family: "Comic Neue", sans-serif;
@@ -897,17 +897,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Specials
+# franquicies
 --------------------------------------------------------------*/
-.specials {
+.franquicies {
   overflow: hidden;
 }
 
-.specials .nav-tabs {
+.franquicies .nav-tabs {
   border: 0;
 }
 
-.specials .nav-link {
+.franquicies .nav-link {
   border: 0;
   padding: 12px 15px 12px 0;
   transition: 0.3s;
@@ -918,56 +918,56 @@ section {
   font-size: 15px;
 }
 
-.specials .nav-link:hover {
+.franquicies .nav-link:hover {
   color: #ffb03b;
 }
 
-.specials .nav-link.active {
+.franquicies .nav-link.active {
   color: #ffb03b;
   border-color: #ffb03b;
 }
 
-.specials .tab-pane.active {
+.franquicies .tab-pane.active {
   animation: fadeIn 0.5s ease-out;
 }
 
-.specials .details h3 {
+.franquicies .details h3 {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #433f39;
 }
 
-.specials .details p {
+.franquicies .details p {
   color: #777777;
 }
 
-.specials .details p:last-child {
+.franquicies .details p:last-child {
   margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
-  .specials .nav-link {
+  .franquicies .nav-link {
     border: 0;
     padding: 15px;
   }
 
-  .specials .nav-link.active {
+  .franquicies .nav-link.active {
     color: #fff;
     background: #ffb03b;
   }
 }
 
 /*--------------------------------------------------------------
-# Events
+# ressenyes
 --------------------------------------------------------------*/
-.events {
-  background: url(../img/events-bg.jpg) center center no-repeat;
+.ressenyes {
+  background: url(../img/ressenyes-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.events::before {
+.ressenyes::before {
   content: "";
   background-color: rgba(12, 11, 10, 0.8);
   position: absolute;
@@ -977,78 +977,78 @@ section {
   bottom: 0;
 }
 
-.events .section-title h2 {
+.ressenyes .section-title h2 {
   color: #fff;
 }
 
-.events .container {
+.ressenyes .container {
   position: relative;
 }
 
 @media (min-width: 1024px) {
-  .events {
+  .ressenyes {
     background-attachment: fixed;
   }
 }
 
-.events .events-carousel {
+.ressenyes .ressenyes-carousel {
   background: rgba(255, 255, 255, 0.08);
   padding: 30px;
 }
 
-.events .event-item {
+.ressenyes .event-item {
   color: #fff;
 }
 
-.events .event-item h3 {
+.ressenyes .event-item h3 {
   font-weight: 600;
   font-size: 26px;
   color: #ffb03b;
 }
 
-.events .event-item .price {
+.ressenyes .event-item .price {
   font-size: 26px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
-.events .event-item .price span {
+.ressenyes .event-item .price span {
   border-bottom: 2px solid #ffb03b;
 }
 
-.events .event-item ul {
+.ressenyes .event-item ul {
   list-style: none;
   padding: 0;
 }
 
-.events .event-item ul li {
+.ressenyes .event-item ul li {
   padding-bottom: 10px;
 }
 
-.events .event-item ul i {
+.ressenyes .event-item ul i {
   font-size: 20px;
   padding-right: 4px;
   color: #ffb03b;
 }
 
-.events .event-item p:last-child {
+.ressenyes .event-item p:last-child {
   margin-bottom: 0;
 }
 
-.events .swiper-pagination {
+.ressenyes .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.events .swiper-pagination .swiper-pagination-bullet {
+.ressenyes .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
 
-.events .swiper-pagination .swiper-pagination-bullet-active {
+.ressenyes .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffb03b;
 }
 

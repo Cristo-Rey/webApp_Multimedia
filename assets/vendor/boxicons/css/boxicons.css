@@ -2239,7 +2239,7 @@
   .bx-font-size:before {
     content: "\eae6";
   }
-  .bx-food-menu:before {
+  .bx-food-supermercats:before {
     content: "\eae7";
   }
   .bx-food-tag:before {
@@ -2599,13 +2599,13 @@
   .bx-memory-card:before {
     content: "\eb5e";
   }
-  .bx-menu:before {
+  .bx-supermercats:before {
     content: "\eb5f";
   }
-  .bx-menu-alt-left:before {
+  .bx-supermercats-alt-left:before {
     content: "\ef5b";
   }
-  .bx-menu-alt-right:before {
+  .bx-supermercats-alt-right:before {
     content: "\eb61";
   }
   .bx-merge:before {
@@ -4465,7 +4465,7 @@
   .bxs-folder-plus:before {
     content: "\edcc";
   }
-  .bxs-food-menu:before {
+  .bxs-food-supermercats:before {
     content: "\edcd";
   }
   .bxs-fridge:before {

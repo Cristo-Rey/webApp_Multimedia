@@ -1657,11 +1657,11 @@
 }
 
 .pe-none {
-  pointer-events: none !important;
+  pointer-ressenyes: none !important;
 }
 
 .pe-auto {
-  pointer-events: auto !important;
+  pointer-ressenyes: auto !important;
 }
 
 .rounded {

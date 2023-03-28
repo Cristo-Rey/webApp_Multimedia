@@ -133,7 +133,7 @@
 }
 
 .gslide:not(.current) {
-  pointer-events: none;
+  pointer-ressenyes: none;
 }
 
 .gslide-image {

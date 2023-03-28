@@ -105,7 +105,7 @@
       }
     }
   }
-  function getNodeEvents(node) {
+  function getNoderessenyes(node) {
     var name = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
     var fn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
     var cache = node[uid] = node[uid] || [];
@@ -157,10 +157,10 @@
 
     handler.destroy = function () {
       each(element, function (el) {
-        var events = getNodeEvents(el, eventName, handler);
+        var ressenyes = getNoderessenyes(el, eventName, handler);
 
-        if (events.found) {
-          events.all.splice(events.evt, 1);
+        if (ressenyes.found) {
+          ressenyes.all.splice(ressenyes.evt, 1);
         }
 
         if (el.removeEventListener) {
@@ -170,11 +170,11 @@
     };
 
     each(element, function (el) {
-      var events = getNodeEvents(el, eventName, handler);
+      var ressenyes = getNoderessenyes(el, eventName, handler);
 
-      if (el.addEventListener && avoidDuplicate && !events.found || !avoidDuplicate) {
+      if (el.addEventListener && avoidDuplicate && !ressenyes.found || !avoidDuplicate) {
         el.addEventListener(eventName, handler, useCapture);
-        events.all.push({
+        ressenyes.all.push({
           eventName: eventName,
           fn: handler
         });
@@ -565,11 +565,11 @@
   }
 
   function keyboardNavigation(instance) {
-    if (instance.events.hasOwnProperty('keyboard')) {
+    if (instance.ressenyes.hasOwnProperty('keyboard')) {
       return false;
     }
 
-    instance.events['keyboard'] = addEvent('keydown', {
+    instance.ressenyes['keyboard'] = addEvent('keydown', {
       onElement: window,
       withCallback: function withCallback(event, target) {
         event = event || window.event;
@@ -667,15 +667,15 @@
     return angle * 180 / Math.PI;
   }
 
-  var EventsHandlerAdmin = function () {
-    function EventsHandlerAdmin(el) {
-      _classCallCheck(this, EventsHandlerAdmin);
+  var ressenyesHandlerAdmin = function () {
+    function ressenyesHandlerAdmin(el) {
+      _classCallCheck(this, ressenyesHandlerAdmin);
 
       this.handlers = [];
       this.el = el;
     }
 
-    _createClass(EventsHandlerAdmin, [{
+    _createClass(ressenyesHandlerAdmin, [{
       key: "add",
       value: function add(handler) {
         this.handlers.push(handler);
@@ -706,18 +706,18 @@
       }
     }]);
 
-    return EventsHandlerAdmin;
+    return ressenyesHandlerAdmin;
   }();
 
   function wrapFunc(el, handler) {
-    var EventshandlerAdmin = new EventsHandlerAdmin(el);
-    EventshandlerAdmin.add(handler);
-    return EventshandlerAdmin;
+    var ressenyeshandlerAdmin = new ressenyesHandlerAdmin(el);
+    ressenyeshandlerAdmin.add(handler);
+    return ressenyeshandlerAdmin;
   }
 
-  var TouchEvents = function () {
-    function TouchEvents(el, option) {
-      _classCallCheck(this, TouchEvents);
+  var Touchressenyes = function () {
+    function Touchressenyes(el, option) {
+      _classCallCheck(this, Touchressenyes);
 
       this.element = typeof el == 'string' ? document.querySelector(el) : el;
       this.start = this.start.bind(this);
@@ -770,7 +770,7 @@
       };
     }
 
-    _createClass(TouchEvents, [{
+    _createClass(Touchressenyes, [{
       key: "start",
       value: function start(evt) {
         if (!evt.touches) {
@@ -1034,7 +1034,7 @@
       }
     }]);
 
-    return TouchEvents;
+    return Touchressenyes;
   }();
 
   function resetSlideMove(slide) {
@@ -1065,7 +1065,7 @@
   }
 
   function touchNavigation(instance) {
-    if (instance.events.hasOwnProperty('touch')) {
+    if (instance.ressenyes.hasOwnProperty('touch')) {
       return false;
     }
 
@@ -1099,7 +1099,7 @@
     var isInlined;
     var sliderWrapper = document.getElementById('glightbox-slider');
     var overlay = document.querySelector('.goverlay');
-    var touchInstance = new TouchEvents(sliderWrapper, {
+    var touchInstance = new Touchressenyes(sliderWrapper, {
       touchStart: function touchStart(e) {
         process = true;
 
@@ -1319,7 +1319,7 @@
         }
       }
     });
-    instance.events['touch'] = touchInstance;
+    instance.ressenyes['touch'] = touchInstance;
   }
 
   var ZoomImages = function () {
@@ -1334,7 +1334,7 @@
       this.slide = slide;
       this.onclose = onclose;
 
-      if (this.img.setZoomEvents) {
+      if (this.img.setZoomressenyes) {
         return false;
       }
 
@@ -1371,7 +1371,7 @@
           _this.zoomOut();
         }
       }, false);
-      this.img.setZoomEvents = true;
+      this.img.setZoomressenyes = true;
     }
 
     _createClass(ZoomImages, [{
@@ -1896,7 +1896,7 @@
     slideMedia.style.height = data.height;
     slideMedia.style.width = data.width;
     slideMedia.appendChild(innerContent);
-    this.events['inlineclose' + hash] = addEvent('click', {
+    this.ressenyes['inlineclose' + hash] = addEvent('click', {
       onElement: slideMedia.querySelectorAll('.gtrigger-close'),
       withCallback: function withCallback(e) {
         e.preventDefault();
@@ -2226,7 +2226,7 @@
             if (isMobileDevice && settings.moreLength > 0) {
               slideConfig.smallDescription = this.slideShortDesc(slideConfig.description, settings.moreLength, settings.moreText);
               slideText.innerHTML = slideConfig.smallDescription;
-              this.descriptionEvents(slideText, slideConfig);
+              this.descriptionressenyes(slideText, slideConfig);
             } else {
               slideText.innerHTML = slideConfig.description;
             }
@@ -2324,8 +2324,8 @@
         return subString + '... <a href="#" class="desc-more">' + wordBoundary + '</a>';
       }
     }, {
-      key: "descriptionEvents",
-      value: function descriptionEvents(desc, data) {
+      key: "descriptionressenyes",
+      value: function descriptionressenyes(desc, data) {
         var _this2 = this;
 
         var moreLink = desc.querySelector('.desc-more');
@@ -2355,7 +2355,7 @@
                   addClass(body, 'gdesc-closed');
                   desc.innerHTML = data.smallDescription;
 
-                  _this2.descriptionEvents(desc, data);
+                  _this2.descriptionressenyes(desc, data);
 
                   setTimeout(function () {
                     removeClass(body, 'gdesc-closed');
@@ -2499,7 +2499,7 @@
       this.settings = extend(defaults, options);
       this.effectsClasses = this.getAnimationClasses();
       this.videoPlayers = {};
-      this.apiEvents = [];
+      this.apiressenyes = [];
       this.fullElementsList = false;
     }
 
@@ -2511,7 +2511,7 @@
         var selector = this.getSelector();
 
         if (selector) {
-          this.baseEvents = addEvent('click', {
+          this.baseressenyes = addEvent('click', {
             onElement: selector,
             withCallback: function withCallback(e, target) {
               e.preventDefault();
@@ -3280,12 +3280,12 @@
         this.loader = modal.querySelector('.gloader');
         this.slidesContainer = document.getElementById('glightbox-slider');
         this.bodyHiddenChildElms = bodyChildElms;
-        this.events = {};
+        this.ressenyes = {};
 
         addClass(this.modal, 'glightbox-' + this.settings.skin);
 
         if (this.settings.closeButton && closeButton) {
-          this.events['close'] = addEvent('click', {
+          this.ressenyes['close'] = addEvent('click', {
             onElement: closeButton,
             withCallback: function withCallback(e, target) {
               e.preventDefault();
@@ -3300,7 +3300,7 @@
         }
 
         if (this.nextButton) {
-          this.events['next'] = addEvent('click', {
+          this.ressenyes['next'] = addEvent('click', {
             onElement: this.nextButton,
             withCallback: function withCallback(e, target) {
               e.preventDefault();
@@ -3311,7 +3311,7 @@
         }
 
         if (this.prevButton) {
-          this.events['prev'] = addEvent('click', {
+          this.ressenyes['prev'] = addEvent('click', {
             onElement: this.prevButton,
             withCallback: function withCallback(e, target) {
               e.preventDefault();
@@ -3322,7 +3322,7 @@
         }
 
         if (this.settings.closeOnOutsideClick) {
-          this.events['outClose'] = addEvent('click', {
+          this.ressenyes['outClose'] = addEvent('click', {
             onElement: modal,
             withCallback: function withCallback(e, target) {
               if (!_this7.preventOutsideClick && !hasClass(document.body, 'glightbox-mobile') && !closest(e.target, '.ginner-container')) {
@@ -3344,7 +3344,7 @@
           addClass(document.body, 'glightbox-touch');
         }
 
-        this.events['resize'] = addEvent('resize', {
+        this.ressenyes['resize'] = addEvent('resize', {
           onElement: window,
           withCallback: function withCallback() {
             _this7.resize();
@@ -3496,14 +3496,14 @@
         var _this8 = this;
 
         if (!this.lightboxOpen) {
-          if (this.events) {
-            for (var key in this.events) {
-              if (this.events.hasOwnProperty(key)) {
-                this.events[key].destroy();
+          if (this.ressenyes) {
+            for (var key in this.ressenyes) {
+              if (this.ressenyes.hasOwnProperty(key)) {
+                this.ressenyes[key].destroy();
               }
             }
 
-            this.events = null;
+            this.ressenyes = null;
           }
 
           return false;
@@ -3536,14 +3536,14 @@
           _this8.prevActiveSlide = null;
           _this8.built = false;
 
-          if (_this8.events) {
-            for (var _key in _this8.events) {
-              if (_this8.events.hasOwnProperty(_key)) {
-                _this8.events[_key].destroy();
+          if (_this8.ressenyes) {
+            for (var _key in _this8.ressenyes) {
+              if (_this8.ressenyes.hasOwnProperty(_key)) {
+                _this8.ressenyes[_key].destroy();
               }
             }
 
-            _this8.events = null;
+            _this8.ressenyes = null;
           }
 
           var body = document.body;
@@ -3574,10 +3574,10 @@
       key: "destroy",
       value: function destroy() {
         this.close();
-        this.clearAllEvents();
+        this.clearAllressenyes();
 
-        if (this.baseEvents) {
-          this.baseEvents.destroy();
+        if (this.baseressenyes) {
+          this.baseressenyes.destroy();
         }
       }
     }, {
@@ -3589,7 +3589,7 @@
           throw new TypeError('Event name and callback must be defined');
         }
 
-        this.apiEvents.push({
+        this.apiressenyes.push({
           evt: evt,
           once: once,
           callback: callback
@@ -3608,7 +3608,7 @@
         var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
         var onceTriggered = [];
 
-        each(this.apiEvents, function (event, i) {
+        each(this.apiressenyes, function (event, i) {
           var evt = event.evt,
               once = event.once,
               callback = event.callback;
@@ -3624,14 +3624,14 @@
 
         if (onceTriggered.length) {
           each(onceTriggered, function (i) {
-            return _this9.apiEvents.splice(i, 1);
+            return _this9.apiressenyes.splice(i, 1);
           });
         }
       }
     }, {
-      key: "clearAllEvents",
-      value: function clearAllEvents() {
-        this.apiEvents.splice(0, this.apiEvents.length);
+      key: "clearAllressenyes",
+      value: function clearAllressenyes() {
+        this.apiressenyes.splice(0, this.apiressenyes.length);
       }
     }, {
       key: "version",

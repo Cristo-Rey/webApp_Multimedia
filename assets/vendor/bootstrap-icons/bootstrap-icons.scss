@@ -927,14 +927,14 @@ $bootstrap-icons-map: (
   "mask": "\f482",
   "megaphone-fill": "\f483",
   "megaphone": "\f484",
-  "menu-app-fill": "\f485",
-  "menu-app": "\f486",
-  "menu-button-fill": "\f487",
-  "menu-button-wide-fill": "\f488",
-  "menu-button-wide": "\f489",
-  "menu-button": "\f48a",
-  "menu-down": "\f48b",
-  "menu-up": "\f48c",
+  "supermercats-app-fill": "\f485",
+  "supermercats-app": "\f486",
+  "supermercats-button-fill": "\f487",
+  "supermercats-button-wide-fill": "\f488",
+  "supermercats-button-wide": "\f489",
+  "supermercats-button": "\f48a",
+  "supermercats-down": "\f48b",
+  "supermercats-up": "\f48c",
   "mic-fill": "\f48d",
   "mic-mute-fill": "\f48e",
   "mic-mute": "\f48f",
@@ -2925,14 +2925,14 @@ $bootstrap-icons-map: (
 .bi-mask::before { content: map-get($bootstrap-icons-map, "mask"); }
 .bi-megaphone-fill::before { content: map-get($bootstrap-icons-map, "megaphone-fill"); }
 .bi-megaphone::before { content: map-get($bootstrap-icons-map, "megaphone"); }
-.bi-menu-app-fill::before { content: map-get($bootstrap-icons-map, "menu-app-fill"); }
-.bi-menu-app::before { content: map-get($bootstrap-icons-map, "menu-app"); }
-.bi-menu-button-fill::before { content: map-get($bootstrap-icons-map, "menu-button-fill"); }
-.bi-menu-button-wide-fill::before { content: map-get($bootstrap-icons-map, "menu-button-wide-fill"); }
-.bi-menu-button-wide::before { content: map-get($bootstrap-icons-map, "menu-button-wide"); }
-.bi-menu-button::before { content: map-get($bootstrap-icons-map, "menu-button"); }
-.bi-menu-down::before { content: map-get($bootstrap-icons-map, "menu-down"); }
-.bi-menu-up::before { content: map-get($bootstrap-icons-map, "menu-up"); }
+.bi-supermercats-app-fill::before { content: map-get($bootstrap-icons-map, "supermercats-app-fill"); }
+.bi-supermercats-app::before { content: map-get($bootstrap-icons-map, "supermercats-app"); }
+.bi-supermercats-button-fill::before { content: map-get($bootstrap-icons-map, "supermercats-button-fill"); }
+.bi-supermercats-button-wide-fill::before { content: map-get($bootstrap-icons-map, "supermercats-button-wide-fill"); }
+.bi-supermercats-button-wide::before { content: map-get($bootstrap-icons-map, "supermercats-button-wide"); }
+.bi-supermercats-button::before { content: map-get($bootstrap-icons-map, "supermercats-button"); }
+.bi-supermercats-down::before { content: map-get($bootstrap-icons-map, "supermercats-down"); }
+.bi-supermercats-up::before { content: map-get($bootstrap-icons-map, "supermercats-up"); }
 .bi-mic-fill::before { content: map-get($bootstrap-icons-map, "mic-fill"); }
 .bi-mic-mute-fill::before { content: map-get($bootstrap-icons-map, "mic-mute-fill"); }
 .bi-mic-mute::before { content: map-get($bootstrap-icons-map, "mic-mute"); }
