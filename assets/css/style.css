@@ -73,9 +73,8 @@ h6 {
 #header {
   height: 70px;
   z-index: 997;
-  transition: all 0.5s;
+  transition: all 1s;
   padding: 10px 0;
-  background: rgba(26, 24, 22, 0.85);
 }
 
 #header.header-transparent {
@@ -84,6 +83,10 @@ h6 {
 
 #header.header-scrolled {
   top: 0;
+  background: rgba(26, 24, 22, 1);
+}
+
+#header.inner {
   background: rgba(26, 24, 22, 1);
 }
 
@@ -558,7 +561,7 @@ section {
   padding: 20px 0;
   background-color: #f2f1ef;
   min-height: 40px;
-  margin-top: 120px;
+  margin-top: 70px;
 }
 
 @media (max-width: 992px) {
@@ -820,6 +823,10 @@ section {
 /*--------------------------------------------------------------
 # supermercats Section
 --------------------------------------------------------------*/
+.supermercats {
+  background: #fffaf3;
+}
+
 .supermercats #supermercats-flters {
   padding: 0;
   margin: 0 auto 0 auto;
@@ -874,7 +881,7 @@ section {
 
 .supermercats .supermercats-content a {
   padding-right: 10px;
-  background: #fff;
+  background: #fffaf3;
   position: relative;
   z-index: 3;
   font-weight: 700;
@@ -882,7 +889,7 @@ section {
 }
 
 .supermercats .supermercats-content span {
-  background: #fff;
+  background: #fffaf3;
   position: relative;
   z-index: 3;
   padding: 0 10px;
