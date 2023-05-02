@@ -1,0 +1,1311 @@
+{
+	"@context": "https://schema.org",
+	"@type": "itemList",
+	"itemListElement": [
+		{
+			"@type": "GroceryStore",
+			"@identifier": 1,
+			"name": "Eroski Antoni Marquès, 9",
+			"telephone": "+34 971 75 99 31",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOb4M3gCu89kJVwMp5cRYiaG5C9RVYjuD_Guh1O=w427-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07003",
+				"streetAddress": "Antoni Marquès, 9"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.579474939738304",
+				"longitude": "2.651203222062304"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Eroski",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-21:00",
+				"Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Eroski Antoni Marquès 9",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 2,
+			"name": "Eroski Obispo Llompart 44",
+			"telephone": "+34 971 50 00 67",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOmfdxO47Z7ROP0QX_Fv2hZUV8THnMG9FTP6B8A=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Inca, Spain",
+				"postalCode": "07300",
+				"streetAddress": "Obispo Llompart 44"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.7230240765832",
+				"longitude": "2.906963825887892"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Eroski",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Eroski Obispo Llompart 44",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 3,
+			"name": "Eroski Soller",
+			"telephone": "+34 971 63 87 38",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOv85tqEL1ueeDtIX9NUdycwsZdLtv3hwR_7Zdu=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Soller, Spain",
+				"postalCode": "07100",
+				"streetAddress": "Carrer de la Prosperitat"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.769952840534664",
+				"longitude": "2.709504380389808"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Eroski",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-21:00",
+				"Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Eroski Soller",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 4,
+			"name": "Eroski Sa Pobla",
+			"telephone": "+34 971 54 29 30",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMYYF4CLBJCaMZqVBecEeqp5w4RHxiG7krYPJfx=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Sa Pobla, Spain",
+				"postalCode": "07420",
+				"streetAddress": "Carrer Joan Pizá Massanet"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.77579534113592",
+				"longitude": "3.0237934843137593"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Eroski",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Eroski Sa Pobla",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 5,
+			"name": "Eroski Can Picafort",
+			"telephone": "+34 971 85 26 92",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOPZiUvNXkVMAn-8WHClVMVR8WfssjbTOXQCxde=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Can Picafort, Spain",
+				"postalCode": "07450",
+				"streetAddress": "Carretera de Arta al Puerto Alcudia"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.771636018525285",
+				"longitude": "3.141900221602074"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Eroski",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Eroski Can Picafort",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 11,
+			"name": "Mercadona Conservatori",
+			"telephone": "+34 971 29 24 20",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPL7H22mYRJ9_QJxkWVg-n8txPjlMKirSMrBmcS=w408-h408-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07004",
+				"streetAddress": "Carrer de Pere Caffaro 11"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.771636018525285",
+				"longitude": "3.141900221602074"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Mercadona",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Mercadona Conservatori",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 12,
+			"name": "Mercadona Peguera",
+			"telephone": "+34 971 68 80 78",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMPViXDmLniKkHIazHd8nl_IbkJxf24aPlLKHKg=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Peguera, Spain",
+				"postalCode": "07160",
+				"streetAddress": "Carrer de La Savina 14"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.5387630145157",
+				"longitude": "2.438943696490595"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Mercadona",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Mercadona Peguera",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 13,
+			"name": "Mercadona Andratx",
+			"telephone": "+34 971 14 58 01",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOnxKLep4032PL1eLjITlWKaRJDE8Jp1ko01myE=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Andratx, Spain",
+				"postalCode": "07150",
+				"streetAddress": "Carrer Son Lluis"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.57638285546812",
+				"longitude": "2.4255928115919114"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Mercadona",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Mercadona Andratx",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 14,
+			"name": "Mercadona Alcudia",
+			"telephone": "+34 971 54 76 23",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipN1VfVCjCXx2rr1rV_yo24zq3pq-7ZHByBZGnqy=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Alcudia, Spain",
+				"postalCode": "07400",
+				"streetAddress": "Carrer de Pollèntia 26"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.85115760473729",
+				"longitude": "3.1267055315134566"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Mercadona",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Mercadona Alcudia",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 15,
+			"name": "Mercadona Manacor",
+			"telephone": "+34 971 84 56 19",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipN40LLCEx_ceSwHVY6rpCLp07byGxFYDErRgUre=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Manacor, Spain",
+				"postalCode": "07500",
+				"streetAddress": "Plaça de Ramon Llull 14"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.56671551286464",
+				"longitude": "3.21190990356207"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Mercadona",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Mercadona Manacor",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 21,
+			"name": "Carrefour Sa Coma",
+			"telephone": "+34 971 16 37 05",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOP2kpIG64MgTTafMAL6AjR5IU3XUHwfiqtKPCy=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Sa Coma, Spain",
+				"postalCode": "07560",
+				"streetAddress": "Avinguda de ses Palmeres 10"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.580139011238344",
+				"longitude": "3.373634526979257"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Carrefour",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 09:00-22:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrefour Sa Coma",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 22,
+			"name": "Carrefour Porto Cristo",
+			"telephone": "+34 971 82 15 66",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOP2kpIG64MgTTafMAL6AjR5IU3XUHwfiqtKPCy=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Porto Cristo, Spain",
+				"postalCode": "07680",
+				"streetAddress": "Espa, Ronda de lOest - i Parroco Padre Gelabert - i Marina Manacor Mallorca 7500"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.54930093908115",
+				"longitude": "3.332148138221633"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Carrefour",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30",
+				"Su 09:00-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrefour Porto Cristo",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 23,
+			"name": "Carrefour Santanyi",
+			"telephone": "+34 971 64 21 60",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNIq-q9KkCi9MvtHHckRa-lGc0duOZ9OEdCRamY=w408-h343-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Santanyi, Spain",
+				"postalCode": "07650",
+				"streetAddress": "Carrer de Palma 133"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.35900130699374",
+				"longitude": "3.1241374268863056"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Carrefour",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30",
+				"Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrefour Santanyi",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 24,
+			"name": "Carrefour Ocimax",
+			"telephone": "+34 971 17 04 61",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNPf3Iu98MZa7ho8dWfEc0b44xuEfQJNgdZnnVX=w427-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07010",
+				"streetAddress": "C/ del General Riera 152"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.59443043760322",
+				"longitude": "2.644672238157451"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Carrefour",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30",
+				"Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrefour Ocimax",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 25,
+			"name": "Carrefour Palma",
+			"telephone": "+34 914 90 89 00",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNPf3Iu98MZa7ho8dWfEc0b44xuEfQJNgdZnnVX=w427-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07005",
+				"streetAddress": "C/ d'Aragó 52"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.578023667989434",
+				"longitude": "2.661634065370489"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Carrefour",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrefour Palma",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 31,
+			"name": "Lidl Av. del Bontemps",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipM22V_V5px0xMMX3Ify2-DR1ZQaJC658cTYHcib=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Illes Balears, Spain",
+				"postalCode": "07560",
+				"streetAddress": "Av. del Bontemps"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.59393121687131",
+				"longitude": "3.378845063265891"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Lidl Av. del Bontemps",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 32,
+			"name": "Lidl Aragó, 42",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipM22V_V5px0xMMX3Ify2-DR1ZQaJC658cTYHcib=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07005",
+				"streetAddress": "C/ d'Aragó, 42"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.577004197067794",
+				"longitude": "2.6612554544566054"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Lidl Aragó",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 33,
+			"name": "Lidl Bulevar de Peguera, 2",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMxor7vGh92DGpDwfbssqlmeXnwT6pfNfPPHdU-=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Calvià, Spain",
+				"postalCode": "07184",
+				"streetAddress": "Bulevar de Peguera, 2"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.54069547935306",
+				"longitude": "2.4406505851565834"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30",
+				"Su 09:00-15:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Bulevar de Peguera, 2",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 34,
+			"name": "Lidl Via de Corneli Àtic",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPw5BIj6umygjwVyYYbDTG9AFtUoISH3s9hq5ah=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Alcúdia, Spain",
+				"postalCode": "07400",
+				"streetAddress": "Via de Corneli Àtic, S/N"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.84511734750722",
+				"longitude": "3.126035137247012"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30",
+				"Su 09:00-15:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Via de Corneli",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 35,
+			"name": "Lidl C-717",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNySglQCHa5BaJrLGI4gL5jHcVHMinddKcl8TqX=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Campos, Spain",
+				"postalCode": "07630",
+				"streetAddress": "C-717, 16"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.43823138167088",
+				"longitude": "3.0115773778359434"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30",
+				"Su 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Lidl C-717",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 41,
+			"name": "Bip Bip Carrer Tramuntana",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMiz947IYEb_7YYKtfhqx0lLDGgLeSwZRXi7zxN=w408-h544-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Cala Bona, Spain",
+				"postalCode": "07559",
+				"streetAddress": "Carrer Tramuntana, 7"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.61392578739028",
+				"longitude": "3.390566628844936"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:00-21:00",
+				"Su 08:00-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Bip Bip C-717",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 42,
+			"name": "Bip Bip Canonge Quetglas",
+			"telephone": "+34 971 504 909",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPYA_hI1HR-lMERbB4chlKZWsr7kZWEFLg_nS2p=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Inca, Spain",
+				"postalCode": "07300",
+				"streetAddress": "Carrer del Canonge Quetglas, 7"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.72361396542674",
+				"longitude": "2.9023844026878716"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:00-21:15",
+				"Su 08:00-20:45"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Canonge Quetglas",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 43,
+			"name": "Bip Bip Pare Bartomeu, Caputxí, 5",
+			"telephone": "+34 971 613 650",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOMJ5QaGN6TlG-Z9Yu8sSpiHrSJRk8TOB6WC100=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Bunyola, Spain",
+				"postalCode": "07110",
+				"streetAddress": "Carrer del Pare Bartomeu, Caputxí, 5"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.69832965150287",
+				"longitude": "2.704958237352971"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-21:00",
+				"Su 09:00-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Canonge Quetglas",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 44,
+			"name": "Bip Bip Ctra. de Galilea, 3",
+			"telephone": "+34 971 616 792",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPx1PTMxBhTW7CAXf78-QFH8E8BQaSEYsc6T4HM=w408-h408-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Puigpunyent, Spain",
+				"postalCode": "07194",
+				"streetAddress": "Ctra. de Galilea, 3"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.62218345172325",
+				"longitude": "2.526779379738823"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Canonge Quetglas",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 45,
+			"name": "Bip Bip Ctra. de Galilea, 3",
+			"telephone": "+34 971 644 234",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNfOHGEeQ4g_fDDNLIU6vFT1jzdwrSfSerJnre9=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Montuiri, Spain",
+				"postalCode": "07230",
+				"streetAddress": "Carrer Major, 15"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.56995097267376",
+				"longitude": "2.989992898987399"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Bip Bip Ctra. de Galilea, 3",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 51,
+			"name": "Aprop Jaume Balmes, 32",
+			"telephone": "+34 971 244 417",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOMJahp5jkp6_iWmx3ZXre58C4NUpiDqQMBWfXW=w408-h544-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07005",
+				"streetAddress": "Carrer de Jaume Balmes, 32"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.57792701903962",
+				"longitude": "2.6617099376773856"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 09:00-21:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Jaume Balmes, 32",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 52,
+			"name": "Aprop Carrer Germanor, 35",
+			"telephone": "",
+			"image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=BPSVFn2T8lf3ovXzoCm3aw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=119.35973&pitch=0&thumbfov=100",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Son Serra de Marina, Spain",
+				"postalCode": "07459",
+				"streetAddress": "Carrer Germanor, 35"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.7384695175194",
+				"longitude": "3.226317738880197"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-21:00",
+				"Su 9:00-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer Germanor, 35",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 53,
+			"name": "Aprop Campanet",
+			"telephone": "",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMESN-D8ven2QAWx-HP7Rac9FJj6qLxwsZH0epd=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Campanet, Spain",
+				"postalCode": "07310",
+				"streetAddress": "PLAZA MAYOR 9"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.78483030156193",
+				"longitude": "2.9810746680106126"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:00",
+				"Su 9:00-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Campanet",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 54,
+			"name": "Aprop Carrer de Tramuntana",
+			"telephone": "+34 971 521 059",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOJN0vx4JCLtbpa4xQ32500DfxdRBLmcNme_GZZ=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Sineu, Spain",
+				"postalCode": "07510",
+				"streetAddress": "Carrer de Tramuntana, 19"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.64851977170515",
+				"longitude": "3.009351538681256"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-20:00",
+				"Su 9:00-13:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer de Tramuntana",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 55,
+			"name": "Aprop Carrer dels Reis de Mallorca, 25",
+			"telephone": "+34 971 560 832",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMMgWF5kVzq4zqTy5M3JvYNQHnfDs3wYFBJzdFB=w408-h544-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Vilafranca de Bonany, Spain",
+				"postalCode": "07250",
+				"streetAddress": "Carrer dels Reis de Mallorca, 25"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.57532143630857",
+				"longitude": "3.1104339092897932"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:00-21:00",
+				"Su 8:30-13:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrer dels Reis de Mallorca, 25",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		}
+	]
+}
