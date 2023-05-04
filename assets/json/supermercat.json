@@ -694,7 +694,7 @@
 					}
 				]
 			}
-		},
+		},		
 		{
 			"@type": "GroceryStore",
 			"@identifier": 32,
@@ -858,6 +858,221 @@
 					{
 						"@type": "VideoObject",
 						"name": "Video Lidl C-717",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 36,
+			"name": "Lidl Ctra. Artà-Alcúdia, 41C",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMExV4rD_V4ryGSXTTTFhf4sTOK3B7zwSZBUeIq=w408-h544-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Can Picafort, Spain",
+				"postalCode": "07458",
+				"streetAddress": "Ctra. Artà-Alcúdia, 41C"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.75888700153956",
+				"longitude": "3.158704214959451"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Lidl Av. del Bontemps",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 37,
+			"name": "Lidl Av. Rei Jaume II",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipOcYoMyl2GrycIX3w_uqgA8N5k858bWqPb5Bsz7=w455-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Inca, Spain",
+				"postalCode": "07300",
+				"streetAddress": "Av. Rei Jaume II, 94-96"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.72861045900093",
+				"longitude": "2.923479075237688"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Lidl Av. del Bontemps",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 38,
+			"name": "Lidl Ctra. Palma a Puerto Pollença, 33A",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNyZiOMVFDKvN9r00g0ctjL4B1GEVAvbJEba8Xu=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Pollença, Spain",
+				"postalCode": "07460",
+				"streetAddress": "Ctra. Palma a Puerto Pollença, 33A"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.75888700153956",
+				"longitude": "3.158704214959451"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "VideoLidl Ctra. Palma a Puerto Pollença, 33A",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 39,
+			"name": "Lidl Via Palma, 89",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipNBLLWfNAbenYpELCXQ4sh_UuE3qFSC0vz_XkU4=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Manacor, Spain",
+				"postalCode": "07500",
+				"streetAddress": "Via Palma, 89"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.584498767190965",
+				"longitude": "3.2119279930136253"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Lidl Via Palma, 89",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+				{
+			"@type": "GroceryStore",
+			"@identifier": 40,
+			"name": "Lidl Av. Juan Carlos I, 58",
+			"telephone": "+34 900 958 311",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPkcGxX1t7p1Yek6INPII3hmKwFxyIbIa6IoTsl=w408-h277-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Son Moll, Spain",
+				"postalCode": "07580",
+				"streetAddress": "Av. Juan Carlos I, 58"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.70997508805238",
+				"longitude": "3.447652092843377"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Lidl",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Av. Juan Carlos I, 58",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1090,6 +1305,221 @@
 		},
 		{
 			"@type": "GroceryStore",
+			"@identifier": 46,
+			"name": "Bip Bip Cala Agulla",
+			"telephone": "+34 971 565 170",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMHFQx2ya4D1qYvQrk-L2tFxXo4oJWeGq908gNa=w408-h305-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Cala Agulla, Spain",
+				"postalCode": "07590",
+				"streetAddress": "Cala Agulla"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.725915135826355",
+				"longitude": "3.458584966687182"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 08:00-20:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Bip Bip Cala Agulla",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 47,
+			"name": "Bip Bip Carrer Nuredduna, 17",
+			"telephone": "",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPq660D5jRM1riLCm1f2BC1aWOQC5trM99X4obO=w531-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Canyamel, Spain",
+				"postalCode": "07589",
+				"streetAddress": "Carrer Nuredduna, 17"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.66413609247195",
+				"longitude": "3.4722289103073556"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 08:00-20:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Bip Bip Carrer Nuredduna, 17",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 48,
+			"name": "Bip Bip Passeig Mallorca, 43",
+			"telephone": "+34 971 851 134",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMb99VKJuYEGHL4W04beb6kRWc2eInD7noGYu7v=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Can Picafort, Spain",
+				"postalCode": "07458",
+				"streetAddress": "Passeig Mallorca, 43"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.766181342532796",
+				"longitude": "3.1687673099808564"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Su 08:00-20:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Bip Bip Passeig Mallorca, 43",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 49,
+			"name": "Bip Bip Carrer Sant Roc, 55",
+			"telephone": "+34 971 879 234",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMb99VKJuYEGHL4W04beb6kRWc2eInD7noGYu7v=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Alaró, Spain",
+				"postalCode": "07430",
+				"streetAddress": "Carrer Sant Roc, 55"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.728643464059694",
+				"longitude": "2.79113033814103"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-20:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrer Sant Roc, 55",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 50,
+			"name": "Bip Bip Carrer de Víctor Catalá, 5",
+			"telephone": "",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipMbzs5skRWJdQRDY0hBPTenBTk0hI4-tipTfbFW=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Palma, Spain",
+				"postalCode": "07600",
+				"streetAddress": "Carrer de Víctor Catalá, 5"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.54492274723164",
+				"longitude": "2.7609368105031513"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Bip Bip",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-20:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Carrer de Víctor Catalá, 5",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},				
+		{
+			"@type": "GroceryStore",
 			"@identifier": 51,
 			"name": "Aprop Jaume Balmes, 32",
 			"telephone": "+34 971 244 417",
@@ -1294,7 +1724,227 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Carrer dels Reis de Mallorca, 25",
+						"name": "Video Aprop Carrer dels Reis de Mallorca, 25",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 56,
+			"name": "Aprop Carrer Llevant, 2",
+			"telephone": "",
+			"image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=9tXIQbwrNWLMMINMvY_MAg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=256.47125&pitch=0&thumbfov=100",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Port d'Andratx, Spain",
+				"postalCode": "07157",
+				"streetAddress": "Carrer Llevant, 26"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.55157414369532",
+				"longitude": "2.4106407112924755"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:00-21:00",
+				"Su 8:30-13:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer Llevant, 2",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 57,
+			"name": "Aprop Carrer de Petra, 87",
+			"telephone": "",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPntNjAJ4xXh_x3EQ6PTCcXPjAcDbf2GbZ8dXw3=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Sant Joan, Spain",
+				"postalCode": "07240",
+				"streetAddress": "Carrer de Petra, 87"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.55157414369532",
+				"longitude": "2.4106407112924755"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:00-21:00",
+				"Su 8:30-13:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer de Petra, 87",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 58,
+			"name": "Aprop Carrer de l'Església, 26",
+			"telephone": "",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPvc6TVigPKs_kms_welh_IKgXuzMjBpF48UP0o=w408-h544-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Port de Sóller, Spain",
+				"postalCode": "07108",
+				"streetAddress": "Carrer de l'Església, 26"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.80744811969921",
+				"longitude": "2.6979589413316782"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:00",
+				"Su 9:00-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer de l'Església, 26",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 59,
+			"name": "Aprop Carrer de Sant Jaume, 19",
+			"telephone": "+34 971 638 478",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipO1yYWVClq00pG7cZ4Q7_06fZspl2gYQ8VGL9QC=w426-h240-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Sóller, Spain",
+				"postalCode": "07100",
+				"streetAddress": "Carrer de Sant Jaume, 19"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.771570034177195",
+				"longitude": "2.715811726519796"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 08:30-21:00",
+				"Su 8:30-14:00"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer de Sant Jaume, 19",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				],
+				"audio": [
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "[URL][URL][URL]"
+					}
+				]
+			}
+		},
+		{
+			"@type": "GroceryStore",
+			"@identifier": 60,
+			"name": "Aprop Carrer des Gall, 26",
+			"telephone": "+34 971 874 310",
+			"image": "https://lh5.googleusercontent.com/p/AF1QipPSXWg7Y2pS0ypEityiAhqo15RDp30lecIAnkGl=w408-h306-k-no",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Sencelles, Spain",
+				"postalCode": "07140",
+				"streetAddress": "Carrer des Gall, 26"
+			},
+			"geo": {
+				"@type": "GeoCoordinates",
+				"latitude": "39.64796428055293",
+				"longitude": "2.8895330399522465"
+			},
+			"brand": {
+				"type": "Brand",
+				"name": "Aprop",
+				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+			},
+			"openingHours": [
+				"Mo-Sa 09:00-21:00",
+				"Su 9:00-13:30"
+			],
+			"subjectOf": {
+				"@type": "CreativeWork",
+				"video": [
+					{
+						"@type": "VideoObject",
+						"name": "Video Aprop Carrer des Gall, 26",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
