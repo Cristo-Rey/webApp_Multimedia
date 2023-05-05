@@ -7,7 +7,7 @@ async function llistaSupermercats() {
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
             const newElement = document.createElement('div');
-            newElement.classList.add('col-lg-6', 'supermercats-item', `filter-${item['brand.name'].toLowerCase()}`);
+            newElement.classList.add('col-lg-6', 'supermercats-item', `filter-${item.brand.name}`);
             const content = document.createElement('div');
             content.classList.add('supermercats-content');
             const link = document.createElement('a');
