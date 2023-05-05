@@ -1,6 +1,6 @@
 async function llistaSupermercats() {
     try{
-        const response = await fetch('/assets/js/supermercats.json');
+        const response = await fetch('/assets/js/supermercat.json');
         const json = await response.json();
         const itemList = json.itemListElement;
         const container = document.querySelector('.supermercats-container');
