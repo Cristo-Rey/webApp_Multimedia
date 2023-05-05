@@ -14,7 +14,7 @@ async function llistaSupermercats() {
             link.href = '#';
             link.textContent = item.name;
             const rating = document.createElement('span');
-            const randomRating = (Math.random() * 5);
+            const randomRating = (Math.random() * 5).toFixed(1);
             rating.textContent = `${randomRating} ✯`;
             content.appendChild(link);
             content.appendChild(rating);
