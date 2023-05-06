@@ -1576,3 +1576,11 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+#map{
+  margin-top:20px;
+  height: 40vh;
+  width: 100%;
+}
+
+
