@@ -1,3 +1,5 @@
+async function fer_mapa(){
+
 let map = L.map('map').setView([39.6136200, 3.0200400],9)
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
@@ -22,3 +24,6 @@ try{
 catch(error){
     console.error('Hubo un error al cargar el archivo JSON', error);
 }
+}
+
+fer_mapa()
