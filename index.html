@@ -33,7 +33,7 @@
 	<!--MAPA API-->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
 		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
 </head>
 
@@ -43,7 +43,13 @@
 		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
 			<div class="logo me-auto">
-				<h1><a href="index.html">CristoRey3</a></h1>
+				<h1>
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+						<image xlink:href="crist.svg" width="100%" height="100%" />
+					</svg>
+					<a href="index.html">CristoRey3</a>
+				</h1>
+
 			</div>
 
 			<nav id="navbar" class="navbar order-last order-lg-0">
@@ -109,17 +115,10 @@
 				<div class="row">
 
 					<div class="col-lg-5 align-items-stretch video-box">
-						<div id="map"></div>
-						<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-						integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-						crossorigin=""></script>
-						<script src="assets/js/mapa.js"></script>
-						
-						<!--
 						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/2tRIjRVcHcQ"
 							title="Video Presentació" frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen></iframe>-->
+							allowfullscreen></iframe>
 					</div>
 
 					<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
@@ -588,6 +587,37 @@
 		
 		
 		End Gallery Section -->
+
+
+		<!-- ======= Mapa Section ======= -->
+		<section id="about" class="about">
+			<div class="container-fluid">
+
+				<div class="row">
+
+					<div class="col-lg-5 align-items-stretch video-box">
+						<div id="map"></div>
+						<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+							integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+						<script src="assets/js/mapa.js"></script>
+					</div>
+
+					<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+
+						<div class="content">
+							<h3><strong>CristoRey3</strong> - Supermercats enregistrats</h3>
+							<p class="fst-italic">
+								Et presentam una sel·lecció dels supermercats més destacats i populars de Mallorca. Aquests establiments ofereixen una amplia varietat de productes frescs, comestibles i artícles de la llar.
+							</p>
+							<p>
+								Ja comptem amb més de 60 supermercats enregistrats!! Prova a sel·leccionar-ne un del mapa i escriure-hi una valoració
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section><!-- End Mapa Section -->
 
 		<!-- ======= Jutges Section ======= -->
 		<section id="jutges" class="jutges">
