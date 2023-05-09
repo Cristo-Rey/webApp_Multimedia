@@ -1180,8 +1180,6 @@ section {
 # jutges
 --------------------------------------------------------------*/
 .jutges {
-  background: url("../img/jutges-bg.jpg") center center no-repeat;
-  background-size: cover;
   padding: 60px 0;
   position: relative;
 }

@@ -23,6 +23,7 @@ async function llistaSupermercats() {
             description.classList.add('supermercats-ingredients');
             description.textContent = item.address.streetAddress;
             newElement.appendChild(description);
+            newElement.setAttribute('onclick', `enviarSucursal('${item.name}')`)
             container.appendChild(newElement);
         }
     }

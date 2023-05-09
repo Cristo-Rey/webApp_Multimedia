@@ -29,292 +29,87 @@
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
 
-
-	<!--MAPA API-->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
-
-	<!-- Send informació sucursals -->
+	<!-- Obtenim les dades de la sucursal -->
 	<script>
-        function enviarSucursal(sucursal) {
-            localStorage.setItem("sucursal", sucursal);
-			window.location.href = "sucursal.html";
+        function getSucursal() {
+            var sucursal = localStorage.getItem("sucursal");
+            console.log(sucursal);
         }
     </script>
-
 </head>
 
-<body>
+<body onload="getSucursal()">
+
 	<!-- ======= Header ======= -->
-	<header id="header" class="fixed-top d-flex align-items-center header-transparent">
+	<header id="header" class="fixed-top d-flex align-items-center inner">
 		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
 			<div class="logo me-auto">
-				<h1>
-					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-						<image xlink:href="crist.svg" width="100%" height="100%" />
-					</svg>
-					<a href="index.html">CristoRey3</a>
-				</h1>
-
+				<h1><a href="index.html">CristoRey3</a></h1>
 			</div>
 
 			<nav id="navbar" class="navbar order-last order-lg-0">
 				<ul>
-					<li><a class="nav-link scrollto active" href="#hero">Inici</a></li>
-					<li><a class="nav-link scrollto" href="#about">Sobre Nosaltres</a></li>
-					<li class="dropdown"><a href="#franquicies">Franquícies TOP<i class="bi bi-chevron-down"></i></a>
-						<ul>
-							<li><a href="#">Mercadona</a></li>
-							<li><a href="#">Eroski</a></li>
-							<li><a href="#">Carrefour</a></li>
-							<li><a href="#">Lidl</a></li>
-							<li><a href="#">Bip</a></li>
-							<li><a href="#">Aprop</a></li>
-						</ul>
-					</li>
-					<li><a class="nav-link scrollto" href="#supermercats">Supermercats TOP</a></li>
+					<li><a class="nav-link scrollto active" href="#franquicies">Inici</a></li>
 					<li><a class="nav-link scrollto" href="#ressenyes">Ressenyes TOP</a></li>
-					<li><a class="nav-link scrollto" href="#jutges">Jutges</a></li>
+					<li><a class="nav-link scrollto" href="#supermercats">Locals</a></li>
+					<li><a class="nav-link scrollto" href="#gallery">Fotos TOP</a></li>
+					<li><a class="nav-link scrollto" href="#about">Extra</a></li>
+					<li><a class="nav-link scrollto" href="#testimonials">Valoracions</a></li>
 				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
 			</nav><!-- .navbar -->
 		</div>
 	</header><!-- End Header -->
 
-	<!-- ======= Hero Section ======= -->
-	<section id="hero">
-		<div class="hero-container">
-			<div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-				<!-- NO BORRAR QUE DEIXEN DE FUNCIONAR TOTS ELS CARRUSELS DEPORTIVOS -->
-				<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-				<div class="carousel-inner" role="listbox">
-					<!-- Slide 1 -->
-					<div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg);">
-						<div class="carousel-container">
-							<div class="carousel-content">
-								<h2 class="animate__animated animate__fadeInDown"><span>CristoRey3</span> - Guia de
-									Supermercats</h2>
-								<p class="animate__animated animate__fadeInUp">La millor pàgina guia de supermercats de
-									Mallorca on podràs trobar informació detallada de les diferents franquícies amb els
-									seus respectius establiments.</p>
-								<div>
-									<a href="#supermercats"
-										class="btn-supermercats animate__animated animate__fadeInUp scrollto">Supermercats
-										TOP</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!-- End Hero -->
-
 	<main id="main">
 
-		<!-- ======= About Section ======= -->
-		<section id="about" class="about">
-			<div class="container-fluid">
+		<!-- NO BORRAR QUE DEIXEN DE FUNCIONAR TOTS ELS CARRUSELS DEPORTIVOS -->
+		<ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-				<div class="row">
+		<!-- ======= Breadcrumbs Section ======= -->
+		<section class="breadcrumbs">
+			<div class="container">
 
-					<div class="col-lg-5 align-items-stretch video-box">
-						<iframe width="100%" height="100%" src="https://www.youtube.com/embed/2tRIjRVcHcQ"
-							title="Video Presentació" frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							allowfullscreen></iframe>
-					</div>
-
-					<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
-						<div class="content">
-							<h3><strong>CristoRey3</strong> - Qui som?</h3>
-							<p class="fst-italic">
-								Som un grup de joves que volen ajudar a la gent a trobar el supermercat més proper a la
-								seva casa,
-								així com oferir informació detallada de les diferents franquícies amb els seus
-								respectius establiments.
-							</p>
-							<p>
-								El que nosaltres oferim és:
-							</p>
-							<ul>
-								<li><i class="bx bx-check-double"></i> Informació precisa i veraç sobre les diferents
-									franquícies</li>
-								<li><i class="bx bx-check-double"></i> Ofertes del dia</li>
-								<li><i class="bx bx-check-double"></i> Els millors supermercat qualitat preu</li>
-								<li><i class="bx bx-check-double"></i> El supermercat més proper a tu</li>
-							</ul>
-
-						</div>
-
-					</div>
+				<div class="d-flex justify-content-between align-items-center">
+					<h2>Mercadona</h2>
+					<ol>
+						<li><a href="index.html">Home</a></li>
+						<li>Mercadona</li>
+					</ol>
 				</div>
 
 			</div>
-		</section><!-- End About Section -->
+		</section><!-- End Breadcrumbs Section -->
 
 		<!-- ======= Franquícies Destacades Section ======= -->
 		<section id="franquicies" class="franquicies">
 			<div class="container">
-				<div class="section-title">
-					<h2>Franquícies <span>TOP</span></h2>
-					<p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-						atque vitae autem.</p>
-				</div>
-
-
-
-				<!-- Llista de Franquícies Destacades-->
-				<div class="row">
-					<div class="col-lg-3">
-						<ul class="nav nav-tabs flex-column">
-							<li class="nav-item">
-								<a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Mercadona</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#tab-2">Eroski</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#tab-3">Carrefour</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#tab-4">Lidl</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" data-bs-toggle="tab" href="#tab-5">Bip Bip</a>
-							</li>
-						</ul>
-					</div>
-
-					<!-- Franquícia destacada 1	-->
-					<div class="col-lg-9 mt-4 mt-lg-0">
-						<div class="tab-content">
-							<div class="tab-pane active show" id="tab-1">
-								<div class="row">
-									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Architecto ut aperiam autem id</h3>
-										<p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-											dila parde sonata raqer a videna mareta paulona marka</p>
-										<p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
-											Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
-											repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
-											quaerat quos qui similique accusamus nostrum rem vero</p>
-									</div>
-									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/logo_franquicia/franquicia-1.jpg" alt="" class="img-fluid">
-									</div>
-								</div>
+				<!-- Franquícia destacada 1	-->
+				<div class="col-lg mt-4 mt-lg-0">
+					<div class="tab-content">
+						<div class="row">
+							<div class="col-lg-4 text-center order-1 order-lg-1">
+								<img src="assets/img/logo_franquicia/franquicia-1.jpg" alt="" class="img-fluid">
 							</div>
-
-							<!-- Franquícia destacada 2	-->
-							<div class="tab-pane" id="tab-2">
-								<div class="row">
-									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Et blanditiis nemo veritatis excepturi</h3>
-										<p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-											dila parde sonata raqer a videna mareta paulona marka</p>
-										<p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et
-											reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et
-											velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto
-											madirna desera vafle de nideran pal</p>
-									</div>
-									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/logo_franquicia/franquicia-2.jpg" alt="" class="img-fluid">
-									</div>
+							<div class="col-lg details order-2 order-lg-2"
+								style="display:flex;text-align: left;justify-content: center;flex-direction: column;">
+								<div class="section-title">
+									<h2>Franquícies - <span>Mercadona</span></h2>
 								</div>
-							</div>
-							<!-- Franquícia destacada 3	-->
-							<div class="tab-pane" id="tab-3">
-								<div class="row">
-									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-										<p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non
-											enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat
-											perferendis aut</p>
-										<p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis
-											quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima
-											molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam.
-											Soluta et harum voluptatem optio quae</p>
-									</div>
-									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/logo_franquicia/franquicia-3.jpg" alt="" class="img-fluid">
-									</div>
-								</div>
-							</div>
-							<!-- Franquícia destacada 4 -->
-							<div class="tab-pane" id="tab-4">
-								<div class="row">
-									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-										<p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure
-											voluptas iure porro quis delectus</p>
-										<p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam
-											necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in
-											consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam
-											quia a laborum inventore</p>
-									</div>
-									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/logo_franquicia/franquicia-4.jpg" alt="" class="img-fluid">
-									</div>
-								</div>
-							</div>
-							<!-- Franquícia destacada 5 -->
-							<div class="tab-pane" id="tab-5">
-								<div class="row">
-									<div class="col-lg-8 details order-2 order-lg-1">
-										<h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-										<p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro
-											quia.</p>
-										<p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis
-											recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui
-											quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-									</div>
-									<div class="col-lg-4 text-center order-1 order-lg-2">
-										<img src="assets/img/logo_franquicia/franquicia-5.jpg" alt="" class="img-fluid">
-									</div>
-								</div>
+								<p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
+									dila parde sonata raqer a videna mareta paulona marka</p>
+								<p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
+									Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
+									repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
+									quaerat quos qui similique accusamus nostrum rem vero</p>
 							</div>
 						</div>
 					</div>
 				</div>
-
+			</div>
 			</div>
 		</section><!-- End franquicies Section -->
-
-		<!-- ======= supermercats Section ======= -->
-		<section id="supermercats" class="supermercats">
-			<div class="container">
-
-				<div class="section-title">
-					<h2>Supermercats <span>TOP</span></h2>
-				</div>
-
-				<div class="row">
-					<div class="col-lg-12 d-flex justify-content-center">
-						<ul id="supermercats-flters">
-							<li data-filter="*" class="filter-active">Tots</li>
-							<li data-filter=".filter-Mercadona">Mercadona</li>
-							<li data-filter=".filter-Eroski">Eroski</li>
-							<li data-filter=".filter-Carrefour">Carrefour</li>
-							<li data-filter=".filter-Lidl">Lidl</li>
-							<li data-filter=".filter-Aprop">Aprop</li>
-							<li data-filter=".filter-BipBip">Bip Bip</li>
-
-						</ul>
-					</div>
-				</div>
-
-				<div class="row supermercats-container">
-
-				</div>
-
-			</div>
-		</section><!-- End supermercats Section -->
 
 		<!-- ======= Ressenyes TOP ======= -->
 		<section id="ressenyes" class="ressenyes">
@@ -430,13 +225,119 @@
 			</div>
 		</section><!-- End Ressenyes TOP -->
 
+		<!-- ======= supermercats Section ======= -->
+		<section id="supermercats" class="supermercats">
+			<div class="container">
 
-		<!-- ======= Gallery Section ======= 
+				<div class="section-title">
+					<h2>Locals <span>TOP</span></h2>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12 d-flex justify-content-center">
+						<ul id="supermercats-flters">
+							<li data-filter="*" class="filter-active">Tots</li>
+							<li data-filter=".filter-mercadona">Palma</li>
+							<li data-filter=".filter-eroski">Llevant</li>
+							<li data-filter=".filter-carrefour">Badia d'Alcúdia</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row supermercats-container">
+
+					<div class="col-lg-6 supermercats-item filter-mercadona">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 1</a><span>4.9 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-carrefour">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 2</a><span>4.7 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-mercadona">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 3</a><span>4.8 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-eroski">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 4</a><span>5.0 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-carrefour">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 5</a><span>4.6 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-mercadona">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 6</a><span>4.8 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-eroski">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 7</a><span>4.9 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-eroski">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 8</a><span>4.8 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+					<div class="col-lg-6 supermercats-item filter-carrefour">
+						<div class="supermercats-content">
+							<a href="#">Mercadona 9</a><span>4.9 ✯</span>
+						</div>
+						<div class="supermercats-ingredients">
+							Descripció súper èpica 😎
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section><!-- End supermercats Section -->
+
+		<!-- ======= Gallery Section =======  -->
 		<section id="gallery" class="gallery">
 			<div class="container-fluid">
 
 				<div class="section-title">
-					<h2>Some photos from <span>Our Restaurant</span></h2>
+					<h2>Fotos <span>TOP</span></h2>
 					<p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
 						atque vitae autem.</p>
 				</div>
@@ -511,89 +412,51 @@
 
 			</div>
 		</section>
-		
-		
-		End Gallery Section -->
 
-
-		<!-- ======= Mapa Section ======= -->
+		<!-- End Gallery Section -->
+		<!-- ======= About Section ======= -->
 		<section id="about" class="about">
 			<div class="container-fluid">
 
 				<div class="row">
 
-					<div class="col-lg-5 align-items-stretch video-box">
-						<div id="map"></div>
-						<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-							integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
-						<script src="assets/js/mapa.js"></script>
-					</div>
-
 					<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
 
 						<div class="content">
-							<h3><strong>CristoRey3</strong> - Supermercats enregistrats</h3>
+							<h3><strong>Mercadona</strong> - ¿Theme Song?</h3>
 							<p class="fst-italic">
-								Et presentam una sel·lecció dels supermercats més destacats i populars de Mallorca. Aquests establiments ofereixen una amplia varietat de productes frescs, comestibles i artícles de la llar.
+								Som un grup de joves que volen ajudar a la gent a trobar el supermercat més proper a la
+								seva casa,
+								així com oferir informació detallada de les diferents franquícies amb els seus
+								respectius establiments.
 							</p>
 							<p>
-								Ja comptem amb més de 60 supermercats enregistrats!! Prova a sel·leccionar-ne un del mapa i escriure-hi una valoració
+								El que nosaltres oferim és:
 							</p>
+							<ul>
+								<li><i class="bx bx-check-double"></i> Informació precisa i veraç sobre les diferents
+									franquícies</li>
+								<li><i class="bx bx-check-double"></i> Ofertes del dia</li>
+								<li><i class="bx bx-check-double"></i> Els millors supermercat qualitat preu</li>
+								<li><i class="bx bx-check-double"></i> El supermercat més proper a tu</li>
+							</ul>
+
 						</div>
 
 					</div>
-				</div>
-			</div>
-		</section><!-- End Mapa Section -->
 
-		<!-- ======= Jutges Section ======= -->
-		<section id="jutges" class="jutges">
-			<div class="container">
+					<div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch">
+						<audio controls>
+							<source src="assets/audio/mercadona.mp3" type="audio/mp3">
+						</audio>
 
-				<div class="section-title">
-					<h2>Els nostres <span>Jutges</span></h2>
-					<p>Aquests són els encarregats d'avaluar els diferents supermercats de l'illa perquè puguis gaudir
-						de la millor experiència de compra.</p>
-				</div>
-
-				<div class="row">
-
-					<div class="col-lg-4 col-md-6">
-						<div class="member">
-							<div class="pic"><img src="assets/img/jutges/jutges-1.jpg" class="img-fluid" alt=""></div>
-							<div class="member-info">
-								<h4>Xavier "Induráin" Vives Marcus</h4>
-								<span>Ciclista</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="member">
-							<div class="pic"><img src="assets/img/jutges/jutges-2.jpg" class="img-fluid" alt=""></div>
-							<div class="member-info">
-								<h4>Xavier "decide si" Vives Marcus</h4>
-								<span>Mercenari</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6">
-						<div class="member">
-							<div class="pic"><img src="assets/img/jutges/jutges-3.jpg" class="img-fluid" alt=""></div>
-							<div class="member-info">
-								<h4>Xavier "La Roca" Johnnson</h4>
-								<span>Gigoló</span>
-							</div>
-						</div>
 					</div>
 
 				</div>
 
 			</div>
-		</section><!-- End jutges Section -->
-
-		<!-- ======= Testimonials Section ======= 
+		</section><!-- End About Section -->
+		<!-- ======= Testimonials Section ======= -->
 		<section id="testimonials" class="testimonials">
 			<div class="container position-relative">
 
@@ -618,7 +481,7 @@
 									<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 								</p>
 							</div>
-						</div><!-- End testimonial item 
+						</div><!-- End testimonial item -->
 
 						<div class="swiper-slide">
 							<div class="testimonial-item">
@@ -638,7 +501,7 @@
 									<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 								</p>
 							</div>
-						</div><!-- End testimonial item 
+						</div><!-- End testimonial item -->
 
 						<div class="swiper-slide">
 							<div class="testimonial-item">
@@ -658,7 +521,7 @@
 									<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 								</p>
 							</div>
-						</div><!-- End testimonial item 
+						</div><!-- End testimonial item -->
 
 						<div class="swiper-slide">
 							<div class="testimonial-item">
@@ -678,7 +541,7 @@
 									<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 								</p>
 							</div>
-						</div><!-- End testimonial item 
+						</div><!-- End testimonial item -->
 
 						<div class="swiper-slide">
 							<div class="testimonial-item">
@@ -698,7 +561,7 @@
 									<i class="bx bxs-quote-alt-right quote-icon-right"></i>
 								</p>
 							</div>
-						</div><!-- End testimonial item 
+						</div><!-- End testimonial item -->
 
 					</div>
 					<div class="swiper-pagination"></div>
@@ -706,8 +569,8 @@
 
 			</div>
 		</section>
-		
-		End Testimonials Section -->
+
+		<!-- End Testimonials Section -->
 
 
 	</main><!-- End #main -->
@@ -731,9 +594,6 @@
 	<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script src="assets/vendor/php-email-form/validate.js"></script>
-
-	<!-- Scripts propis -->
-	<script src="assets/js/supermercats.js"></script>
 
 	<!-- Template Main JS File -->
 	<script src="assets/js/main.js"></script>
