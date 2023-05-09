@@ -110,7 +110,7 @@ async function loadSucursal() {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
 
-                var xinxeta = L.icon({
+                /*var xinxeta = L.icon({
                     iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
                     iconSize: [25, 41],
                     iconAnchor: [12, 41],
@@ -142,7 +142,7 @@ async function loadSucursal() {
                         break;
                 }
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
-                singleMarker.addTo(map);
+                singleMarker.addTo(map);*/
 
 
 
