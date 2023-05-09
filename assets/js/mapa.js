@@ -19,7 +19,7 @@ async function fer_mapa() {
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
         shadowSize: [41, 41]
-    });
+    });    
     var blueIcon = L.icon({
         iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
         iconSize: [25, 41],
@@ -49,7 +49,7 @@ async function fer_mapa() {
         shadowSize: [41, 41]
     });
 
-    var defaultIcon = L.icon({
+    var violetIcon = L.icon({
         iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
@@ -88,7 +88,8 @@ async function fer_mapa() {
                     var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: blackIcon });
                     break;
                 default:
-                    var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: defaultIcon });
+                    console.log(item.brand.name)
+                    var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: violetIcon });
                     break;
 
             }
