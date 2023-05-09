@@ -73,7 +73,7 @@ async function loadSucursal() {
                 const div2 = document.createElement('div');
                 div2.classList.add('col-lg', 'details', 'order-2', 'order-lg-2');
                 div2.style.display = 'flex';
-                div2.style.textAlign = 'left';
+                div2.style.textAlign = 'center';
                 div2.style.justifyContent = 'center';
                 div2.style.flexDirection = 'column';
                 
