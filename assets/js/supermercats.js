@@ -31,5 +31,3 @@ async function llistaSupermercats() {
         console.error('Hubo un error al cargar el archivo JSON', error);
     }
 }
-
-llistaSupermercats();
