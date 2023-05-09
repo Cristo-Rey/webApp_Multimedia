@@ -13,7 +13,7 @@ async function loadSucursal() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
-                // Generamos la parte del titulo
+                // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
                 const h2 = document.createElement('h2');
@@ -36,6 +36,69 @@ async function loadSucursal() {
 
                 container.appendChild(h2);
                 container.appendChild(ol);
+
+                // %%%%%%%%%%%%%%%%% INICI %%%%%%%%%%%%%%%%%
+
+                const container2 = document.querySelector('.inici-sucursal');
+
+                const div1 = document.createElement('div');
+                div1.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-1');
+                const img = document.createElement('img');
+                
+                // Switch para selecionar la franquicia
+                switch (item.brand.name) {
+                    case 'Mercadona':
+                        img.src = 'assets/img/logo_franquicia/franquicia-1.jpg';
+                        break;
+                    case 'Eroski':
+                        img.src = 'assets/img/logo_franquicia/franquicia-2.jpg';
+                        break;
+                    case 'Carrefour':
+                        img.src = 'assets/img/logo_franquicia/franquicia-3.jpg';
+                        break;
+                    case 'Lidl':
+                        img.src = 'assets/img/logo_franquicia/franquicia-4.jpg';
+                        break;
+                    case 'BipBip':
+                        img.src = 'assets/img/logo_franquicia/franquicia-5.jpg';
+                        break;
+                    case 'Aprop':
+                        img.src = 'assets/img/logo_franquicia/franquicia-6.jpg';
+                        break;
+                }
+                img.alt = `Logo de ${item.brand.name}`;
+                img.classList.add('img-fluid');
+                div1.appendChild(img);
+
+                const div2 = document.createElement('div');
+                div2.classList.add('col-lg', 'details', 'order-2', 'order-lg-2');
+                div2.style.display = 'flex';
+                div2.style.textAlign = 'left';
+                div2.style.justifyContent = 'center';
+                div2.style.flexDirection = 'column';
+                
+                const div3 = document.createElement('div');
+                div3.classList.add('section-title');
+                const h2s = document.createElement('h2');
+                h2s.textContent = `${item.brand.name} - <span>${item.address.streetAdress}</span>`;
+
+                div3.appendChild(h2s);
+
+                const p1 = document.createElement('p');
+                p1.classList.add('fst-italic');
+                p1.textContent = `${item.address.postalCode} - ${item.address.addressLocality}`;
+
+                const p2 = document.createElement('p');
+                p2.textContent = item.openingHours[0];
+                
+                // Agregar los elementos a los divs
+                div2.appendChild(div3);
+                div2.appendChild(p1);
+                div2.appendChild(p2);
+
+                // Agregar los elementos al container
+                container2.appendChild(div1);
+                container2.appendChild(div2);
 
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
