@@ -109,6 +109,7 @@ async function loadSucursal() {
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
+                
 
                 /*var xinxeta = L.icon({
                     iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
