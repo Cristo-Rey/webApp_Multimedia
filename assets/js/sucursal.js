@@ -17,7 +17,7 @@ async function loadSucursal() {
                 const container = document.querySelector('d-flex justify-content-between align-items-center');
 
                 const h2 = document.createElement('h2');
-                h2.textContent = `${item.name}`;
+                h2.textContent = item.name;
 
                 const ol = document.createElement('ol');
 
@@ -28,7 +28,7 @@ async function loadSucursal() {
                 li1.appendChild(a);
 
                 const li2 = document.createElement('li');
-                li2.textContent = 'Mercadona';
+                li2.textContent = item.brand.name;
 
                 // Agregar los elementos al DOM
                 ol.appendChild(li1);
