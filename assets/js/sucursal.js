@@ -46,27 +46,30 @@ async function loadSucursal() {
                 const img = document.createElement('img');
                 
                 // Switch para selecionar la franquicia
-                switch (item.brand.name) {
-                    case 'Mercadona':
-                        img.src = 'assets/img/logo_franquicia/franquicia-1.jpg';
-                        break;
-                    case 'Eroski':
-                        img.src = 'assets/img/logo_franquicia/franquicia-2.jpg';
-                        break;
-                    case 'Carrefour':
-                        img.src = 'assets/img/logo_franquicia/franquicia-3.jpg';
-                        break;
-                    case 'Lidl':
-                        img.src = 'assets/img/logo_franquicia/franquicia-4.jpg';
-                        break;
-                    case 'BipBip':
-                        img.src = 'assets/img/logo_franquicia/franquicia-5.jpg';
-                        break;
-                    case 'Aprop':
-                        img.src = 'assets/img/logo_franquicia/franquicia-6.jpg';
-                        break;
-                }
-                img.alt = `Logo de ${item.brand.name}`;
+                // switch (item.brand.name) {
+                //     case 'Mercadona':
+                //         img.src = 'assets/img/logo_franquicia/franquicia-1.jpg';
+                //         break;
+                //     case 'Eroski':
+                //         img.src = 'assets/img/logo_franquicia/franquicia-2.jpg';
+                //         break;
+                //     case 'Carrefour':
+                //         img.src = 'assets/img/logo_franquicia/franquicia-3.jpg';
+                //         break;
+                //     case 'Lidl':
+                //         img.src = 'assets/img/logo_franquicia/franquicia-4.jpg';
+                //         break;
+                //     case 'BipBip':
+                //         img.src = 'assets/img/logo_franquicia/franquicia-5.jpg';
+                //         break;
+                //     case 'Aprop':
+                //         img.src = 'assets/img/logo_franquicia/franquicia-6.jpg';
+                //         break;
+                // }
+                // img.alt = `Logo de ${item.brand.name}`;
+
+                img.src = item.image;
+                img.alt = 'Imatge del local';
                 img.classList.add('img-fluid');
                 div1.appendChild(img);
 
