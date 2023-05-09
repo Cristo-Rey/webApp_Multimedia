@@ -144,7 +144,8 @@ async function loadSucursal() {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
                 singleMarker.addTo(map);*/
 
-
+                // Afegim el mapa al container
+                container3.appendChild(map._container);
 
 
                 // Salir del bucle cuando se encuentra el elemento buscado
