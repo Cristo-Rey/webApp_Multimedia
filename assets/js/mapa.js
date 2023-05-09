@@ -56,9 +56,6 @@ async function fer_mapa() {
         popupAnchor: [1, -34],
         shadowSize: [41, 41]
     });
-    var singleMarker = L.marker([39.6136200, 3.0200400], { icon: greenIcon });
-    singleMarker.addTo(map);
-
 
     try {
         const response = await fetch('/assets/js/supermercat.json');

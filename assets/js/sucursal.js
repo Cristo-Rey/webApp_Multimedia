@@ -102,9 +102,55 @@ async function loadSucursal() {
                 container2.appendChild(div1);
                 container2.appendChild(div2);
 
+                // %%%%%%%%%%%%%%%%% MAPA %%%%%%%%%%%%%%%%%
+
+                const container3 = document.querySelector('.mapa-sucursal');
+                let map = L.map('map').setView([39.6136200, 3.0200400], 9);
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                var xinxeta = L.icon({
+                    iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
+                    iconSize: [25, 41],
+                    iconAnchor: [12, 41],
+                    popupAnchor: [1, -34],
+                    shadowSize: [41, 41]
+                });
+
+                switch (item.brand.name) {
+                    case "Eroski":
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-red.png';
+                        break;
+                    case "Mercadona":
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-orange.png';
+                        break;
+                    case "Carrefour":
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-blue.png';
+                        break;
+                    case "Lidl":
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-yellow.png';
+                        break;
+                    case "BipBip":
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-green.png';
+                        break;
+                    case "Aprop":
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-black.png';
+                        break;
+                    default:
+                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-violet.png';
+                        break;
+                }
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
+                singleMarker.addTo(map);
+
+
+
+
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
             }
+
         }
     }
     catch (error) {
