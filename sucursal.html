@@ -30,12 +30,7 @@
 	<link href="assets/css/style.css" rel="stylesheet">
 
 	<!-- Obtenim les dades de la sucursal -->
-	<script>
-        function getSucursal() {
-            var sucursal = localStorage.getItem("sucursal");
-            console.log(sucursal);
-        }
-    </script>
+	<script src="assets/js/sucursal.js"></script>
 </head>
 
 <body onload="getSucursal()">
@@ -45,7 +40,13 @@
 		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
 			<div class="logo me-auto">
-				<h1><a href="index.html">CristoRey3</a></h1>
+				<h1>
+					<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+						<image xlink:href="crist.svg" width="100%" height="100%" />
+					</svg>
+					<a href="index.html">CristoRey3</a>
+				</h1>
+
 			</div>
 
 			<nav id="navbar" class="navbar order-last order-lg-0">
