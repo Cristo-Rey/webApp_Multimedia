@@ -7,7 +7,7 @@ async function fer_mapa() {
     }).addTo(map);
 
     var greenIcon = L.icon({
-        iconUrl: 'assets/img/mapa/jpgmarker-icon-2x-green.png',
+        iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
         iconSize: [25, 41],
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
@@ -88,7 +88,7 @@ async function fer_mapa() {
                     var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: blackIcon });
                     break;
                 default:
-                    console.log(item.brand.name)
+                    console.log(item.brand.name);
                     var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: violetIcon });
                     break;
 
