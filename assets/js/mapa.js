@@ -93,9 +93,6 @@ async function fer_mapa() {
 
             }
             singleMarker.addTo(map);
-
-            var singleMarker = L.marker([item.geo.latitude, item.geo.longitude]);
-            singleMarker.addTo(map);
         }
     }
     catch (error) {
