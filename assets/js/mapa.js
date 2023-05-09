@@ -95,7 +95,6 @@ async function fer_mapa() {
             }
             singleMarker.addTo(map);
         }
-        console.log(itemList.length);
     }
     catch (error) {
         console.error('Hubo un error al cargar el archivo JSON', error);
