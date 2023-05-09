@@ -83,8 +83,7 @@ async function loadSucursal() {
                 const div3 = document.createElement('div');
                 div3.classList.add('section-title');
                 const h2s = document.createElement('h2');
-                h2s.textContent = `${item.brand.name} - <span>${item.address.streetAddress}</span>`;
-
+                h2s.innerHTML = `${item.brand.name} - <span>${item.address.streetAddress}</span>`;
                 div3.appendChild(h2s);
 
                 const p1 = document.createElement('p');
@@ -92,7 +91,7 @@ async function loadSucursal() {
                 p1.textContent = `${item.address.postalCode} - ${item.address.addressLocality}`;
 
                 const p2 = document.createElement('p');
-                p2.textContent = item.openingHours[0];
+                p2.textContent = item.openingHours.join('\n');
                 
                 // Agregar los elementos a los divs
                 div2.appendChild(div3);
