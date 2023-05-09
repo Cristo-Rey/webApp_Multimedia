@@ -61,7 +61,7 @@ async function fer_mapa() {
         const response = await fetch('/assets/js/supermercat.json');
         const json = await response.json();
         const itemList = json.itemListElement;
-        const container = document.querySelector('.supermercats-container');
+
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
 
