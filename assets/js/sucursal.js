@@ -14,8 +14,8 @@ async function loadSucursal() {
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
                 // Generamos la parte del titulo
-                const container = document.querySelector('div.d-flex.justify-content-between.align-items-center');
-                
+                const container = document.querySelector('.barra-gris');
+
                 const h2 = document.createElement('h2');
                 h2.textContent = item.name;
 
