@@ -105,13 +105,13 @@ async function loadSucursal() {
                 // %%%%%%%%%%%%%%%%% MAPA %%%%%%%%%%%%%%%%%
 
                 const container3 = document.querySelector('.mapa-sucursal');
-                let map = L.map('map').setView([39.6136200, 3.0200400], 9);
+                let map = L.map('map').setView([item.geo.latitude, item.geo.longitude], 12);
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
                 
 
-                /*var xinxeta = L.icon({
+                var xinxeta = L.icon({
                     iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
                     iconSize: [25, 41],
                     iconAnchor: [12, 41],
@@ -143,7 +143,7 @@ async function loadSucursal() {
                         break;
                 }
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
-                singleMarker.addTo(map);*/
+                singleMarker.addTo(map);
 
 
                 // Salir del bucle cuando se encuentra el elemento buscado
