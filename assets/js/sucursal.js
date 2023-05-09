@@ -80,7 +80,7 @@ async function loadSucursal() {
                 const div3 = document.createElement('div');
                 div3.classList.add('section-title');
                 const h2s = document.createElement('h2');
-                h2s.textContent = `${item.brand.name} - <span>${item.address.streetAdress}</span>`;
+                h2s.textContent = `${item.brand.name} - <span>${item.address.streetAddress}</span>`;
 
                 div3.appendChild(h2s);
 
