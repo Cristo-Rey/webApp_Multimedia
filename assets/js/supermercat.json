@@ -453,8 +453,8 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "39.771636018525285",
-				"longitude": "3.141900221602074"
+				"latitude": "39.5911954331743",
+				"longitude": "2.6542222644068314"
 			},
 			"brand": {
 				"type": "Brand",
@@ -1967,8 +1967,8 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "39.725915135826355",
-				"longitude": "3.458584966687182"
+				"latitude": "39.719582126697624",
+				"longitude": "3.457115647609067"
 			},
 			"brand": {
 				"type": "Brand",
@@ -2010,8 +2010,8 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "39.66413609247195",
-				"longitude": "3.4722289103073556"
+				"latitude": "39.6579155228097",
+				"longitude": "3.440312472894908"
 			},
 			"brand": {
 				"type": "Brand",
@@ -2053,8 +2053,8 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "39.766181342532796",
-				"longitude": "3.1687673099808564"
+				"latitude": "39.76046499841764",
+				"longitude": "3.1672211729306596"
 			},
 			"brand": {
 				"type": "Brand",
@@ -2139,8 +2139,8 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "39.54492274723164",
-				"longitude": "2.7609368105031513"
+				"latitude": "39.53042096411894",
+				"longitude": "2.7536775555665622"
 			},
 			"brand": {
 				"type": "Brand",
