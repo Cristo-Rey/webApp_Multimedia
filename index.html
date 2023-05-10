@@ -37,12 +37,22 @@
 
 	<!-- Send informació sucursals -->
 	<script>
-        function enviarSucursal(sucursal) {
-            localStorage.setItem("sucursal", sucursal);
-        }
-    </script>
+		function enviarSucursal(sucursal) {
+			localStorage.setItem("sucursal", sucursal);
+		}
+	</script>
 
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z54KRZSVN6"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-Z54KRZSVN6');
+</script>
 
 <body>
 	<!-- ======= Header ======= -->
@@ -533,10 +543,13 @@
 						<div class="content">
 							<h3><strong>CristoRey3</strong> - Supermercats enregistrats</h3>
 							<p class="fst-italic">
-								Et presentam una sel·lecció dels supermercats més destacats i populars de Mallorca. Aquests establiments ofereixen una amplia varietat de productes frescs, comestibles i artícles de la llar.
+								Et presentam una sel·lecció dels supermercats més destacats i populars de Mallorca.
+								Aquests establiments ofereixen una amplia varietat de productes frescs, comestibles i
+								artícles de la llar.
 							</p>
 							<p>
-								Ja comptem amb més de 60 supermercats enregistrats!! Prova a sel·leccionar-ne un del mapa i escriure-hi una valoració
+								Ja comptem amb més de 60 supermercats enregistrats!! Prova a sel·leccionar-ne un del
+								mapa i escriure-hi una valoració
 							</p>
 						</div>
 

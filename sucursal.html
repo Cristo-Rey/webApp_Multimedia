@@ -20,7 +20,7 @@
 
 	<!-- MAPA API-->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-	integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
 	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
 	<!-- Vendor CSS Files -->
@@ -36,16 +36,26 @@
 
 	<!-- Obtenim les dades de la sucursal -->
 	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-	integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 	<script src="assets/js/sucursal.js"></script>
 
 	<style>
 		#map {
-		  height: 600px;
-		  width: 100%;
+			height: 600px;
+			width: 100%;
 		}
 	</style>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z54KRZSVN6"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-Z54KRZSVN6');
+</script>
 
 <body onload="loadSucursal()">
 
@@ -227,7 +237,7 @@
 					<h2><span>Mapa</span></h2>
 				</div>
 				<div id="map">
-					
+
 				</div>
 
 			</div>
