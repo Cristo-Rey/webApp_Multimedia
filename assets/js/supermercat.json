@@ -2478,14 +2478,14 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 58,
-			"name": "Aprop Carrer de l'Esglesia, 26",
+			"name": "Aprop Carrer de l`Esglesia, 26",
 			"telephone": "",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipPvc6TVigPKs_kms_welh_IKgXuzMjBpF48UP0o=w408-h544-k-no",
 			"address": {
 				"@type": "PostalAddress",
 				"addressLocality": "Port de Sóller, Spain",
 				"postalCode": "07108",
-				"streetAddress": "Carrer de l'Esglesia, 26"
+				"streetAddress": "Carrer de l`Esglesia, 26"
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
@@ -2506,7 +2506,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Aprop Carrer de l'Esglesia, 26",
+						"name": "Video Aprop Carrer de l`Esglesia, 26",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
