@@ -317,7 +317,7 @@
 				"@type": "PostalAddress",
 				"addressLocality": "Porreres, Spain",
 				"postalCode": "07260",
-				"streetAddress": "Carrer d'en Dusai 36"
+				"streetAddress": "Carrer d`en Dusai 36"
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
@@ -354,12 +354,12 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 9,
-			"name": "Eroski Cala D'Or",
+			"name": "Eroski Cala D`Or",
 			"telephone": "+34 971 65 80 24",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipMWx5m0guJyqi5izO3NB0LaLO0MHYw6sBS5hFSC=w408-h298-k-no",
 			"address": {
 				"@type": "PostalAddress",
-				"addressLocality": "Cala D'Or, Spain",
+				"addressLocality": "Cala D`Or, Spain",
 				"postalCode": "07650",
 				"streetAddress": "Avinguda Bienvenidos s/n"
 			},
@@ -382,7 +382,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Cala D'Or",
+						"name": "Video Eroski Cala D`Or",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1054,7 +1054,7 @@
 				"@type": "PostalAddress",
 				"addressLocality": "Palma, Spain",
 				"postalCode": "07005",
-				"streetAddress": "C/ d'Aragó 52"
+				"streetAddress": "C/ d`Aragó 52"
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
@@ -1176,7 +1176,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 28,
-			"name": "Carrefour S'Indioteria",
+			"name": "Carrefour S`Indioteria",
 			"telephone": "+34 914 90 89 00",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipObHwyMMdWBtJA1bDheY4S1wiESjN7epzY-goZx=w408-h278-k-no",
 			"address": {
@@ -1203,7 +1203,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Carrefour S'Indioteria",
+						"name": "Video Carrefour S`Indioteria",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1219,7 +1219,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 29,
-			"name": "Carrefour S'Arenal",
+			"name": "Carrefour S`Arenal",
 			"telephone": "+34 914 90 89 00",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipOF-UYp3lTcR_wZ6-4VM5731IrgeNhxhUC8G20P=w426-h240-k-no",
 			"address": {
@@ -1246,7 +1246,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Carrefour S'Arenal",
+						"name": "Video Carrefour S`Arenal",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1355,7 +1355,7 @@
 				"@type": "PostalAddress",
 				"addressLocality": "Palma, Spain",
 				"postalCode": "07005",
-				"streetAddress": "C/ d'Aragó, 42"
+				"streetAddress": "C/ d`Aragó, 42"
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
@@ -2395,7 +2395,7 @@
 			"image": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=9tXIQbwrNWLMMINMvY_MAg&cb_client=search.gws-prod.gps&w=408&h=240&yaw=256.47125&pitch=0&thumbfov=100",
 			"address": {
 				"@type": "PostalAddress",
-				"addressLocality": "Port d'Andratx, Spain",
+				"addressLocality": "Port d`Andratx, Spain",
 				"postalCode": "07157",
 				"streetAddress": "Carrer Llevant, 26"
 			},
@@ -2489,8 +2489,8 @@
 			},
 			"geo": {
 				"@type": "GeoCoordinates",
-				"latitude": "39.80744811969921",
-				"longitude": "2.6979589413316782"
+				"latitude": "39.79746216981886",
+				"longitude": "2.697958562922692"
 			},
 			"brand": {
 				"type": "Brand",
