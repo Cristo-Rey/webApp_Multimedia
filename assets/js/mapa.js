@@ -123,6 +123,11 @@ async function getRoute(destinationLat, destinationLng) {
                         L.latLng(userCoordinates[0], userCoordinates[1]),
                         L.latLng(destinationCoordinates[0], destinationCoordinates[1])
                     ],
+                    routeWhileDragging: true,
+                    autoRoute: true,
+                    draggableWaypoints: false,
+                    addWaypoints: false,
+                    serviceURL: 'https://router.project-osrm.org/viaroute',
                     show: false,
                 }).addTo(map);
             },
