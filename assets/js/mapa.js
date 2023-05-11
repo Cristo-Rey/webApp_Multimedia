@@ -94,8 +94,8 @@ async function fer_mapa() {
             // Crear el popup con la información del supermercado
             const popupContent = `
                 <div>
-                    <h2 style="font-size: 12px;">${item.name}</h2>
-                        <img src="${item.image}" style="width: 50%;" onclick="enviarSucursal('${item.name}')">
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                        <img src="${item.image}" style="width: 70%;" onclick="enviarSucursal(${item.name})">
                     <p><a href='sucursal.html' target="_blank">Més informació</a></p>
                 </div>
             `;
