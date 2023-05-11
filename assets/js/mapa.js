@@ -6,6 +6,16 @@ async function fer_mapa() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    // Agregar Leaflet Routing Machine
+    let control = L.Routing.control({
+        waypoints: [],
+        routeWhileDragging: false,
+        show: false,
+    }).addTo(map);
+
+
+    // Iconos personalizados
+
     var greenIcon = L.icon({
         iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
         iconSize: [25, 41],
@@ -95,8 +105,9 @@ async function fer_mapa() {
             const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                        <img src="${item.image}" style="width: 70%;">
+                    <img src="${item.image}" style="width: 70%;">
                     <p><a href='sucursal.html' target="_blank" onclick="enviarSucursal('${item.name}')">Més informació</a></p>
+                    <button onclick="getRoute(${item.geo.latitude}, ${item.geo.longitude})">Ruta</button>
                 </div>
             `;
             singleMarker.bindPopup(popupContent);
@@ -104,6 +115,29 @@ async function fer_mapa() {
     }
     catch (error) {
         console.error('Hubo un error al cargar el archivo JSON', error);
+    }
+}
+
+async function getRoute(destinationLat, destinationLng) {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+            function (position) {
+                const userCoordinates = [position.coords.latitude, position.coords.longitude];
+                const destinationCoordinates = [destinationLat, destinationLng];
+                L.Routing.control({
+                    waypoints: [
+                        L.latLng(userCoordinates[0], userCoordinates[1]),
+                        L.latLng(destinationCoordinates[0], destinationCoordinates[1])
+                    ],
+                    show: false,
+                }).addTo(map);
+            },
+            function (error) {
+                alert("Error al obtener la ubicación: " + error.message);
+            }
+        );
+    } else {
+        alert('La geolocalización no está disponible en este navegador.');
     }
 }
 
