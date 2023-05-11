@@ -127,7 +127,7 @@ async function getRoute(destinationLat, destinationLng) {
                     autoRoute: true,
                     draggableWaypoints: false,
                     addWaypoints: false,
-                    serviceURL: 'https://router.project-osrm.org/viaroute',
+                    router: L.Routing.mapbox('sk.eyJ1IjoidHJvbWJvbmV0MTIiLCJhIjoiY2xoajIzMDFvMGRydDNmbXVodmMxNXpiMyJ9.kc99OzB_mVqhCUjX1bfnFw'),
                     show: false,
                 }).addTo(map);
             },
