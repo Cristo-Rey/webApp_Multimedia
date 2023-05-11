@@ -19,7 +19,7 @@ async function fer_mapa() {
         iconAnchor: [12, 41],
         popupAnchor: [1, -34],
         shadowSize: [41, 41]
-    });    
+    });
     var blueIcon = L.icon({
         iconUrl: 'assets/img/mapa/marker-icon-2x-blue.png',
         iconSize: [25, 41],
@@ -94,9 +94,9 @@ async function fer_mapa() {
             // Crear el popup con la información del supermercado
             const popupContent = `
                 <div>
-                <h2 style="font-size: 10px;";>${item.name}</h2>
-                <img src="${item.image}" style="width: 50%;" onclick=enviarSucursal('${item.name}')>
-                <p><a href='sucursal.html' target="_blank">Més informació</a></p>
+                    <h2 style="font-size: 12px;">${item.name}</h2>
+                        <img src="${item.image}" style="width: 50%;" onclick="enviarSucursal('${item.name}')">
+                    <p><a href='sucursal.html' target="_blank">Més informació</a></p>
                 </div>
             `;
             singleMarker.bindPopup(popupContent);
