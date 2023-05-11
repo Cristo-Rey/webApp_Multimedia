@@ -90,6 +90,16 @@ async function fer_mapa() {
                     break;
             }
             singleMarker.addTo(map);
+            // 'onclick', `enviarSucursal('${item.name}')
+            // Crear el popup con la información del supermercado
+            const popupContent = `
+                <div>
+                <h2>${item.name}</h2>
+                <img src="${item.image}" style="width: 100%;" onclick=enviarSucursal(${item.name})>
+                <p><a href='sucursal.html' target="_blank">Més informació</a></p>
+                </div>
+            `;
+            singleMarker.bindPopup(popupContent);
         }
     }
     catch (error) {
@@ -97,4 +107,4 @@ async function fer_mapa() {
     }
 }
 
-fer_mapa()
+fer_mapa();
