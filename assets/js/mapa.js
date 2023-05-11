@@ -95,8 +95,8 @@ async function fer_mapa() {
             const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                        <img src="${item.image}" style="width: 70%;")">
-                    <p><a href='sucursal.html' target="_blank" onclick="enviarSucursal('${item.name}'>Més informació</a></p>
+                        <img src="${item.image}" style="width: 70%;">
+                    <p><a href='sucursal.html' target="_blank" onclick="enviarSucursal('${item.name}')">Més informació</a></p>
                 </div>
             `;
             singleMarker.bindPopup(popupContent);
