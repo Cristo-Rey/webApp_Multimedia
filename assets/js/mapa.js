@@ -1,9 +1,3 @@
-
-// Hacemos el import para el leaflet routing machine
-import 'leaflet-routing-machine/dist/leaflet-routing-machine.js';
-import 'leaflet-routing-machine/dist/leaflet-routing-machine.css';
-
-
 let map;
 
 async function fer_mapa() {
