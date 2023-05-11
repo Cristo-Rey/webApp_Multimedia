@@ -8,14 +8,6 @@ async function fer_mapa() {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    // Agregar Leaflet Routing Machine
-    let control = L.Routing.control({
-        waypoints: [],
-        routeWhileDragging: false,
-        show: false,
-    }).addTo(map);
-
-
     // Iconos personalizados
 
     var greenIcon = L.icon({
