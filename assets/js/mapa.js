@@ -1,5 +1,6 @@
 let map;
-
+var L = require('leaflet');
+require('leaflet-routing-machine');
 async function fer_mapa() {
 
     map = L.map('map').setView([39.6136200, 3.0200400], 9);
@@ -94,7 +95,7 @@ async function fer_mapa() {
                     break;
             }
             singleMarker.addTo(map);
-            
+
             // Crear el popup con la información del supermercado
             const popupContent = `
                 <div>
