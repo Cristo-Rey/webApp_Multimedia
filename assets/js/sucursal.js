@@ -146,6 +146,12 @@ async function loadSucursal() {
                 singleMarker.addTo(map);
 
 
+                // Posam l'audio de la franquicia
+                const audio =document.getElementById('franquiciaAudio');
+                audio.querySelector('source').setAttribute('src',item.audio.contentUrl)
+
+
+
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
             }
