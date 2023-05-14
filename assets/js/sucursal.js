@@ -153,7 +153,6 @@ async function loadSucursal() {
                 console.log(item.subjectOf.audio);
                 console.log('puttta');
                 audio.querySelector('source').setAttribute('src', item.subjectOf.audio[0].contentUrl);
-                //console.log(item.audio.contentUrl);
 
 
 
