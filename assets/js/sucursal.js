@@ -149,7 +149,7 @@ async function loadSucursal() {
                 // Posam l'audio de la franquicia
                 const audio =document.getElementById('franquiciaAudio');
                 console.log(item);
-                console.log(item.subjectOf.audio[0]);
+                console.log(item.subjectOf.audio[0].contentUrl);
                 console.log(item.subjectOf.audio);
                 console.log('puttta');
                 audio.querySelector('source').setAttribute('src', item.subjectOf.audio[0].contentUrl);
