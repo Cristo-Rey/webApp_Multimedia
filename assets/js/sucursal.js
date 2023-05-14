@@ -148,7 +148,8 @@ async function loadSucursal() {
 
                 // Posam l'audio de la franquicia
                 const audio =document.getElementById('franquiciaAudio');
-                console.log(item.audio);
+                console.log(item);
+                console.log('puta')
                 //audio.querySelector('source').setAttribute('src', item.audio.contentUrl);
                 //console.log(item.audio.contentUrl);
 
