@@ -14,7 +14,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
+						"name": "Video",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -22,7 +22,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -39,7 +39,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
+						"name": "Video",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -47,7 +47,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -64,7 +64,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
+						"name": "Video",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -72,7 +72,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -89,7 +89,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
+						"name": "Video",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -97,32 +97,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
-					}
-				]
-			}
-		},
-        {
-			"@type": "Brand",
-			"@identifier": 4,
-            "name": "BipBip",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg",
-            "description":"Bip-Bip Supermercats és una cadena de botigues que s'ha guanyat la confiança i lleialtat dels seus clients gràcies al seu enfocament a oferir una experiència de compra ràpida i convenient. Amb una àmplia presència a tota l'illa, els supermercats Bip-Bip s'han convertit en una destinació popular per a aquells que busquen satisfer les necessitats diàries d'abastament de manera eficient.",
-
-			"subjectOf": {
-				"@type": "CreativeWork",
-				"video": [
-					{
-						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
-						"contentUrl": "[URL][URL][URL]"
-					}
-				],
-				"audio": [
-					{
-						"@type": "AudioObject",
-						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -139,15 +114,15 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
+						"name": "Video",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
 				"audio": [
 					{
 						"@type": "AudioObject",
-						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
+						"name": "Audio Suggerit",
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -164,15 +139,15 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Eroski Antoni Marquès 9",
+						"name": "Video",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
 				"audio": [
 					{
 						"@type": "AudioObject",
-						"name": "Audio",
-						"contentUrl": "[URL][URL][URL]"
+						"name": "Audio Suggerit",
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
