@@ -150,7 +150,7 @@ async function loadSucursal() {
                 const audio =document.getElementById('franquiciaAudio');
                 console.log(item.audio);
                 //audio.querySelector('source').setAttribute('src', item.audio.contentUrl);
-                console.log(item.audio.contentUrl);
+                //console.log(item.audio.contentUrl);
 
 
 
