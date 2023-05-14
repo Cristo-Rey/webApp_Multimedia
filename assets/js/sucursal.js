@@ -153,6 +153,7 @@ async function loadSucursal() {
                 console.log(item.subjectOf.audio);
                 console.log('puttta');
                 audio.querySelector('source').setAttribute('src', item.subjectOf.audio[0].contentUrl);
+                audio.querySelector('source').setAttribute('src', assets/audio/bipbip.mp3);
 
 
 
