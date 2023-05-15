@@ -154,13 +154,6 @@ async function loadSucursal() {
                 audio.appendChild(source);
                 audio.setAttribute('controls', '');
 
-                audio.addEventListener('canplay', function () {
-                    audio.play();
-                });
-
-                console.log(item.subjectOf.audio[0].contentUrl);
-
-
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
             }
