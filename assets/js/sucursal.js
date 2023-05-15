@@ -44,7 +44,7 @@ async function loadSucursal() {
                 const div1 = document.createElement('div');
                 div1.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-1');
                 const img = document.createElement('img');
-                
+
                 // Switch para selecionar la franquicia
                 // switch (item.brand.name) {
                 //     case 'Mercadona':
@@ -79,7 +79,7 @@ async function loadSucursal() {
                 div2.style.textAlign = 'center';
                 div2.style.justifyContent = 'center';
                 div2.style.flexDirection = 'column';
-                
+
                 const div3 = document.createElement('div');
                 div3.classList.add('section-title');
                 const h2s = document.createElement('h2');
@@ -92,7 +92,7 @@ async function loadSucursal() {
 
                 const p2 = document.createElement('p');
                 p2.textContent = item.openingHours.join(' - ');
-                
+
                 // Agregar los elementos a los divs
                 div2.appendChild(div3);
                 div2.appendChild(p1);
@@ -109,7 +109,7 @@ async function loadSucursal() {
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
-                
+
 
                 var xinxeta = L.icon({
                     iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
@@ -121,25 +121,25 @@ async function loadSucursal() {
 
                 switch (item.brand.name) {
                     case "Eroski":
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-red.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-red.png';
                         break;
                     case "Mercadona":
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-orange.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-orange.png';
                         break;
                     case "Carrefour":
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-blue.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-blue.png';
                         break;
                     case "Lidl":
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-yellow.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-yellow.png';
                         break;
                     case "BipBip":
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-green.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-green.png';
                         break;
                     case "Aprop":
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-black.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';
                         break;
                     default:
-                        xinxeta.iconUrl='assets/img/mapa/marker-icon-2x-violet.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-violet.png';
                         break;
                 }
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
@@ -147,7 +147,8 @@ async function loadSucursal() {
 
 
                 // Posam l'audio de la franquicia
-                const audio =document.getElementById('franquiciaAudio');
+                const audio = document.getElementById('franquiciaAudio');
+                audio.setAttribute('controls', ''); // Agregamos el atributo "controls"
                 audio.querySelector('source').setAttribute('src', item.subjectOf.audio[0].contentUrl);
                 audio.querySelector('source').setAttribute('type', 'audio/mp3');
                 console.log(item.subjectOf.audio[0].contentUrl);
