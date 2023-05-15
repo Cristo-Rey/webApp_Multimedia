@@ -154,8 +154,10 @@ async function loadSucursal() {
                 console.log(item.subjectOf.audio[0].contentUrl);
 
                 audio.addEventListener('play', function () {
-                    audio.play();
+                    console.log('El audio se está reproduciendo');
                 });
+
+                audio.play();
 
 
 
