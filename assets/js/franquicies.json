@@ -6,7 +6,7 @@
 			"@type": "Brand",
 			"@identifier": 1,
             "name": "Mercadona",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg",
+            "logo": "/assets/img/logo_franquicia/franquicia-1.jpg",
             "description":"Mercadona és una empresa valenciana de distribució de queviures que va néixer el 1981 de la mà de Juan Roig, que en segueix essent el president executiu. Integrada en el sector dels supermercats, els supermercats Mercadona, amb una espai de vendes d'uns 1.300 metres quadrats de mitjana, responen a un model de comerç urbà de proximitat, del mateix estil que els seus competidors.",
 
 			"subjectOf": {
@@ -31,7 +31,7 @@
 			"@type": "Brand",
 			"@identifier": 2,
             "name": "Eroski",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg",
+            "logo": "/assets/img/logo_franquicia/franquicia-2.jpg",
             "description":"El Grup Eroski és una cooperativa basca dedicada a la distribució. És una de les empreses que integren el grup Mondragón Corporación Cooperativa. El mot Eroski és una contracció de les paraules en eusquera \"erosi\" (comprar) i \"toki\" (lloc), traduïble com \"lloc on comprar\".",
 
 			"subjectOf": {
@@ -56,7 +56,7 @@
 			"@type": "Brand",
 			"@identifier": 3,
             "name": "Carrefour",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg",
+            "logo": "/assets/img/logo_franquicia/franquicia-3.jpg",
             "description":"Carrefour (lit: intersecció o cruïlla) és una cadena multinacional de distribució d'origen francès, sent el primer grup europeu, a escassa distància per ingressos nets de l'alemanya Schwarz Gruppe (matriu de Lidl i Makro), i tercer mundial del sector. En 2014, el grup completa 10 860 botigues en 33 països (10 països integrats), 3360 a Europa (excepte França) 5013 a França, 830 a Amèrica Llatina i 307 a Àsia, així com 1350 botigues en països en conveni.",
 
 			"subjectOf": {
@@ -81,7 +81,7 @@
 			"@type": "Brand",
 			"@identifier": 4,
             "name": "Lidl",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg",
+            "logo": "/assets/img/logo_franquicia/franquicia-4.jpg",
             "description":"Lidl Stiftung&Co. KG, més coneguda per la seva marca comercial Lidl, és una cadena de supermercats de descompte d'origen alemany. Té més de 10.000 establiments en 27 països i forma part del grup Schwarz, un dels majors conglomerats de distribució d'Europa.",
 
 			"subjectOf": {
@@ -106,7 +106,7 @@
 			"@type": "Brand",
 			"@identifier": 5,
             "name": "BipBip",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg",
+            "logo": "/assets/img/logo_franquicia/franquicia-5.jpg",
             "description":"Bip-Bip Supermercats és una cadena de botigues que s'ha guanyat la confiança i lleialtat dels seus clients gràcies al seu enfocament a oferir una experiència de compra ràpida i convenient. Amb una àmplia presència a tota l'illa, els supermercats Bip-Bip s'han convertit en una destinació popular per a aquells que busquen satisfer les necessitats diàries d'abastament de manera eficient.",
 
 			"subjectOf": {
@@ -131,7 +131,7 @@
 			"@type": "Brand",
 			"@identifier": 6,
             "name": "BipBip",
-            "logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg",
+            "logo": "/assets/img/logo_franquicia/franquicia-6.jpg",
             "description":"Aprop Supermercats és una cadena de botigues que s'ha posicionat com una opció capdavantera en oferir una experiència de compra completa i personalitzada. Amb una xarxa d'establiments a diferents localitats, els supermercats Aprop s'han guanyat la confiança dels seus clients en brindar una àmplia varietat de productes, un servei excepcional i un enfocament a la comoditat i satisfacció del client.",
 
 			"subjectOf": {
