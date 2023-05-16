@@ -135,7 +135,7 @@ async function loadSucursal() {
                         xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-green.png';
                         break;
                     case "Aprop":
-                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';strong
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';
                         break;
                     default:
                         xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-violet.png';
