@@ -25,10 +25,10 @@ async function llista_franquicies() {
         const info = document.createElement('div');
         info.classList.add('col-lg-8', 'details', 'order-2', 'order-lg-1');
         const nom = document.createElement('h3');
-        nom.textContent('también hay seres buenos, los menos');
+        nom.textContent='también hay seres buenos, los menos';
         const desc = document.createElement('p');
         desc.classList.add('fsc-italic');
-        desc.textContent('Con qué derecho hablan de Diós estos demonios?');
+        desc.textContent='Con qué derecho hablan de Diós estos demonios?';
 
         const imgdiv = document.createElement('div');
         imgdiv.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-2');
