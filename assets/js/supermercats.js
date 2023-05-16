@@ -2,7 +2,7 @@ async function llista_franquicies() {
     try {
         const responseFrnaquicies = await fetch('/assets/js/franquicies.json');
         const jsonFranquicies = await responseFrnaquicies.json();
-        const itemList = json.itemListElement;
+        const itemList = jsonFranquicies.itemListElement;
         const llista_franquicies = document.getElementById('llista_franquicies');
         const div_franquicies = document.getElementById('div_franquicies');
 
