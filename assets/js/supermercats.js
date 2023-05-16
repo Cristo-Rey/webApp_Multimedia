@@ -7,7 +7,7 @@ async function llista_franquicies() {
         const div_franquicies = document.getElementById('div_franquicies');
 
         const liElement = document.createElement('li');
-        liElement.classList.add('nav-item','active','show');
+        liElement.classList.add('nav-item', 'active', 'show');
         const aElement = document.createElement('a');
         aElement.classList.add('nav-link');
         aElement.setAttribute('data-bs-toggle', 'tab');
@@ -16,9 +16,64 @@ async function llista_franquicies() {
         liElement.appendChild(aElement);
         llista_franquicies.appendChild(liElement);
 
+        const franquicia = document.createElement('div');
+        franquicia.classList.add("tab-pane", active, show);
+        franquicia.setAttribute("tab-0");
+        const row = document.createElement('div');
+        row.classList.add('row');
+
+        const info = document.createElement('div');
+        info.classList.add('col-lg-8', 'details', 'order-2', 'order-lg-1');
+        const nom = document.createElement('h3');
+        nom.textContent('también hay seres buenos, los menos');
+        const desc = document.createElement('p');
+        desc.classList.add('fsc-italic');
+        desc.textContent('Con qué derecho hablan de Diós estos demonios?');
+
+        const imgdiv = document.createElement('div');
+        imgdiv.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-2');
+        const img = document.createElement('img');
+        img.src = 'assets/img/logo_franquicia/franquicia-1.jpg';
+        img.alt = '';
+        img.classList.add('img-fluid');
+
+        info.appendChild(nom);
+        info.appendChild(desc);
+        row.appendChild(info);
+
+        imgdiv.appendChild(img);
+        franquicia.appendChild(row);
+        franquicia.appendChild(imgdiv)
 
 
-        for (let i = 0; i < itemList.length; i++) {
+
+
+
+        /*
+                                    <div class="tab-pane active show" id="tab-1"> // Franquicia
+                                        <div class="row">   //row
+                                            <div class="col-lg-8 details order-2 order-lg-1"> // info
+                                                <h3>Architecto ut aperiam autem id</h3> // nom
+                                                <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente 
+                                                    dila parde sonata raqer a videna mareta paulona marka</p> // desc
+                                                <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
+                                                    Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
+                                                    repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
+                                                    quaerat quos qui similique accusamus nostrum rem vero</p>
+                                            </div>
+                                            <div class="col-lg-4 text-center order-1 order-lg-2">
+                                                <img src="assets/img/logo_franquicia/franquicia-1.jpg" alt="" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
+        
+        */
+
+
+
+
+
+        for (let i = 1; i < itemList.length; i++) {
             const item = itemList[i];
             const liElement = document.createElement('li');
             liElement.classList.add('nav-item');
@@ -29,6 +84,15 @@ async function llista_franquicies() {
             aElement.textContent = item.name;
             liElement.appendChild(aElement);
             llista_franquicies.appendChild(liElement);
+
+
+
+
+
+
+
+
+
         }
     } catch (error) {
         console.error('Hubo un error al cargar el archivo JSON', error);
