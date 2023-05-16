@@ -146,10 +146,7 @@ async function loadSucursal() {
 
                 // %%%%%%%%%%%%%%%%% AUDIO %%%%%%%%%%%%%%%%%
 
-                const container4 = document.querySelector('.barra-gris');
-
-                const div = document.createElement('div');
-                div.classList.add('content');
+                const container4 = document.querySelector('audioTheme');
 
                 const h3 = document.createElement('h3');
                 const strong = document.createElement('strong');
@@ -180,11 +177,10 @@ async function loadSucursal() {
                 ul.appendChild(li3);
                 ul.appendChild(li4);
 
-                div.appendChild(h3);
-                div.appendChild(p10);
-                div.appendChild(p20);
-                div.appendChild(ul);
-                container4.appendChild(div);
+                container4.appendChild(h3);
+                container4.appendChild(p10);
+                container4.appendChild(p20);
+                container4.appendChild(ul);
 
                 // Posam l'audio de la franquicia
                 const audio = document.getElementById('franquiciaAudio');
