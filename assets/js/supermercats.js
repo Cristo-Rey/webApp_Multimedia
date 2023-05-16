@@ -17,7 +17,7 @@ async function llista_franquicies() {
         llista_franquicies.appendChild(liElement);
 
         const franquicia = document.createElement('div');
-        franquicia.classList.add("tab-pane", active, show);
+        franquicia.classList.add("tab-pane", 'active', 'show');
         franquicia.setAttribute("tab-0");
         const row = document.createElement('div');
         row.classList.add('row');
