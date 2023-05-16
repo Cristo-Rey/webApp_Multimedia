@@ -136,7 +136,7 @@ async function loadSucursal() {
                         xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-green.png';
                         break;
                     case "Aprop":
-                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';
+                        xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';strong
                         break;
                     default:
                         xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-violet.png';
@@ -145,6 +145,47 @@ async function loadSucursal() {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
                 singleMarker.addTo(map);
 
+                // %%%%%%%%%%%%%%%%% AUDIO %%%%%%%%%%%%%%%%%
+
+                const container4 = document.querySelector('.barra-gris');
+
+                const div = document.createElement('div');
+                div.classList.add('content');
+
+                const h3 = document.createElement('h3');
+                const strong = document.createElement('strong');
+                strong.textContent = item.brand.name;
+                h3.appendChild(strong);
+                h3.appendChild(document.createTextNode(' - Theme Song'));
+
+                const p10 = document.createElement('p');
+                p10.classList.add('fst-italic');
+                p10.textContent = 'Som un grup de joves que volen ajudar a la gent a trobar el supermercat més proper a la seva casa, així com oferir informació detallada de les diferents franquícies amb els seus respectius establiments.';
+
+                const p20 = document.createElement('p');
+                p20.textContent = 'El que nosaltres oferim és:';
+
+                const ul = document.createElement('ul');
+
+                const li10 = document.createElement('li');
+                li10.innerHTML = '<i class="bx bx-check-double"></i> Informació precisa i veraç sobre les diferents franquícies';
+                const li20 = document.createElement('li');
+                li20.innerHTML = '<i class="bx bx-check-double"></i> Ofertes del dia';
+                const li3 = document.createElement('li');
+                li3.innerHTML = '<i class="bx bx-check-double"></i> Els millors supermercat qualitat preu';
+                const li4 = document.createElement('li');
+                li4.innerHTML = '<i class="bx bx-check-double"></i> El supermercat més proper a tu';
+
+                ul.appendChild(li10);
+                ul.appendChild(li20);
+                ul.appendChild(li3);
+                ul.appendChild(li4);
+
+                div.appendChild(h3);
+                div.appendChild(p10);
+                div.appendChild(p20);
+                div.appendChild(ul);
+                container4.appendChild(div);
 
                 // Posam l'audio de la franquicia
                 const audio = document.getElementById('franquiciaAudio');
