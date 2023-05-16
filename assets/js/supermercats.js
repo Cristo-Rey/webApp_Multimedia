@@ -1,4 +1,4 @@
-async function llistaSupermercats() {
+async function llista_franquicies() {
     try {
         const responseFrnaquicies = await fetch('/assets/js/franquicies.json');
         const jsonFranquicies = await responseFrnaquicies.json();
@@ -76,4 +76,4 @@ async function llistaSupermercats() {
 }
 
 llistaSupermercats();
-llistaSupermercats();
+llista_franquicies();
