@@ -146,10 +146,13 @@ async function loadSucursal() {
 
                 // %%%%%%%%%%%%%%%%% AUDIO %%%%%%%%%%%%%%%%%
 
-                const container4 = document.querySelector('audioTheme');
+                const container4 = document.querySelector('.audioTheme');
 
                 const h3 = document.createElement('h3');
-                h3.textContent = item.brand.name;
+                const strong = document.createElement('strong');
+                strong.textContent = item.brand.name;
+                h3.appendChild(strong);
+                h3.appendChild(document.createTextNode(' - Theme Song'));
 
                 const p10 = document.createElement('p');
                 p10.classList.add('fst-italic');
