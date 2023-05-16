@@ -76,3 +76,4 @@ async function llistaSupermercats() {
 }
 
 llistaSupermercats();
+llistaSupermercats();
