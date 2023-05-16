@@ -2,9 +2,7 @@ async function fer_mapa() {
 
     let map = L.map('map').setView([39.6136200, 3.0200400], 9);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',).addTo(map);
 
     // Iconos personalizados
 
@@ -97,7 +95,7 @@ async function fer_mapa() {
             const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.image}" style="width: 70%;">
+                    <img src="${item.image}" style="height: 100px;">
                     <p><a href='sucursal.html' target="_blank" onclick="enviarSucursal('${item.name}')">Més informació</a></p>
                 </div>
             `;
