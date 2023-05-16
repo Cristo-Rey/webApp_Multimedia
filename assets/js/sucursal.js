@@ -104,7 +104,6 @@ async function loadSucursal() {
 
                 // %%%%%%%%%%%%%%%%% MAPA %%%%%%%%%%%%%%%%%
 
-                const container3 = document.querySelector('.mapa-sucursal');
                 let map = L.map('map').setView([item.geo.latitude, item.geo.longitude], 12);
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
