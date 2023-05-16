@@ -43,7 +43,8 @@ async function llista_franquicies() {
 
         imgdiv.appendChild(img);
         franquicia.appendChild(row);
-        franquicia.appendChild(imgdiv)
+        franquicia.appendChild(imgdiv);
+        div_franquicies.appendChild(franquicia);
 
 
 
