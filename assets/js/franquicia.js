@@ -84,51 +84,51 @@ async function loadFranquicia() {
 
                 fer_mapa(item.name);
 
-                // %%%%%%%%%%%%%%%%% AUDIO %%%%%%%%%%%%%%%%%
+                // %%%%%%%%%%%%%%%%% GALERIA %%%%%%%%%%%%%%%%%
 
-                const container4 = document.querySelector('.audioTheme');
+                const container3 = document.querySelector('.galeria-dinamica');
 
-                const h3 = document.createElement('h3');
-                const strong = document.createElement('strong');
-                strong.textContent = item.name;
-                h3.appendChild(strong);
-                h3.appendChild(document.createTextNode(' - Theme Song'));
+                const div4 = document.createElement('div');
+                div4.classList.add('section-title');
+                const h2g = document.createElement('h2');
+                h2g.innerHTML = `<span>Fotos</span> - ${item.name}`;
+                div4.appendChild(h2g);
 
-                const p10 = document.createElement('p');
-                p10.classList.add('fst-italic');
-                p10.textContent = 'Som un grup de joves que volen ajudar a la gent a trobar el supermercat més proper a la seva casa, així com oferir informació detallada de les diferents franquícies amb els seus respectius establiments.';
+                const p2 = document.createElement('p');
+                p2.textContent = `Fotos de les subcursals de ${item.name}`;
+                div4.appendChild(p2);
 
-                const p20 = document.createElement('p');
-                p20.textContent = 'El que nosaltres oferim és:';
+                const div5 = document.createElement('div');
+                div5.classList.add('row', 'g-0');
 
-                const ul = document.createElement('ul');
+                for (let j = 0; j < itemListSupermercat.length; j++) {
+                    const itemSupermercat = itemListSupermercat[j];
+                    if (itemSupermercat.brand.name === item.name) {
+                        const div6 = document.createElement('div');
+                        div6.classList.add('col-lg-3', 'col-md-4');
+                        div6.style.flexBasis = '20%';
+                        const div7 = document.createElement('div');
+                        div7.classList.add('gallery-item');
+                        const a2 = document.createElement('a');
+                        a2.href = itemSupermercat.image;
+                        a2.classList.add('gallery-lightbox');
+                        const img2 = document.createElement('img');
+                        img2.src = itemSupermercat.image;
+                        img2.alt = itemSupermercat.name;
+                        img2.classList.add('img-fluid');
+                        img2.style.objectFit = 'cover';
+                        img2.style.aspectRatio = '1 / 1';
+                        a2.appendChild(img2);
+                        div7.appendChild(a2);
+                        div6.appendChild(div7);
+                        div5.appendChild(div6);
+                    }
+                }
 
-                const li10 = document.createElement('li');
-                li10.innerHTML = '<i class="bx bx-check-double"></i> Informació precisa i veraç sobre les diferents franquícies';
-                const li20 = document.createElement('li');
-                li20.innerHTML = '<i class="bx bx-check-double"></i> Ofertes del dia';
-                const li3 = document.createElement('li');
-                li3.innerHTML = '<i class="bx bx-check-double"></i> Els millors supermercat qualitat preu';
-                const li4 = document.createElement('li');
-                li4.innerHTML = '<i class="bx bx-check-double"></i> El supermercat més proper a tu';
+                container3.appendChild(div4);
+                container3.appendChild(div5);
 
-                ul.appendChild(li10);
-                ul.appendChild(li20);
-                ul.appendChild(li3);
-                ul.appendChild(li4);
-
-                container4.appendChild(h3);
-                container4.appendChild(p10);
-                container4.appendChild(p20);
-                container4.appendChild(ul);
-
-                // Posam l'audio de la franquicia
-                const audio = document.getElementById('franquiciaAudio');
-                const source = document.createElement('source');
-                source.setAttribute('src', item.subjectOf.audio[0].contentUrl);
-                source.setAttribute('type', 'audio/mp3');
-                audio.appendChild(source);
-                audio.setAttribute('controls', '');
+                // %%%%%%%%%%%%%%%%% RESENYES %%%%%%%%%%%%%%%%%
 
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
