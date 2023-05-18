@@ -34,6 +34,11 @@ async function llista_franquicies() {
             info.classList.add('col-lg-8', 'details', 'order-2', 'order-lg-1');
             const nom = document.createElement('h3');
             nom.textContent = itemList[i].name;
+            // Creamos una etiqueta <a> para poder hacer click en el nombre de la franquicia
+            const nomA = document.createElement('a');
+            nomA.appendChild(nom);
+            nomA.setAttribute('href', 'franquicia.html');
+            nomA.setAttribute('onclick', `enviarFranquicia('${item.name}')`)
             const desc = document.createElement('p');
             desc.classList.add('fsc-italic');
             desc.textContent = itemList[i].description;
@@ -45,7 +50,7 @@ async function llista_franquicies() {
             img.alt = '';
             img.classList.add('img-fluid');
 
-            info.appendChild(nom);
+            info.appendChild(nomA);
             info.appendChild(desc);
             row.appendChild(info);
 
