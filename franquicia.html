@@ -18,6 +18,11 @@
 		href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
 		rel="stylesheet">
 
+	<!-- MAPA API-->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+
 	<!-- Vendor CSS Files -->
 	<link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +33,11 @@
 
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- Obtenim les dades de la sucursal -->
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+	<script src="assets/js/franquicia.js"></script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -40,7 +50,7 @@
 	gtag('config', 'G-Z54KRZSVN6');
 </script>
 
-<body>
+<body onload="loadFranquicia()">
 
 	<!-- ======= Header ======= -->
 	<header id="header" class="fixed-top d-flex align-items-center inner">
@@ -78,15 +88,8 @@
 		<!-- ======= Breadcrumbs Section ======= -->
 		<section class="breadcrumbs">
 			<div class="container">
-
-				<div class="d-flex justify-content-between align-items-center">
-					<h2>Mercadona</h2>
-					<ol>
-						<li><a href="index.html">Home</a></li>
-						<li>Mercadona</li>
-					</ol>
+				<div class="d-flex justify-content-between align-items-center barra-gris">
 				</div>
-
 			</div>
 		</section><!-- End Breadcrumbs Section -->
 
@@ -96,22 +99,7 @@
 				<!-- Franquícia destacada 1	-->
 				<div class="col-lg mt-4 mt-lg-0">
 					<div class="tab-content">
-						<div class="row">
-							<div class="col-lg-4 text-center order-1 order-lg-1">
-								<img src="assets/img/logo_franquicia/franquicia-1.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="col-lg details order-2 order-lg-2"
-								style="display:flex;text-align: left;justify-content: center;flex-direction: column;">
-								<div class="section-title">
-									<h2>Franquícies - <span>Mercadona</span></h2>
-								</div>
-								<p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente
-									dila parde sonata raqer a videna mareta paulona marka</p>
-								<p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint.
-									Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est
-									repellat minima eveniet eius et quis magni nihil. Consequatur dolorem
-									quaerat quos qui similique accusamus nostrum rem vero</p>
-							</div>
+						<div class="row inici-franquicia">
 						</div>
 					</div>
 				</div>
@@ -235,105 +223,11 @@
 
 		<!-- ======= supermercats Section ======= -->
 		<section id="supermercats" class="supermercats">
-			<div class="container">
-
+			<div class="container" id="mapdiv">
 				<div class="section-title">
-					<h2>Locals <span>TOP</span></h2>
+					<h2><span>Mapa</span></h2>
 				</div>
-
-				<div class="row">
-					<div class="col-lg-12 d-flex justify-content-center">
-						<ul id="supermercats-flters">
-							<li data-filter="*" class="filter-active">Tots</li>
-							<li data-filter=".filter-mercadona">Palma</li>
-							<li data-filter=".filter-eroski">Llevant</li>
-							<li data-filter=".filter-carrefour">Badia d'Alcúdia</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="row supermercats-container">
-
-					<div class="col-lg-6 supermercats-item filter-mercadona">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 1</a><span>4.9 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-carrefour">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 2</a><span>4.7 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-mercadona">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 3</a><span>4.8 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-eroski">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 4</a><span>5.0 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-carrefour">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 5</a><span>4.6 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-mercadona">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 6</a><span>4.8 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-eroski">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 7</a><span>4.9 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-eroski">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 8</a><span>4.8 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
-
-					<div class="col-lg-6 supermercats-item filter-carrefour">
-						<div class="supermercats-content">
-							<a href="#">Mercadona 9</a><span>4.9 ✯</span>
-						</div>
-						<div class="supermercats-ingredients">
-							Descripció súper èpica 😎
-						</div>
-					</div>
+				<div id="map">
 
 				</div>
 
@@ -342,128 +236,12 @@
 
 		<!-- ======= Gallery Section =======  -->
 		<section id="gallery" class="gallery">
-			<div class="container-fluid">
-
-				<div class="section-title">
-					<h2>Fotos <span>TOP</span></h2>
-					<p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas
-						atque vitae autem.</p>
-				</div>
-
-				<div class="row g-0">
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-md-4">
-						<div class="gallery-item">
-							<a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox">
-								<img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-							</a>
-						</div>
-					</div>
-
-				</div>
-
+			<div class="container-fluid galeria-dinamica">
 			</div>
 		</section>
 
 		<!-- End Gallery Section -->
-		<!-- ======= About Section ======= -->
-		<section id="about" class="about">
-			<div class="container-fluid">
 
-				<div class="row">
-
-					<div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-
-						<div class="content">
-							<h3><strong>Mercadona</strong> - ¿Theme Song?</h3>
-							<p class="fst-italic">
-								Som un grup de joves que volen ajudar a la gent a trobar el supermercat més proper a la
-								seva casa,
-								així com oferir informació detallada de les diferents franquícies amb els seus
-								respectius establiments.
-							</p>
-							<p>
-								El que nosaltres oferim és:
-							</p>
-							<ul>
-								<li><i class="bx bx-check-double"></i> Informació precisa i veraç sobre les diferents
-									franquícies</li>
-								<li><i class="bx bx-check-double"></i> Ofertes del dia</li>
-								<li><i class="bx bx-check-double"></i> Els millors supermercat qualitat preu</li>
-								<li><i class="bx bx-check-double"></i> El supermercat més proper a tu</li>
-							</ul>
-
-						</div>
-
-					</div>
-
-					<div class="col-lg-5 d-flex flex-column justify-content-center align-items-stretch">
-						<audio id="franquiciaAudio" controls>
-							<source src="" type="audio/mp3">
-						</audio>
-
-					</div>
-
-				</div>
-
-			</div>
-		</section><!-- End About Section -->
 		<!-- ======= Testimonials Section ======= -->
 		<section id="testimonials" class="testimonials">
 			<div class="container position-relative">
