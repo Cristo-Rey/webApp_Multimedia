@@ -1194,7 +1194,7 @@ section {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fff6e8;
   z-index: 9;
 }
 
@@ -1588,4 +1588,316 @@ section {
   height: 40vh;
   width: 100%;
   justify-content: center !important;
+}
+
+.theme_song {
+  background: #fffFfF;
+}
+
+.theme_song .content {
+  padding: 0 80px;
+}
+
+.theme_song .content h3 {
+  font-weight: 400;
+  font-size: 34px;
+  color: #5f5950;
+}
+
+.theme_song .content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.theme_song .content p {
+  font-size: 15px;
+  color: #848484;
+}
+
+.theme_song .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.theme_song .content ul li+li {
+  margin-top: 15px;
+}
+
+.theme_song .content ul li {
+  position: relative;
+  padding-left: 26px;
+}
+
+.theme_song .content ul i {
+  font-size: 20px;
+  color: #ffb03b;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.theme_song .content p:last-child {
+  margin-bottom: 0;
+}
+
+.theme_song .video-box {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 400px;
+  position: relative;
+}
+
+.theme_song .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+
+.theme_song .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.theme_song .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 176, 59, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.theme_song .play-btn:hover::after {
+  border-left: 15px solid #ffb03b;
+  transform: scale(20);
+}
+
+.theme_song .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+@media (max-width: 1024px) {
+
+  .theme_song .content,
+  .theme_song .accordion-list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .theme_song .content {
+    padding-top: 30px;
+  }
+
+  .theme_song .accordion-list {
+    padding-bottom: 30px;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+  .mapa_main {
+    background: #fffFfF;
+  }
+  
+  .mapa_main .content {
+    padding: 0 80px;
+  }
+  
+  .mapa_main .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #5f5950;
+  }
+  
+  .mapa_main .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+  .mapa_main .content p {
+    font-size: 15px;
+    color: #848484;
+  }
+  
+  .mapa_main .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .mapa_main .content ul li+li {
+    margin-top: 15px;
+  }
+  
+  .mapa_main .content ul li {
+    position: relative;
+    padding-left: 26px;
+  }
+  
+  .mapa_main .content ul i {
+    font-size: 20px;
+    color: #ffb03b;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+  .mapa_main .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .mapa_main .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    position: relative;
+  }
+  
+  .mapa_main .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+  }
+  
+  .mapa_main .play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .mapa_main .play-btn::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0s;
+    animation: pulsate-btn 2s;
+    animation-direction: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 176, 59, 0.7);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+  }
+  
+  .mapa_main .play-btn:hover::after {
+    border-left: 15px solid #ffb03b;
+    transform: scale(20);
+  }
+  
+  .mapa_main .play-btn:hover::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    animation: none;
+    border-radius: 0;
+  }
+  
+  @media (max-width: 1024px) {
+  
+    .mapa_main .content,
+    .mapa_main .accordion-list {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .mapa_main .content {
+      padding-top: 30px;
+    }
+  
+    .mapa_main .accordion-list {
+      padding-bottom: 30px;
+    }
+  }
+  
+  @keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
 }

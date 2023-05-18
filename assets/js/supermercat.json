@@ -22,7 +22,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-21:00",
@@ -41,7 +41,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -66,7 +66,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00"
@@ -84,7 +84,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -109,7 +109,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-21:00",
@@ -128,7 +128,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -153,7 +153,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 09:00-21:00"
@@ -171,7 +171,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -196,7 +196,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 09:00-21:30"
@@ -214,7 +214,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -239,7 +239,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00",
@@ -258,7 +258,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -283,7 +283,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -302,7 +302,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -327,7 +327,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:00-21:00",
@@ -346,7 +346,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -371,7 +371,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -390,7 +390,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -415,7 +415,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Eroski",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-2.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-2.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00",
@@ -434,7 +434,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/eroski.mp3"
+						"contentUrl": "assets/audio/eroski.mp3"
 					}
 				]
 			}
@@ -459,7 +459,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -477,7 +477,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -502,7 +502,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -520,7 +520,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -545,7 +545,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -563,7 +563,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -588,7 +588,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -606,7 +606,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -631,7 +631,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -649,7 +649,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -674,7 +674,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -692,7 +692,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -717,7 +717,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -735,7 +735,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -760,7 +760,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -778,7 +778,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -803,7 +803,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -821,7 +821,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -846,7 +846,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Mercadona",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-1.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-1.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -864,7 +864,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/mercadona.mp3"
+						"contentUrl": "assets/audio/mercadona.mp3"
 					}
 				]
 			}
@@ -889,7 +889,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 09:00-22:00"
@@ -907,7 +907,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -932,7 +932,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -951,7 +951,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -976,7 +976,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -995,7 +995,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1020,7 +1020,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -1039,7 +1039,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1064,7 +1064,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00"
@@ -1082,7 +1082,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1107,7 +1107,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-22:00"
@@ -1125,7 +1125,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1150,7 +1150,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-22:00"
@@ -1168,7 +1168,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1193,7 +1193,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-20:30"
@@ -1211,7 +1211,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1236,7 +1236,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-20:30"
@@ -1254,7 +1254,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1279,7 +1279,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Carrefour",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-3.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-3.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 06:00-22:00"
@@ -1297,7 +1297,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/carrefour.mp3"
+						"contentUrl": "assets/audio/carrefour.mp3"
 					}
 				]
 			}
@@ -1322,7 +1322,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1340,7 +1340,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1365,7 +1365,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1383,7 +1383,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1408,7 +1408,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -1427,7 +1427,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1452,7 +1452,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -1471,7 +1471,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1496,7 +1496,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30",
@@ -1515,7 +1515,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1540,7 +1540,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1558,7 +1558,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1583,7 +1583,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1601,7 +1601,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1626,7 +1626,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1644,7 +1644,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1669,7 +1669,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1687,7 +1687,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1712,7 +1712,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Lidl",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-4.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-4.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:30"
@@ -1730,7 +1730,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/lidl.mp3"
+						"contentUrl": "assets/audio/lidl.mp3"
 					}
 				]
 			}
@@ -1755,7 +1755,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:00-21:00",
@@ -1774,7 +1774,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -1799,7 +1799,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:00-21:15",
@@ -1818,7 +1818,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -1843,7 +1843,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-21:00",
@@ -1862,7 +1862,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -1887,7 +1887,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 09:00-21:00"
@@ -1905,7 +1905,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -1930,7 +1930,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 09:00-21:00"
@@ -1948,7 +1948,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -1973,7 +1973,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 08:00-20:00"
@@ -1991,7 +1991,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -2016,7 +2016,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 08:00-20:00"
@@ -2034,7 +2034,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -2059,7 +2059,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 08:00-20:00"
@@ -2077,7 +2077,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -2102,7 +2102,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-20:30"
@@ -2120,7 +2120,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -2145,7 +2145,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "BipBip",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-5.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-5.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-20:30"
@@ -2163,7 +2163,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/bipbip.mp3"
+						"contentUrl": "assets/audio/bipbip.mp3"
 					}
 				]
 			}
@@ -2188,7 +2188,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Su 09:00-21:00"
@@ -2206,7 +2206,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2231,7 +2231,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-21:00",
@@ -2250,7 +2250,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2275,7 +2275,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00",
@@ -2294,7 +2294,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2319,7 +2319,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-20:00",
@@ -2338,7 +2338,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2363,7 +2363,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:00-21:00",
@@ -2382,7 +2382,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2407,7 +2407,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:00-21:00",
@@ -2426,7 +2426,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2451,7 +2451,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:00-21:00",
@@ -2470,7 +2470,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2495,7 +2495,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00",
@@ -2514,7 +2514,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2539,7 +2539,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 08:30-21:00",
@@ -2558,7 +2558,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
@@ -2583,7 +2583,7 @@
 			"brand": {
 				"type": "Brand",
 				"name": "Aprop",
-				"logo": "https://www.cristorey3.com/assets/img/logo_franquicia/franquicia-6.jpg"
+				"logo": "assets/img/logo_franquicia/franquicia-6.jpg"
 			},
 			"openingHours": [
 				"Mo-Sa 09:00-21:00",
@@ -2602,7 +2602,7 @@
 					{
 						"@type": "AudioObject",
 						"name": "Audio",
-						"contentUrl": "https://www.cristorey3.com/assets/audio/aprop.mp3"
+						"contentUrl": "assets/audio/aprop.mp3"
 					}
 				]
 			}
