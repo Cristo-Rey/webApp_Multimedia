@@ -1,3 +1,34 @@
+async function audioTheme(brand, paragraf) {
+        try{
+        const response = await fetch('/assets/js/franquicies.json');
+        const json = await response.json();
+        const itemList = json.itemListElement;
+        for(let i=0;i<itemList.length;i++){
+            if(itemList[i].name==brand){
+                paragraf.textContent=itemList[i].description;
+            }
+        }
+
+
+
+
+
+
+
+        }
+        catch (error) {
+            console.error('Hubo un error.', error);
+        }
+
+
+
+
+
+
+}
+
+
+
 async function loadSucursal() {
     try {
         // Obtenemos la sucursal seleccionada
@@ -44,29 +75,6 @@ async function loadSucursal() {
                 const div1 = document.createElement('div');
                 div1.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-1');
                 const img = document.createElement('img');
-
-                // Switch para selecionar la franquicia
-                // switch (item.brand.name) {
-                //     case 'Mercadona':
-                //         img.src = 'assets/img/logo_franquicia/franquicia-1.jpg';
-                //         break;
-                //     case 'Eroski':
-                //         img.src = 'assets/img/logo_franquicia/franquicia-2.jpg';
-                //         break;
-                //     case 'Carrefour':
-                //         img.src = 'assets/img/logo_franquicia/franquicia-3.jpg';
-                //         break;
-                //     case 'Lidl':
-                //         img.src = 'assets/img/logo_franquicia/franquicia-4.jpg';
-                //         break;
-                //     case 'BipBip':
-                //         img.src = 'assets/img/logo_franquicia/franquicia-5.jpg';
-                //         break;
-                //     case 'Aprop':
-                //         img.src = 'assets/img/logo_franquicia/franquicia-6.jpg';
-                //         break;
-                // }
-                // img.alt = `Logo de ${item.brand.name}`;
 
                 img.src = item.image;
                 img.alt = 'Imatge del local';
@@ -145,7 +153,6 @@ async function loadSucursal() {
                 singleMarker.addTo(map);
 
                 // %%%%%%%%%%%%%%%%% AUDIO %%%%%%%%%%%%%%%%%
-
                 const container4 = document.querySelector('.audioTheme');
 
                 const h3 = document.createElement('h3');
@@ -156,31 +163,14 @@ async function loadSucursal() {
 
                 const p10 = document.createElement('p');
                 p10.classList.add('fst-italic');
-                p10.textContent = 'Som un grup de joves que volen ajudar a la gent a trobar el supermercat més proper a la seva casa, així com oferir informació detallada de les diferents franquícies amb els seus respectius establiments.';
+                audioTheme(item.brand.name,p10);
+                //p10.textContent = 'Tumba la casa mami';
 
-                const p20 = document.createElement('p');
-                p20.textContent = 'El que nosaltres oferim és:';
-
-                const ul = document.createElement('ul');
-
-                const li10 = document.createElement('li');
-                li10.innerHTML = '<i class="bx bx-check-double"></i> Informació precisa i veraç sobre les diferents franquícies';
-                const li20 = document.createElement('li');
-                li20.innerHTML = '<i class="bx bx-check-double"></i> Ofertes del dia';
-                const li3 = document.createElement('li');
-                li3.innerHTML = '<i class="bx bx-check-double"></i> Els millors supermercat qualitat preu';
-                const li4 = document.createElement('li');
-                li4.innerHTML = '<i class="bx bx-check-double"></i> El supermercat més proper a tu';
-
-                ul.appendChild(li10);
-                ul.appendChild(li20);
-                ul.appendChild(li3);
-                ul.appendChild(li4);
+                
 
                 container4.appendChild(h3);
                 container4.appendChild(p10);
-                container4.appendChild(p20);
-                container4.appendChild(ul);
+
 
                 // Posam l'audio de la franquicia
                 const audio = document.getElementById('franquiciaAudio');
