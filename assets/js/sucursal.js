@@ -401,7 +401,7 @@ async function valoracionsSucursals() {
 
         if (!hayReviews) { // Agrega un mensaje si no hay reviews
             const noReviewsMessage = document.createElement('h1');
-            noReviewsMessage.textContent = 'No hay reviews para esta sucursal.';
+            noReviewsMessage.textContent = 'No hi ha cap valoració per aquest supermercat 😢';
             noReviewsMessage.style.textAlign = 'center';
             noReviewsMessage.style.color = '#ffffff';
             container.appendChild(noReviewsMessage);
