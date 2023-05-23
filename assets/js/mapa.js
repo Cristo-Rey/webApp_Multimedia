@@ -95,7 +95,7 @@ async function fer_mapa() {
             const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.image}" style="height: 100px; width:100%">
+                    <img src="${item.image}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;" alt="${item.name}">
                     <p><a href='sucursal.html' target="_blank" onclick="enviarSucursal('${item.name}')">Més informació</a></p>
                 </div>
             `;

@@ -37,7 +37,7 @@ async function cercaJSONExterns() {
     var checkbox2 = document.getElementById("checkbox2");
     var checkbox3 = document.getElementById("checkbox3");
 
-    // Monuments case
+
     if (checkbox1.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
         const json = await response.json();
@@ -194,7 +194,7 @@ async function loadSucursal() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
-                supermarket = item;
+                supermarket =  item;
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
@@ -334,7 +334,99 @@ async function loadSucursal() {
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
             }
+        }
+    }
+    catch (error) {
+        console.error('Hubo un error.', error);
+    }
+}
 
+async function valoracionsSucursals() {
+    try {
+        const responseSupermercat = await fetch('/assets/js/valoracions.json');
+        const json = await responseSupermercat.json();
+        const itemList = json.itemListElement;
+
+        const container = document.querySelector('.valoracions-sucursal');
+        const testimonialsSlider = document.createElement('div');
+        testimonialsSlider.classList.add('testimonials-slider', 'swiper');
+        testimonialsSlider.setAttribute('data-aos', 'fade-up');
+        testimonialsSlider.setAttribute('data-aos-delay', '100');
+
+        const swiperWrapper = document.createElement('div');
+        swiperWrapper.classList.add('swiper-wrapper');
+
+        let hayReviews = false; // Variable para verificar si hay reviews
+
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+
+            if (item.itemReviewed.name === localStorage.getItem("sucursal")) {
+                hayReviews = true; // Se cambia a true si hay reviews                
+                const swiperSlide = document.createElement('div');
+                swiperSlide.classList.add('swiper-slide');
+
+                const testimonialItem = document.createElement('div');
+                testimonialItem.classList.add('testimonial-item');
+
+                const testimonialImg = document.createElement('img');
+                testimonialImg.src = "assets/img/testimonials/testimonials-1.jpg";
+                testimonialImg.classList.add('testimonial-img');
+                testimonialImg.alt = 'Usuari';
+
+                const testimonialName = document.createElement('h3');
+                testimonialName.textContent = item.author;
+
+                const stars = document.createElement('div');
+                stars.classList.add('stars');
+
+                for (let j = 0; j < item.reviewRating.ratingValue; j++) {
+                    const star = document.createElement('i');
+                    star.classList.add('bi', 'bi-star-fill');
+                    stars.appendChild(star);
+                }
+
+                const testimonialText = document.createElement('p');
+                testimonialText.innerHTML = `<i class="bx bxs-quote-alt-left quote-icon-left"></i>${item.reviewBody}<i class="bx bxs-quote-alt-right quote-icon-right"></i>`;
+
+                testimonialItem.appendChild(testimonialImg);
+                testimonialItem.appendChild(testimonialName);
+                testimonialItem.appendChild(stars);
+                testimonialItem.appendChild(testimonialText);
+
+                swiperSlide.appendChild(testimonialItem);
+                swiperWrapper.appendChild(swiperSlide);
+            }
+        }
+
+        if (!hayReviews) { // Agrega un mensaje si no hay reviews
+            const noReviewsMessage = document.createElement('h1');
+            noReviewsMessage.textContent = 'No hay reviews para esta sucursal.';
+            noReviewsMessage.style.textAlign = 'center';
+            noReviewsMessage.style.color = '#ffffff';
+            container.appendChild(noReviewsMessage);
+        } else {
+            const swiperPagination = document.createElement('div');
+            swiperPagination.classList.add('swiper-pagination');
+
+            testimonialsSlider.appendChild(swiperWrapper);
+            testimonialsSlider.appendChild(swiperPagination);
+
+            container.appendChild(testimonialsSlider);
+
+            // Inicializar el swiper después de agregar el contenido al DOM
+            function initSwiper() {
+                const swiper = new Swiper('.swiper', {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    }
+                });
+            }
+            initSwiper();
         }
     }
     catch (error) {
