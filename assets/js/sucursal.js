@@ -57,7 +57,7 @@ async function cercaJSONExterns() {
                 const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.image[0].url}" style="height: 100px; width:100%">
+                    <img src="${item.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
@@ -84,7 +84,7 @@ async function cercaJSONExterns() {
                 const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.photo[0].contentUrl}" style="height: 100px; width:100%">
+                    <img src="${item.photo[0].contentUrl}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
@@ -112,7 +112,7 @@ async function cercaJSONExterns() {
                 const popupContent = `
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
-                    <img src="${item.image[0].url}" style="height: 100px; width:100%">
+                    <img src="${item.image[0].url}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;">
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
