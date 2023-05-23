@@ -1,0 +1,216 @@
+{
+    "@context": "https://schema.org",
+    "@type": "itemList",
+    "itemListElement": [
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Alfonso El Butanero",
+            "reviewBody": "Este supermercado es el mejor de la zona, tiene de todo y a buen precio. Lo recomiendo.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Eroski Can Picafort"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.5"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "María La Pescadera",
+            "reviewBody": "El pescado fresco y a buen precio. Además, la atención al cliente es excelente.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Mercadona Sa Pobla"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.0"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Pedro El Carnicero",
+            "reviewBody": "La carne de este supermercado es de excelente calidad. Siempre fresca y a buen precio.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour Sa Coma"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.7"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Pilar La Frutera",
+            "reviewBody": "Las frutas y verduras son de muy buena calidad y siempre frescas. Además, los precios son muy competitivos.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Lidl Av. del Bontemps"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.3"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Carmen La Panadera",
+            "reviewBody": "Me encanta este Eroski, siempre encuentro lo que necesito y el personal es muy amable.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Eroski Antoni Marquès, 9"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.2"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "José El Fontanero",
+            "reviewBody": "Tienen una buena selección de productos y precios competitivos. Lo visito a menudo.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Eroski Obispo Llompart 44"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "3.9"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Laura La Enfermera",
+            "reviewBody": "El Mercadona de Sa Pobla es mi opción favorita para hacer la compra. Siempre limpio y ordenado.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Mercadona Sa Pobla"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.6"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "David El Mecánico",
+            "reviewBody": "Voy con frecuencia al Carrefour de Sa Coma. Me gusta la variedad de productos y la calidad.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour Sa Coma"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.1"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Mónica La Profesora",
+            "reviewBody": "El Carrefour de Porto Cristo es amplio y cómodo. Siempre encuentro lo que busco.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour Porto Cristo"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.3"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Sergio El Cocinero",
+            "reviewBody": "El Carrefour de Santanyi es genial para comprar productos frescos y de calidad.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour Santanyi"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.0"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Patricia La Abogada",
+            "reviewBody": "Me gusta la ubicación del Carrefour Ocimax, es muy conveniente para mis compras semanales.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour Ocimax"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "3.8"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Carlos El Electricista",
+            "reviewBody": "El Carrefour Palma es enorme y tiene una gran variedad de productos. Me gusta mucho hacer mis compras aquí.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour Palma"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.5"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Ana La Estudiante",
+            "reviewBody": "El Carrefour FAN es muy moderno y tiene un montón de opciones para elegir. Muy recomendable.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Carrefour FAN"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.7"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Juan El Camarero",
+            "reviewBody": "El Lidl de Av. del Bontemps es mi supermercado preferido. Buenos precios y productos de calidad.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Lidl Av. del Bontemps"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.4"
+            }
+        },
+        {
+            "@context": "http://schema.org",
+            "@type": "Review",
+            "author": "Sandra La Dentista",
+            "reviewBody": "El Lidl de Aragó, 42 es un lugar perfecto para hacer la compra semanal. Siempre encuentro lo que necesito.",
+            "itemReviewed": {
+                "@type": "GroceryStore",
+                "name": "Lidl Aragó, 42"
+            },
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4.3"
+            }
+        }
+    ]
+}
