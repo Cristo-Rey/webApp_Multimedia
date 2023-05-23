@@ -30,10 +30,7 @@ function distance(lat1, lon1, lat2, lon2) {
 
 
 async function cercaJSONExterns() {
-    const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
-    const json = await response.json();
-    const itemList = json.itemListElement;
-
+    netejaMarcadors();
     var checkbox1 = document.getElementById("checkbox1");
     var checkbox2 = document.getElementById("checkbox2");
     var checkbox3 = document.getElementById("checkbox3");
@@ -65,6 +62,7 @@ async function cercaJSONExterns() {
             }
         }
     }
+    // Hotels case
     if (checkbox2.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/hotel.json');
         const json = await response.json();
@@ -91,6 +89,8 @@ async function cercaJSONExterns() {
             }
         }
     }
+
+    // Muntanyes case
     if (checkbox3.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/mountains.json');
         const json = await response.json();
@@ -119,10 +119,66 @@ async function cercaJSONExterns() {
     }
 }
 
+// Neteja tots els marcadors del mapa excepte el del propi supermercat
+function netejaMarcadors() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+    var xinxeta = L.icon({
+        iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    switch (supermarket.brand.name) {
+        case "Eroski":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-red.png';
+            break;
+        case "Mercadona":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-orange.png';
+            break;
+        case "Carrefour":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-blue.png';
+            break;
+        case "Lidl":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-yellow.png';
+            break;
+        case "BipBip":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-green.png';
+            break;
+        case "Aprop":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';
+            break;
+        default:
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-violet.png';
+            break;
+    }
+    var singleMarker = L.marker([supermarket.geo.latitude, supermarket.geo.longitude], { icon: xinxeta });
+    singleMarker.addTo(map);
+
+    map.setView([supermarket.geo.latitude, supermarket.geo.longitude], 12);
+}
 
 
 async function loadSucursal() {
     try {
+        var checkbox1 = document.getElementById("checkbox1");
+        var checkbox2 = document.getElementById("checkbox2");
+        var checkbox3 = document.getElementById("checkbox3");
+
+        // Add a click event listener to each checkbox element
+        checkbox1.addEventListener('click', cercaJSONExterns);
+        checkbox2.addEventListener('click', cercaJSONExterns);
+        checkbox3.addEventListener('click', cercaJSONExterns);
+
+
         // Obtenemos la sucursal seleccionada
         var sucursal = localStorage.getItem("sucursal");
 
@@ -136,7 +192,7 @@ async function loadSucursal() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
-                supermarket = item;
+                supermarket =  item;
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
