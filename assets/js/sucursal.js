@@ -1,5 +1,7 @@
 let map;
 let supermarket;
+
+
 async function audioTheme(brand, paragraf) {
     try {
         const response = await fetch('/assets/js/franquicies.json');
@@ -10,23 +12,10 @@ async function audioTheme(brand, paragraf) {
                 paragraf.textContent = itemList[i].description;
             }
         }
-
-
-
-
-
-
-
     }
     catch (error) {
         console.error('Hubo un error.', error);
     }
-
-
-
-
-
-
 }
 function distance(lat1, lon1, lat2, lon2) {
     const R = 6371; // Earth's radius in kilometers
