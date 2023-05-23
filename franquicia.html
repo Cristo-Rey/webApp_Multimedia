@@ -34,10 +34,16 @@
 	<!-- Template Main CSS File -->
 	<link href="assets/css/style.css" rel="stylesheet">
 
-	<!-- Obtenim les dades de la sucursal -->
 	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
 		integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 	<script src="assets/js/franquicia.js"></script>
+
+	<!-- Send informació sucursals -->
+	<script>
+		function enviarSucursal(sucursal) {
+			localStorage.setItem("sucursal", sucursal);
+		}
+	</script>
 </head>
 
 <!-- Google tag (gtag.js) -->
