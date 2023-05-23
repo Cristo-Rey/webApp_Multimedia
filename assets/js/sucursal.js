@@ -1,3 +1,5 @@
+let map;
+let supermarket;
 async function audioTheme(brand, paragraf) {
         try{
         const response = await fetch('/assets/js/franquicies.json');
@@ -26,6 +28,109 @@ async function audioTheme(brand, paragraf) {
 
 
 }
+function distance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Earth's radius in kilometers
+    const dLat = (lat2 - lat1) * Math.PI / 180; // difference in latitude in radians
+    const dLon = (lon2 - lon1) * Math.PI / 180; // difference in longitude in radians
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distance = R * c; // distance in kilometers
+    return distance;
+  }
+
+
+async function cercaJSONExterns() {
+    const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
+    const json = await response.json();
+    const itemList = json.itemListElement;
+
+    var checkbox1 = document.getElementById("checkbox1");
+    var checkbox2 = document.getElementById("checkbox2");
+    var checkbox3 = document.getElementById("checkbox3");
+
+
+    if(checkbox1.checked){
+        const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
+        const json = await response.json();
+        const itemList = json.itemListElement;
+        var xinxeta = L.icon({
+        iconUrl: 'assets/img/mapa/marker-icon-2x-violet.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+        });
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+            if(distance(supermarket.geo.latitude,supermarket.geo.longitude,item.geo.latitude,item.geo.longitude)<15){
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
+                singleMarker.addTo(map);
+                const popupContent = `
+                <div>
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                    <img src="${item.image[0].url}" style="height: 100px; width:100%">
+                </div>
+            `;
+            singleMarker.bindPopup(popupContent);
+            }
+        }
+    }
+    if(checkbox2.checked){
+        const response = await fetch('/assets/js/JSONs_Externs/hotel.json');
+        const json = await response.json();
+        const itemList = json.itemListElement;
+        var xinxeta = L.icon({
+            iconUrl: 'assets/img/mapa/marker-icon-2x-gold.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+            if(distance(supermarket.geo.latitude,supermarket.geo.longitude,item.geo.latitude,item.geo.longitude)<15){
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
+                singleMarker.addTo(map);
+                const popupContent = `
+                <div>
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                    <img src="${item.photo[0].contentUrl}" style="height: 100px; width:100%">
+                </div>
+            `;
+            singleMarker.bindPopup(popupContent);
+            }
+        }
+    }
+    if(checkbox3.checked){
+        const response = await fetch('/assets/js/JSONs_Externs/mountains.json');
+        const json = await response.json();
+        const itemList = json.itemListElement;
+        var xinxeta = L.icon({
+            iconUrl: 'assets/img/mapa/marker-icon-2x-grey.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+            if(distance(supermarket.geo.latitude,supermarket.geo.longitude,item.containsPlace.geo.latitude,item.containsPlace.geo.longitude)<15){
+                var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
+                singleMarker.addTo(map);
+                const popupContent = `
+                <div>
+                    <h2 style="font-size: 20px;">${item.name}</h2>
+                    <img src="${item.image[0].url}" style="height: 100px; width:100%">
+                </div>
+            `;
+            singleMarker.bindPopup(popupContent);
+            }
+        }
+    }
+  }
 
 
 
@@ -44,6 +149,7 @@ async function loadSucursal() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
+                supermarket =item;
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
@@ -112,7 +218,7 @@ async function loadSucursal() {
 
                 // %%%%%%%%%%%%%%%%% MAPA %%%%%%%%%%%%%%%%%
 
-                let map = L.map('map').setView([item.geo.latitude, item.geo.longitude], 12);
+                map = L.map('map').setView([item.geo.latitude, item.geo.longitude], 12);
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 }).addTo(map);
