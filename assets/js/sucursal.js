@@ -1,13 +1,13 @@
 let map;
 let supermarket;
 async function audioTheme(brand, paragraf) {
-        try{
+    try {
         const response = await fetch('/assets/js/franquicies.json');
         const json = await response.json();
         const itemList = json.itemListElement;
-        for(let i=0;i<itemList.length;i++){
-            if(itemList[i].name==brand){
-                paragraf.textContent=itemList[i].description;
+        for (let i = 0; i < itemList.length; i++) {
+            if (itemList[i].name == brand) {
+                paragraf.textContent = itemList[i].description;
             }
         }
 
@@ -17,10 +17,10 @@ async function audioTheme(brand, paragraf) {
 
 
 
-        }
-        catch (error) {
-            console.error('Hubo un error.', error);
-        }
+    }
+    catch (error) {
+        console.error('Hubo un error.', error);
+    }
 
 
 
@@ -33,39 +33,36 @@ function distance(lat1, lon1, lat2, lon2) {
     const dLat = (lat2 - lat1) * Math.PI / 180; // difference in latitude in radians
     const dLon = (lon2 - lon1) * Math.PI / 180; // difference in longitude in radians
     const a =
-      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     const distance = R * c; // distance in kilometers
     return distance;
-  }
+}
 
 
 async function cercaJSONExterns() {
-    const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
-    const json = await response.json();
-    const itemList = json.itemListElement;
-
+    netejaMarcadors();
     var checkbox1 = document.getElementById("checkbox1");
     var checkbox2 = document.getElementById("checkbox2");
     var checkbox3 = document.getElementById("checkbox3");
 
-
-    if(checkbox1.checked){
+    // Monuments case
+    if (checkbox1.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
         const json = await response.json();
         const itemList = json.itemListElement;
         var xinxeta = L.icon({
-        iconUrl: 'assets/img/mapa/marker-icon-2x-violet.png',
-        iconSize: [25, 41],
-        iconAnchor: [12, 41],
-        popupAnchor: [1, -34],
-        shadowSize: [41, 41]
+            iconUrl: 'assets/img/mapa/marker-icon-2x-violet.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
         });
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
-            if(distance(supermarket.geo.latitude,supermarket.geo.longitude,item.geo.latitude,item.geo.longitude)<15){
+            if (distance(supermarket.geo.latitude, supermarket.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
                 singleMarker.addTo(map);
                 const popupContent = `
@@ -74,11 +71,12 @@ async function cercaJSONExterns() {
                     <img src="${item.image[0].url}" style="height: 100px; width:100%">
                 </div>
             `;
-            singleMarker.bindPopup(popupContent);
+                singleMarker.bindPopup(popupContent);
             }
         }
     }
-    if(checkbox2.checked){
+    // Hotels case
+    if (checkbox2.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/hotel.json');
         const json = await response.json();
         const itemList = json.itemListElement;
@@ -91,7 +89,7 @@ async function cercaJSONExterns() {
         });
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
-            if(distance(supermarket.geo.latitude,supermarket.geo.longitude,item.geo.latitude,item.geo.longitude)<15){
+            if (distance(supermarket.geo.latitude, supermarket.geo.longitude, item.geo.latitude, item.geo.longitude) < 15) {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
                 singleMarker.addTo(map);
                 const popupContent = `
@@ -100,11 +98,13 @@ async function cercaJSONExterns() {
                     <img src="${item.photo[0].contentUrl}" style="height: 100px; width:100%">
                 </div>
             `;
-            singleMarker.bindPopup(popupContent);
+                singleMarker.bindPopup(popupContent);
             }
         }
     }
-    if(checkbox3.checked){
+
+    // Muntanyes case
+    if (checkbox3.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/mountains.json');
         const json = await response.json();
         const itemList = json.itemListElement;
@@ -117,7 +117,7 @@ async function cercaJSONExterns() {
         });
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
-            if(distance(supermarket.geo.latitude,supermarket.geo.longitude,item.containsPlace.geo.latitude,item.containsPlace.geo.longitude)<15){
+            if (distance(supermarket.geo.latitude, supermarket.geo.longitude, item.containsPlace.geo.latitude, item.containsPlace.geo.longitude) < 15) {
                 var singleMarker = L.marker([item.geo.latitude, item.geo.longitude], { icon: xinxeta });
                 singleMarker.addTo(map);
                 const popupContent = `
@@ -126,16 +126,72 @@ async function cercaJSONExterns() {
                     <img src="${item.image[0].url}" style="height: 100px; width:100%">
                 </div>
             `;
-            singleMarker.bindPopup(popupContent);
+                singleMarker.bindPopup(popupContent);
             }
         }
     }
-  }
+}
 
+// Neteja tots els marcadors del mapa excepte el del propi supermercat
+function netejaMarcadors() {
+    map.eachLayer(function (layer) {
+        map.removeLayer(layer);
+    });
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+
+    var xinxeta = L.icon({
+        iconUrl: 'assets/img/mapa/marker-icon-2x-green.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+    });
+
+    switch (supermarket.brand.name) {
+        case "Eroski":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-red.png';
+            break;
+        case "Mercadona":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-orange.png';
+            break;
+        case "Carrefour":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-blue.png';
+            break;
+        case "Lidl":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-yellow.png';
+            break;
+        case "BipBip":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-green.png';
+            break;
+        case "Aprop":
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-black.png';
+            break;
+        default:
+            xinxeta.iconUrl = 'assets/img/mapa/marker-icon-2x-violet.png';
+            break;
+    }
+    var singleMarker = L.marker([supermarket.geo.latitude, supermarket.geo.longitude], { icon: xinxeta });
+    singleMarker.addTo(map);
+
+    map.setView([supermarket.geo.latitude, supermarket.geo.longitude], 12);
+}
 
 
 async function loadSucursal() {
     try {
+        var checkbox1 = document.getElementById("checkbox1");
+        var checkbox2 = document.getElementById("checkbox2");
+        var checkbox3 = document.getElementById("checkbox3");
+
+        // Add a click event listener to each checkbox element
+        checkbox1.addEventListener('click', cercaJSONExterns);
+        checkbox2.addEventListener('click', cercaJSONExterns);
+        checkbox3.addEventListener('click', cercaJSONExterns);
+
+
         // Obtenemos la sucursal seleccionada
         var sucursal = localStorage.getItem("sucursal");
 
@@ -149,7 +205,7 @@ async function loadSucursal() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
-                supermarket =item;
+                supermarket = item;
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
@@ -269,10 +325,10 @@ async function loadSucursal() {
 
                 const p10 = document.createElement('p');
                 p10.classList.add('fst-italic');
-                audioTheme(item.brand.name,p10);
+                audioTheme(item.brand.name, p10);
                 //p10.textContent = 'Tumba la casa mami';
 
-                
+
 
                 container4.appendChild(h3);
                 container4.appendChild(p10);
