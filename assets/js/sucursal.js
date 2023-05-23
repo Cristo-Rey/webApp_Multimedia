@@ -1,5 +1,7 @@
 let map;
 let supermarket;
+
+
 async function audioTheme(brand, paragraf) {
     try {
         const response = await fetch('/assets/js/franquicies.json');
