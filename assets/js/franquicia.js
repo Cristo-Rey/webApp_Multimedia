@@ -70,7 +70,7 @@ async function loadFranquicia() {
 
                 const p1 = document.createElement('p');
                 p1.classList.add('fst-italic');
-                p1.textContent = `${item.description}}`;
+                p1.textContent = `${item.description}`;
 
                 // Agregar los elementos a los divs
                 div2.appendChild(div3);
