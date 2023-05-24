@@ -1,6 +1,51 @@
 let map;
 let supermarket;
 
+function loadJSON_LD(info, tipus) {
+    const script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+
+    if (tipus==0) {
+        let s = {
+            "@context": "https://schema.org",
+            "@type": "GroceryStore",
+            "name": info.name,
+            "telephone": info.telephone,
+            "image": info.image,
+            "address": info.address,
+            "geo": info.geo,
+            "brand": info.brand,
+            "oppeningHours": info.oppeningHours
+        };
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+    }else if(tipus==2){
+        let s = {
+            "@context": "https://schema.org",
+            "@type": "Brand",
+            "name": info.name,
+            "logo": info.logo,
+            "description": info.description,
+            "subjectOf": info.subjectOf,
+        };
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+    }        // Cas comentari
+    else if(tipus==1){
+        let s = {
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "author": info.author,
+            "reviewBody": info.reviewBody,
+            "itemReviewed": info.itemReviewed,
+            "reviewRating": info.reviewRating,
+            "alternateName":info.alternateName
+        };
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+    }
+
+}
 
 async function audioTheme(brand, paragraf) {
     try {
@@ -10,8 +55,10 @@ async function audioTheme(brand, paragraf) {
         for (let i = 0; i < itemList.length; i++) {
             if (itemList[i].name == brand) {
                 paragraf.textContent = itemList[i].description;
+                loadJSON_LD(itemList[i],2);
             }
         }
+
     }
     catch (error) {
         console.error('Hubo un error.', error);
@@ -261,6 +308,9 @@ async function loadSucursal() {
                 container2.appendChild(div1);
                 container2.appendChild(div2);
 
+                // %%%%%%%%%%%%%%%%% SEMÀNTICA %%%%%%%%%%%%%%%%%
+                loadJSON_LD(item,0);
+
                 // %%%%%%%%%%%%%%%%% MAPA %%%%%%%%%%%%%%%%%
 
                 map = L.map('map').setView([item.geo.latitude, item.geo.longitude], 12);
@@ -362,6 +412,7 @@ async function valoracionsSucursals() {
             const item = itemList[i];
 
             if (item.itemReviewed.name === localStorage.getItem("sucursal")) {
+                loadJSON_LD(itemList[i],1);
                 hayReviews = true; // Se cambia a true si hay reviews                
                 const swiperSlide = document.createElement('div');
                 swiperSlide.classList.add('swiper-slide');

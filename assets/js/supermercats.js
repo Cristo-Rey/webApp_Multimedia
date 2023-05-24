@@ -1,3 +1,22 @@
+function loadJSON_LD(info) {
+    const script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+
+        let s = {
+            "@context": "https://schema.org",
+            "@type": "GroceryStore",
+            "name": info.name,
+            "telephone": info.telephone,
+            "image": info.image,
+            "address": info.address,
+            "geo": info.geo,
+            "brand": info.brand,
+            "oppeningHours": info.oppeningHours
+        };
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+    }
+
 async function llista_franquicies() {
     try {
         const responseFrnaquicies = await fetch('/assets/js/franquicies.json');
@@ -8,6 +27,7 @@ async function llista_franquicies() {
 
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
+            loadJSON_LD(item);
             const liElement = document.createElement('li');
             liElement.classList.add('nav-item');
             const aElement = document.createElement('a');
