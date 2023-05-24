@@ -310,7 +310,7 @@ async function valoracionsDestacades() {
         }
         if (!hayReviews) { // Agrega un mensaje si no hay reviews
             const noReviewsMessage = document.createElement('h1');
-            noReviewsMessage.textContent = 'No hi ha cap valoració per aquesta franquicia 😢';
+            noReviewsMessage.textContent = 'No hi ha cap valoració destacada per aquesta franquicia 😢';
             noReviewsMessage.style.textAlign = 'center';
             noReviewsMessage.style.color = '#ffffff';
             container.appendChild(noReviewsMessage);
