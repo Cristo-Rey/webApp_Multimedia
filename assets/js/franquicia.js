@@ -129,6 +129,8 @@ async function loadFranquicia() {
                 container3.appendChild(div5);
 
                 // %%%%%%%%%%%%%%%%% RESENYES %%%%%%%%%%%%%%%%%
+                valoracionsDestacades();
+                valoracionsFranquicies();
 
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
@@ -249,5 +251,188 @@ async function fer_mapa(franquicia) {
     }
     catch (error) {
         console.error('Hubo un error al cargar el archivo JSON', error);
+    }
+}
+
+async function valoracionsDestacades() {
+    try {
+        const responseValoracion = await fetch('/assets/js/valoracions.json');
+        const json = await responseValoracion.json();
+        const itemList = json.itemListElement;
+
+        const container = document.querySelector('.valoracions-destacades');
+        const swiperWrapper = document.createElement('div');
+        swiperWrapper.classList.add('swiper-wrapper');
+
+        let hayReviews = false; // Variable para verificar si hay reviews
+
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+            if (item.alternateName === localStorage.getItem("franquicia") && Math.random() < 0.5) {
+                hayReviews = true;
+                const swiperSlide = document.createElement('div');
+                swiperSlide.classList.add('swiper-slide');
+                const row = document.createElement('div');
+                row.classList.add('row', 'event-item');
+                const colImg = document.createElement('div');
+                colImg.classList.add('col-lg-6');
+                const img = document.createElement('img');
+                img.classList.add('img-fluid');
+                img.setAttribute('src', await cercaImatge(item.itemReviewed.name));
+                const colContent = document.createElement('div');
+                colContent.classList.add('col-lg-6', 'pt-4', 'pt-lg-0', 'content');
+                const h3 = document.createElement('h3');
+                h3.textContent = item.itemReviewed.name;
+                const price = document.createElement('div');
+                price.classList.add('price');
+                const p = document.createElement('p');
+                const span = document.createElement('span');
+                span.textContent = item.reviewRating.ratingValue + ' ✯';
+                p.appendChild(span);
+                price.appendChild(p);
+                const p2 = document.createElement('p');
+                p2.classList.add('fst-italic');
+                p2.textContent = item.description;
+                const p3 = document.createElement('p');
+                p3.textContent = item.reviewBody;
+                colContent.appendChild(h3);
+                colContent.appendChild(price);
+                colContent.appendChild(p2);
+                colContent.appendChild(p3);
+                colImg.appendChild(img);
+                row.appendChild(colImg);
+                row.appendChild(colContent);
+                swiperSlide.appendChild(row);
+                swiperWrapper.appendChild(swiperSlide);
+
+                
+            }
+        }
+        if (!hayReviews) { // Agrega un mensaje si no hay reviews
+            const noReviewsMessage = document.createElement('h1');
+            noReviewsMessage.textContent = 'No hi ha cap valoració per aquesta franquicia 😢';
+            noReviewsMessage.style.textAlign = 'center';
+            noReviewsMessage.style.color = '#ffffff';
+            container.appendChild(noReviewsMessage);
+        } else {
+            const swiperPagination = document.createElement('div');
+            swiperPagination.classList.add('swiper-pagination');
+
+            container.appendChild(swiperWrapper);
+            container.appendChild(swiperPagination);
+
+            // Inicializar el swiper después de agregar el contenido al DOM
+            function initSwiper() {
+                const swiper = new Swiper('.swiper', {
+                    slidesPerView: 1,
+                    loop: true,
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true,
+                    }
+                });
+            }
+
+            initSwiper();
+        }
+    } catch (error) {
+        console.error('Hubo un error.', error);
+    }
+}
+
+async function valoracionsFranquicies() {
+    try {
+        const responseValoracion = await fetch('/assets/js/valoracions.json');
+        const json = await responseValoracion.json();
+        const itemList = json.itemListElement;
+
+        const container = document.querySelector('.valoracions-sucursal');
+        const testimonialsSlider = document.createElement('div');
+        testimonialsSlider.classList.add('testimonials-slider', 'swiper');
+        testimonialsSlider.setAttribute('data-aos', 'fade-up');
+        testimonialsSlider.setAttribute('data-aos-delay', '100');
+
+        const swiperWrapper = document.createElement('div');
+        swiperWrapper.classList.add('swiper-wrapper');
+
+        let hayReviews = false; // Variable para verificar si hay reviews
+
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+
+            if (item.alternateName === localStorage.getItem("franquicia")) {
+                hayReviews = true; // Se cambia a true si hay reviews                
+                const swiperSlide = document.createElement('div');
+                swiperSlide.classList.add('swiper-slide');
+
+                const testimonialItem = document.createElement('div');
+                testimonialItem.classList.add('testimonial-item');
+
+                const testimonialImg = document.createElement('img');
+                testimonialImg.src = "assets/img/testimonials/testimonials-1.jpg";
+                testimonialImg.classList.add('testimonial-img');
+                testimonialImg.alt = 'Usuari';
+
+                const testimonialName = document.createElement('h3');
+                testimonialName.textContent = item.author;
+
+                const stars = document.createElement('div');
+                stars.classList.add('stars');
+
+                for (let j = 0; j < item.reviewRating.ratingValue; j++) {
+                    const star = document.createElement('i');
+                    star.classList.add('bi', 'bi-star-fill');
+                    stars.appendChild(star);
+                }
+
+                const testimonialText = document.createElement('p');
+                testimonialText.innerHTML = `<i class="bx bxs-quote-alt-left quote-icon-left"></i>${item.reviewBody}<i class="bx bxs-quote-alt-right quote-icon-right"></i>`;
+
+                testimonialItem.appendChild(testimonialImg);
+                testimonialItem.appendChild(testimonialName);
+                testimonialItem.appendChild(stars);
+                testimonialItem.appendChild(testimonialText);
+
+                swiperSlide.appendChild(testimonialItem);
+                swiperWrapper.appendChild(swiperSlide);
+            }
+        }
+
+        if (!hayReviews) { // Agrega un mensaje si no hay reviews
+            const noReviewsMessage = document.createElement('h1');
+            noReviewsMessage.textContent = 'No hi ha cap valoració per aquesta franquicia 😢';
+            noReviewsMessage.style.textAlign = 'center';
+            noReviewsMessage.style.color = '#ffffff';
+            container.appendChild(noReviewsMessage);
+        } else {
+            const swiperPagination = document.createElement('div');
+            swiperPagination.classList.add('swiper-pagination');
+
+            testimonialsSlider.appendChild(swiperWrapper);
+            testimonialsSlider.appendChild(swiperPagination);
+
+            container.appendChild(testimonialsSlider);
+        }
+    }
+    catch (error) {
+        console.error('Hubo un error.', error);
+    }
+}
+
+async function cercaImatge(nom){
+    //Buscamos el path de la imatge de la sucursal
+    try {
+        const response = await fetch('/assets/js/supermercat.json');
+        const json = await response.json();
+        const itemList = json.itemListElement;
+        for (let i = 0; i < itemList.length; i++) {
+            const item = itemList[i];
+            if (item.name === nom) {
+                return item.image;
+            }
+        }
+    }
+    catch (error) {
+        console.error('Hubo un error.', error);
     }
 }

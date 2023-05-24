@@ -14,7 +14,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.5"
-            }
+            },
+            "alternateName": "Eroski"
         },
         {
             "@context": "http://schema.org",
@@ -28,7 +29,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.0"
-            }
+            },
+            "alternateName": "Mercadona"
         },
         {
             "@context": "http://schema.org",
@@ -42,7 +44,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.7"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -56,7 +59,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.3"
-            }
+            },
+            "alternateName": "Lidl"
         },
         {
             "@context": "http://schema.org",
@@ -70,7 +74,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.2"
-            }
+            },
+            "alternateName": "Eroski"
         },
         {
             "@context": "http://schema.org",
@@ -84,7 +89,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "3.9"
-            }
+            },
+            "alternateName": "Eroski"
         },
         {
             "@context": "http://schema.org",
@@ -98,7 +104,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.6"
-            }
+            },
+            "alternateName": "Mercadona"
         },
         {
             "@context": "http://schema.org",
@@ -112,7 +119,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.1"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -126,7 +134,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.3"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -140,7 +149,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.0"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -154,7 +164,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "3.8"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -168,7 +179,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.5"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -182,7 +194,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.7"
-            }
+            },
+            "alternateName": "Carrefour"
         },
         {
             "@context": "http://schema.org",
@@ -196,7 +209,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.4"
-            }
+            },
+            "alternateName": "Lidl"
         },
         {
             "@context": "http://schema.org",
@@ -210,7 +224,8 @@
             "reviewRating": {
                 "@type": "Rating",
                 "ratingValue": "4.3"
-            }
+            },
+            "alternateName": "Lidl"
         }
     ]
 }
