@@ -21,7 +21,7 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
 		rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-sITy2HhQqZ9IvFJ0W5+FZ6fzvOQ9xv5UqBlNb3CQpJGQz1KmD+8q0yWZs6wZwDoH1I0XqRyXOwzUp+eIgA61g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 	<!-- MAPA API-->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
 		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
@@ -183,31 +183,25 @@
 
 		</section>
 		<section class ="theme_song">
-		<div class="container-fluid">
-			<form>
-				<label for="name">Name:</label>
-				<input type="text" id="name" name="name" required>
-				<br>
-				<label for="rating">Rating:</label>
-				<div class="stars" id="rating">
-				  <input type="radio" id="star5" name="rating" value="5" required>
-				  <label for="star5"><i class="fa fa-star"></i></label>
-				  <input type="radio" id="star4" name="rating" value="4">
-				  <label for="star4"><i class="fa fa-star"></i></label>
-				  <input type="radio" id="star3" name="rating" value="3">
-				  <label for="star3"><i class="fa fa-star"></i></label>
-				  <input type="radio" id="star2" name="rating" value="2">
-				  <label for="star2"><i class="fa fa-star"></i></label>
-				  <input type="radio" id="star1" name="rating" value="1">
-				  <label for="star1"><i class="fa fa-star"></i></label>
-				</div>
-				<br>
-				<label for="comment">Comment:</label>
-				<textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
-				<br>
-				<button type="submit">Submit</button>
-			  </form>
-		</div>
+			<div class="wrapper">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<form action="#">
+					<div class="rating">
+						<input type="number" name="rating" hidden>
+						<i class='bx bx-star star' style="--i: 0;"></i>
+						<i class='bx bx-star star' style="--i: 1;"></i>
+						<i class='bx bx-star star' style="--i: 2;"></i>
+						<i class='bx bx-star star' style="--i: 3;"></i>
+						<i class='bx bx-star star' style="--i: 4;"></i>
+					</div>
+					<textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+					<div class="btn-group">
+						<button type="submit" class="btn submit">Submit</button>
+						<button class="btn cancel">Cancel</button>
+					</div>
+				</form>
+			</div>
+			<script src="/assets/js/ratings.js"></script>
 	</section>
 		<!-- End Testimonials Section -->
 
