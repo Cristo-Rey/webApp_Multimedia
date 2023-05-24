@@ -63,7 +63,7 @@ async function loadFranquicia() {
 
                 const li1 = document.createElement('li');
                 const a = document.createElement('a');
-                a.href = 'index.html';
+                a.href = 'index';
                 a.textContent = 'Home';
                 li1.appendChild(a);
 
@@ -277,7 +277,7 @@ async function fer_mapa(franquicia) {
                 <div>
                     <h2 style="font-size: 20px;">${item.name}</h2>
                     <img src="${item.image}" style="height: 130px; width:130px; object-fit: cover; aspect-ratio: 1/1;" alt="${item.name}">
-                    <p><a href='sucursal.html' target="_blank" onclick="enviarSucursal('${item.name}')">Més informació</a></p>
+                    <p><a href='sucursal' target="_blank" onclick="enviarSucursal('${item.name}')">Més informació</a></p>
                 </div>
             `;
                 singleMarker.bindPopup(popupContent);
@@ -318,7 +318,7 @@ async function valoracionsDestacades() {
                 const colContent = document.createElement('div');
                 colContent.classList.add('col-lg-6', 'pt-4', 'pt-lg-0', 'content');
                 const a = document.createElement('a');
-                a.setAttribute('href', 'sucursal.html');
+                a.setAttribute('href', 'sucursal');
                 a.onclick = function () { enviarSucursal(item.itemReviewed.name) };
                 const h3 = document.createElement('h3');
                 h3.textContent = item.itemReviewed.name;

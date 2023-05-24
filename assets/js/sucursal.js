@@ -252,7 +252,7 @@ async function loadSucursal() {
 
                 const li1 = document.createElement('li');
                 const a = document.createElement('a');
-                a.href = 'index.html';
+                a.href = 'index';
                 a.textContent = 'Home';
                 li1.appendChild(a);
 
