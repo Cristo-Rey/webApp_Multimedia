@@ -57,7 +57,7 @@ async function llista_franquicies() {
             // Creamos una etiqueta <a> para poder hacer click en el nombre de la franquicia
             const nomA = document.createElement('a');
             nomA.appendChild(nom);
-            nomA.setAttribute('href', 'franquicia');
+            nomA.setAttribute('href', 'franquicia.html');
             nomA.setAttribute('onclick', `enviarFranquicia('${item.name}')`)
             const desc = document.createElement('p');
             desc.classList.add('fsc-italic');
@@ -98,7 +98,7 @@ async function llistaSupermercats() {
             const content = document.createElement('div');
             content.classList.add('supermercats-content');
             const link = document.createElement('a');
-            link.href = 'sucursal';
+            link.href = 'sucursal.html';
             link.textContent = item.name;
             const rating = document.createElement('span');
             const randomRating = (Math.random() * 5).toFixed(1);
