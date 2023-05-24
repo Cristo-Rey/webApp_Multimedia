@@ -281,6 +281,9 @@ async function valoracionsDestacades() {
                 img.setAttribute('src', await cercaImatge(item.itemReviewed.name));
                 const colContent = document.createElement('div');
                 colContent.classList.add('col-lg-6', 'pt-4', 'pt-lg-0', 'content');
+                const a = document.createElement('a');
+                a.setAttribute('href', 'sucursal.html');
+                a.onclick = function () { enviarSucursal(item.itemReviewed.name) };
                 const h3 = document.createElement('h3');
                 h3.textContent = item.itemReviewed.name;
                 const price = document.createElement('div');
@@ -292,13 +295,14 @@ async function valoracionsDestacades() {
                 price.appendChild(p);
                 const p2 = document.createElement('p');
                 p2.classList.add('fst-italic');
-                p2.textContent = item.description;
+                p2.textContent = `"${item.author}"`;
                 const p3 = document.createElement('p');
                 p3.textContent = item.reviewBody;
-                colContent.appendChild(h3);
+                a.appendChild(h3);
+                colContent.appendChild(a);
                 colContent.appendChild(price);
-                colContent.appendChild(p2);
                 colContent.appendChild(p3);
+                colContent.appendChild(p2);
                 colImg.appendChild(img);
                 row.appendChild(colImg);
                 row.appendChild(colContent);
