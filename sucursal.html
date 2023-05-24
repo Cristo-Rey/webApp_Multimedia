@@ -21,7 +21,8 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i"
 		rel="stylesheet">
-
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 	<!-- MAPA API-->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
 		integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
@@ -134,22 +135,26 @@
 				<div style="text-align: center;">
 					<br><br>
 					<h3>Llegenda</h3>
-					<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+					<ul
+						style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center;">
 						<li style="display: flex; align-items: center; margin: 5px;">
-						  <span style="display: inline-block; width: 20px; height: 20px; background-color: purple;"></span>
-						  <span style="margin-left: 10px;">Monuments</span>
+							<span
+								style="display: inline-block; width: 20px; height: 20px; background-color: purple;"></span>
+							<span style="margin-left: 10px;">Monuments</span>
 						</li>
 						<li style="display: flex; align-items: center; margin: 5px;">
-						  <span style="display: inline-block; width: 20px; height: 20px; background-color: yellow;"></span>
-						  <span style="margin-left: 10px;">Hotels</span>
+							<span
+								style="display: inline-block; width: 20px; height: 20px; background-color: yellow;"></span>
+							<span style="margin-left: 10px;">Hotels</span>
 						</li>
 						<li style="display: flex; align-items: center; margin: 5px;">
-						  <span style= "display: inline-block; width: 20px; height: 20px; background-color: grey;"></span>
-						  <span style="margin-left: 10px;">Muntanyes</span>
+							<span
+								style="display: inline-block; width: 20px; height: 20px; background-color: grey;"></span>
+							<span style="margin-left: 10px;">Muntanyes</span>
 						</li>
-					  </ul>
-					</div>
+					</ul>
 				</div>
+			</div>
 			</div>
 		</section><!-- End supermercats Section -->
 
@@ -176,8 +181,35 @@
 		<!-- ======= Testimonials Section ======= -->
 		<section id="testimonials" class="testimonials">
 			<div class="container position-relative valoracions-sucursal"></div>
-		</section>
 
+		</section>
+		<section class ="theme_song">
+		<div class="container-fluid">
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<br>
+				<label for="rating">Rating:</label>
+				<div class="stars" id="rating">
+				  <input type="radio" id="star5" name="rating" value="5" required>
+				  <label for="star5"><i class="fa fa-star"></i></label>
+				  <input type="radio" id="star4" name="rating" value="4">
+				  <label for="star4"><i class="fa fa-star"></i></label>
+				  <input type="radio" id="star3" name="rating" value="3">
+				  <label for="star3"><i class="fa fa-star"></i></label>
+				  <input type="radio" id="star2" name="rating" value="2">
+				  <label for="star2"><i class="fa fa-star"></i></label>
+				  <input type="radio" id="star1" name="rating" value="1">
+				  <label for="star1"><i class="fa fa-star"></i></label>
+				</div>
+				<br>
+				<label for="comment">Comment:</label>
+				<textarea id="comment" name="comment" rows="4" cols="50" required></textarea>
+				<br>
+				<button type="submit">Submit</button>
+			  </form>
+		</div>
+	</section>
 		<!-- End Testimonials Section -->
 
 
