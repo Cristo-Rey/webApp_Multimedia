@@ -1,3 +1,37 @@
+function loadJSON_LD(info, tipus) {
+    const script = document.createElement('script');
+    script.setAttribute('type', 'application/ld+json');
+
+    // Cas franquicia
+    if (tipus==0) {
+        let s = {
+            "@context": "https://schema.org",
+            "@type": "Brand",
+            "name": info.name,
+            "logo": info.logo,
+            "description": info.description,
+            "subjectOf": info.subjectOf,
+        };
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+    }
+        // Cas comentari
+    else if(tipus==1){
+        let s = {
+            "@context": "https://schema.org",
+            "@type": "Review",
+            "author": info.author,
+            "reviewBody": info.reviewBody,
+            "itemReviewed": info.itemReviewed,
+            "reviewRating": info.reviewRating,
+            "alternateName":info.alternateName
+        };
+        script.textContent = JSON.stringify(s);
+        document.head.appendChild(script);
+    }
+
+}
+
 async function loadFranquicia() {
     try {
         // Obtenemos la franquicia seleccionada
@@ -18,6 +52,7 @@ async function loadFranquicia() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la franquicia
             if (item.name === franquicia) {
+                loadJSON_LD(item,0);
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
@@ -269,6 +304,7 @@ async function valoracionsDestacades() {
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
             if (item.alternateName === localStorage.getItem("franquicia") && Math.random() < 0.5) {
+                loadJSON_LD(item,1);
                 hayReviews = true;
                 const swiperSlide = document.createElement('div');
                 swiperSlide.classList.add('swiper-slide');
@@ -309,7 +345,7 @@ async function valoracionsDestacades() {
                 swiperSlide.appendChild(row);
                 swiperWrapper.appendChild(swiperSlide);
 
-                
+
             }
         }
         if (!hayReviews) { // Agrega un mensaje si no hay reviews
@@ -365,6 +401,7 @@ async function valoracionsFranquicies() {
             const item = itemList[i];
 
             if (item.alternateName === localStorage.getItem("franquicia")) {
+                loadJSON_LD(item,1);
                 hayReviews = true; // Se cambia a true si hay reviews                
                 const swiperSlide = document.createElement('div');
                 swiperSlide.classList.add('swiper-slide');
@@ -423,7 +460,7 @@ async function valoracionsFranquicies() {
     }
 }
 
-async function cercaImatge(nom){
+async function cercaImatge(nom) {
     //Buscamos el path de la imatge de la sucursal
     try {
         const response = await fetch('/assets/js/supermercat.json');
