@@ -17,13 +17,13 @@ $newItem = array(
     "reviewBody" => $opinion,
     "itemReviewed" => array(
         "@type" => "GroceryStore",
-        "name" => $sucursal[0]
+        "name" => $sucursal
     ),
     "reviewRating" => array(
         "@type" => "Rating",
-        "ratingValue" => $rating+1
+        "ratingValue" => $rating
     ),
-    "alternateName" => $sucursal
+    "alternateName" => substr($sucursal, 0, strpos($sucursal, ' '))
 );
 
 // Agregar el nuevo elemento a la lista de valoraciones
