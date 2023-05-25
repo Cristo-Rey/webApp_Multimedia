@@ -273,7 +273,8 @@ async function loadSucursal() {
                 const div1 = document.createElement('div');
                 div1.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-1');
                 const img = document.createElement('img');
-
+                
+                img.loading="lazy";
                 img.src = item.image;
                 img.alt = 'Imatge del local';
                 img.classList.add('img-fluid');

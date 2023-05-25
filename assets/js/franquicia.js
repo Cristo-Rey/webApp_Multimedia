@@ -86,6 +86,7 @@ async function loadFranquicia() {
                 const img = document.createElement('img');
 
                 img.src = item.logo;
+                img.loading="lazy";
                 img.alt = 'Imatge de la franquicia';
                 img.classList.add('img-fluid');
                 div1.appendChild(img);

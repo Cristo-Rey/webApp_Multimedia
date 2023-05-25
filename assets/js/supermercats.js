@@ -69,6 +69,7 @@ async function llista_franquicies() {
             img.src = itemList[i].logo;
             img.alt = '';
             img.classList.add('img-fluid');
+            img.loading="lazy";
 
             info.appendChild(nomA);
             info.appendChild(desc);
