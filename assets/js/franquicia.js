@@ -409,10 +409,15 @@ async function valoracionsFranquicies() {
                 const testimonialItem = document.createElement('div');
                 testimonialItem.classList.add('testimonial-item');
 
-                const testimonialImg = document.createElement('img');
-                testimonialImg.src = "assets/img/testimonials/testimonials-1.jpg";
-                testimonialImg.classList.add('testimonial-img');
-                testimonialImg.alt = 'Usuari';
+                const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", "100");
+                svg.setAttribute("height", "100");
+
+                const testimonialImg = document.createElementNS("http://www.w3.org/2000/svg", "image");
+                testimonialImg.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "assets/img/user.svg");
+                testimonialImg.setAttribute("width", "100%");
+                testimonialImg.setAttribute("height", "100%");
+                svg.appendChild(testimonialImg);
 
                 const testimonialName = document.createElement('h3');
                 testimonialName.textContent = item.author;
@@ -429,7 +434,7 @@ async function valoracionsFranquicies() {
                 const testimonialText = document.createElement('p');
                 testimonialText.innerHTML = `<i class="bx bxs-quote-alt-left quote-icon-left"></i>${item.reviewBody}<i class="bx bxs-quote-alt-right quote-icon-right"></i>`;
 
-                testimonialItem.appendChild(testimonialImg);
+                testimonialItem.appendChild(svg);
                 testimonialItem.appendChild(testimonialName);
                 testimonialItem.appendChild(stars);
                 testimonialItem.appendChild(testimonialText);
