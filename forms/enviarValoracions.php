@@ -6,7 +6,7 @@ $opinion = $_POST['opinion'];
 $name = $_POST['name'];
 
 // Cargar el JSON existente
-$json = file_get_contents('lista-valoraciones.json');
+$json = file_get_contents('../assets/js/valoracions.json');
 $data = json_decode($json, true);
 
 // Crear un nuevo elemento de valoración
@@ -31,5 +31,8 @@ $data['itemListElement'][] = $newItem;
 
 // Convertir el arreglo de PHP en JSON y guardar el archivo
 $newJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-file_put_contents('lista-valoraciones.json', $newJson);
+file_put_contents('../assets/js/valoracions.json', $newJson);
+
+// Redireccionar a la página de inicio
+header('Location: ../index.html');
 ?>
