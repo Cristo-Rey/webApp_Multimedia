@@ -34,5 +34,5 @@ $newJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 file_put_contents('../assets/js/valoracions.json', $newJson);
 
 // Redireccionar a la página de inicio
-header('Location: ../index.html');
+header('Location: ../sucursal.html');
 ?>
