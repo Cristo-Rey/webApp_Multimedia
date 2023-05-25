@@ -185,8 +185,7 @@
 		<section class ="theme_song">
 			<div class="wrapper">
 				<h3>La teva opinió importa!</h3>
-				<form action="forms/enviarValoracions.php" method="POST">
-					<input type="hidden" name="sucursal" value="{{localStorage.getItem('miValor')}}"/>
+				<form action="forms/enviarValoracions.php" id="formulari" method="POST">
 					<div class="rating">
 						<input type="number" name="rating" hidden>
 						<i class='bx bx-star star' style="--i: 0;"></i>
@@ -195,7 +194,7 @@
 						<i class='bx bx-star star' style="--i: 3;"></i>
 						<i class='bx bx-star star' style="--i: 4;"></i>
 					</div>
-					<textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..." style="border-style: solid;"></textarea>
+					<textarea name="opinion" cols="30" rows="5" placeholder="La teva opinió..." style="border-style: solid;"></textarea>
 					<div class="btn-group">
 						<textarea name="name" cols="30" rows="1" placeholder="Nom i cognom" style="border-style: solid;"></textarea>
 						<button type="submit" class="btn submit" style="border-style: solid; background-color: #ffb13be6; 	font-size: .875rem;

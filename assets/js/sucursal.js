@@ -5,7 +5,7 @@ function loadJSON_LD(info, tipus) {
     const script = document.createElement('script');
     script.setAttribute('type', 'application/ld+json');
 
-    if (tipus==0) {
+    if (tipus == 0) {
         let s = {
             "@context": "https://schema.org",
             "@type": "GroceryStore",
@@ -19,7 +19,7 @@ function loadJSON_LD(info, tipus) {
         };
         script.textContent = JSON.stringify(s);
         document.head.appendChild(script);
-    }else if(tipus==2){
+    } else if (tipus == 2) {
         let s = {
             "@context": "https://schema.org",
             "@type": "Brand",
@@ -31,7 +31,7 @@ function loadJSON_LD(info, tipus) {
         script.textContent = JSON.stringify(s);
         document.head.appendChild(script);
     }        // Cas comentari
-    else if(tipus==1){
+    else if (tipus == 1) {
         let s = {
             "@context": "https://schema.org",
             "@type": "Review",
@@ -39,7 +39,7 @@ function loadJSON_LD(info, tipus) {
             "reviewBody": info.reviewBody,
             "itemReviewed": info.itemReviewed,
             "reviewRating": info.reviewRating,
-            "alternateName":info.alternateName
+            "alternateName": info.alternateName
         };
         script.textContent = JSON.stringify(s);
         document.head.appendChild(script);
@@ -55,7 +55,7 @@ async function audioTheme(brand, paragraf) {
         for (let i = 0; i < itemList.length; i++) {
             if (itemList[i].name == brand) {
                 paragraf.textContent = itemList[i].description;
-                loadJSON_LD(itemList[i],2);
+                loadJSON_LD(itemList[i], 2);
             }
         }
 
@@ -241,7 +241,7 @@ async function loadSucursal() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la sucursal
             if (item.name === sucursal) {
-                supermarket =  item;
+                supermarket = item;
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
@@ -309,7 +309,7 @@ async function loadSucursal() {
                 container2.appendChild(div2);
 
                 // %%%%%%%%%%%%%%%%% SEMÀNTICA %%%%%%%%%%%%%%%%%
-                loadJSON_LD(item,0);
+                loadJSON_LD(item, 0);
 
                 // %%%%%%%%%%%%%%%%% MAPA %%%%%%%%%%%%%%%%%
 
@@ -381,6 +381,15 @@ async function loadSucursal() {
                 audio.appendChild(source);
                 audio.setAttribute('controls', '');
 
+                // %%%%%%%%%%%%%%%%% Formulari %%%%%%%%%%%%%%%%%
+                const form = document.getElementById('formulari');
+
+                const input = document.createElement('input');
+                input.setAttribute('type', 'hidden');
+                input.setAttribute('name', 'sucursal');
+                input.setAttribute('value', localStorage.getItem("sucursal"));
+
+                form.appendChild(input);
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
             }
@@ -412,7 +421,7 @@ async function valoracionsSucursals() {
             const item = itemList[i];
 
             if (item.itemReviewed.name === localStorage.getItem("sucursal")) {
-                loadJSON_LD(itemList[i],1);
+                loadJSON_LD(itemList[i], 1);
                 hayReviews = true; // Se cambia a true si hay reviews                
                 const swiperSlide = document.createElement('div');
                 swiperSlide.classList.add('swiper-slide');
@@ -420,10 +429,15 @@ async function valoracionsSucursals() {
                 const testimonialItem = document.createElement('div');
                 testimonialItem.classList.add('testimonial-item');
 
-                const testimonialImg = document.createElement('img');
-                testimonialImg.src = "assets/img/testimonials/testimonials-1.jpg";
-                testimonialImg.classList.add('testimonial-img');
-                testimonialImg.alt = 'Usuari';
+                const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+                svg.setAttribute("width", "100");
+                svg.setAttribute("height", "100");
+
+                const testimonialImg = document.createElementNS("http://www.w3.org/2000/svg", "image");
+                testimonialImg.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "assets/img/user.svg");
+                testimonialImg.setAttribute("width", "100%");
+                testimonialImg.setAttribute("height", "100%");
+                svg.appendChild(testimonialImg);
 
                 const testimonialName = document.createElement('h3');
                 testimonialName.textContent = item.author;
@@ -440,7 +454,7 @@ async function valoracionsSucursals() {
                 const testimonialText = document.createElement('p');
                 testimonialText.innerHTML = `<i class="bx bxs-quote-alt-left quote-icon-left"></i>${item.reviewBody}<i class="bx bxs-quote-alt-right quote-icon-right"></i>`;
 
-                testimonialItem.appendChild(testimonialImg);
+                testimonialItem.appendChild(svg);
                 testimonialItem.appendChild(testimonialName);
                 testimonialItem.appendChild(stars);
                 testimonialItem.appendChild(testimonialText);

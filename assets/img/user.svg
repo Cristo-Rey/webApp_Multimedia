@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Written by Treer (gitlab.com/Treer) -->
-<svg 
-	version="1.1" 
-	xmlns="http://www.w3.org/2000/svg" 
-	xmlns:xlink="http://www.w3.org/1999/xlink" 
-	width="600" 
-	height="600"
-	stroke="black"
-	stroke-width="30"
-	fill="none">
-
-  <title>Abstract user icon</title>
-	
-  <circle cx="300" cy="300" r="265" />
-  <circle cx="300" cy="230" r="115" />	
-  <path d="M106.81863443903,481.4 a205,205 1 0,1 386.36273112194,0" stroke-linecap="butt" />
+<svg width="600" height="600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="30" stroke="black" version="1.1">
+ <title>Abstract user icon</title>
+ <defs>
+  <radialGradient r="0.76843" spreadMethod="pad" id="svg_4">
+   <stop offset="0" stop-opacity="0.99609" stop-color="#f1792b"/>
+   <stop offset="1" stop-opacity="0.99609" stop-color="#ffff56"/>
+  </radialGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <circle fill="url(#svg_4)" id="svg_1" r="265" cy="300" cx="300"/>
+  <circle id="svg_2" r="115" cy="230" cx="300"/>
+  <path id="svg_3" d="m106.81863,481.4a205,205 1 0 1 386.36274,0"/>
+ </g>
 </svg>

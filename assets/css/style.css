@@ -1995,7 +1995,7 @@ textarea {
   font-size: .875rem;
 }
 .btn-group .btn:hover {
-  background-color: red;
+  background-color: rgb(245, 121, 43) !important;
 }
 
 .btn-group .btn.submit {
