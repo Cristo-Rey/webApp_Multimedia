@@ -1,24 +1,16 @@
 <?php
-
-// RECIBIMOS LOS DATOS DEL FORMULARIO
+// Obtener los datos del formulario
 $sucursal = $_POST['sucursal'];
 $rating = $_POST['rating'];
 $opinion = $_POST['opinion'];
 $name = $_POST['name'];
 
-//DEBUG PARA VER LOS DATOS RECIBIDOS
-echo $sucursal;
-echo $rating;
-echo $opinion;
-echo $name;
+// Cargar el JSON existente
+$json = file_get_contents('lista-valoraciones.json');
+$data = json_decode($json, true);
 
-
-// CONECTAMOS CON UN JSON
-$valoracions = file_get_contents('../assets/json/valoracions.json');
-$valoracions = json_decode($valoracions, true);
-
-// AÑADIMOS LOS DATOS RECIBIDOS AL JSON
-$valoracions['itemListElement'][] = array(
+// Crear un nuevo elemento de valoración
+$newItem = array(
     "@context" => "http://schema.org",
     "@type" => "Review",
     "author" => $name,
@@ -34,12 +26,10 @@ $valoracions['itemListElement'][] = array(
     "alternateName" => $sucursal
 );
 
-// GUARDAMOS LOS DATOS EN EL JSON
-$valoracions = json_encode($valoracions, JSON_PRETTY_PRINT);
-file_put_contents('../assets/json/valoracions.json', $valoracions);
+// Agregar el nuevo elemento a la lista de valoraciones
+$data['itemListElement'][] = $newItem;
 
-// VOLVEMOS A LA PAGINA PRINCIPAL
-header('Location: ../index.html');
-
+// Convertir el arreglo de PHP en JSON y guardar el archivo
+$newJson = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+file_put_contents('lista-valoraciones.json', $newJson);
 ?>
-
