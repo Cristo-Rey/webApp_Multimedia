@@ -1738,7 +1738,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 41,
-			"name": "Bip Bip Carrer Tramuntana",
+			"name": "BipBip Carrer Tramuntana",
 			"telephone": "+34 900 958 311",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipMiz947IYEb_7YYKtfhqx0lLDGgLeSwZRXi7zxN=w408-h544-k-no",
 			"address": {
@@ -1766,7 +1766,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Bip Bip C-717",
+						"name": "Video BipBip C-717",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1782,7 +1782,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 42,
-			"name": "Bip Bip Canonge Quetglas",
+			"name": "BipBip Canonge Quetglas",
 			"telephone": "+34 971 504 909",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipPYA_hI1HR-lMERbB4chlKZWsr7kZWEFLg_nS2p=w408-h306-k-no",
 			"address": {
@@ -1826,7 +1826,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 43,
-			"name": "Bip Bip Pare Bartomeu, Caputxí, 5",
+			"name": "BipBip Pare Bartomeu, Caputxí, 5",
 			"telephone": "+34 971 613 650",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipOMJ5QaGN6TlG-Z9Yu8sSpiHrSJRk8TOB6WC100=w426-h240-k-no",
 			"address": {
@@ -1870,7 +1870,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 44,
-			"name": "Bip Bip Ctra. de Galilea, 3",
+			"name": "BipBip Ctra. de Galilea, 3",
 			"telephone": "+34 971 616 792",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipPx1PTMxBhTW7CAXf78-QFH8E8BQaSEYsc6T4HM=w408-h408-k-no",
 			"address": {
@@ -1913,7 +1913,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 45,
-			"name": "Bip Bip Ctra. de Galilea, 3",
+			"name": "BipBip Ctra. de Galilea, 3",
 			"telephone": "+34 971 644 234",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipNfOHGEeQ4g_fDDNLIU6vFT1jzdwrSfSerJnre9=w426-h240-k-no",
 			"address": {
@@ -1940,7 +1940,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Bip Bip Ctra. de Galilea, 3",
+						"name": "Video BipBip Ctra. de Galilea, 3",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1956,7 +1956,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 46,
-			"name": "Bip Bip Cala Agulla",
+			"name": "BipBip Cala Agulla",
 			"telephone": "+34 971 565 170",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipMHFQx2ya4D1qYvQrk-L2tFxXo4oJWeGq908gNa=w408-h305-k-no",
 			"address": {
@@ -1983,7 +1983,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Bip Bip Cala Agulla",
+						"name": "Video BipBip Cala Agulla",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -1999,7 +1999,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 47,
-			"name": "Bip Bip Carrer Nuredduna, 17",
+			"name": "BipBip Carrer Nuredduna, 17",
 			"telephone": "",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipPq660D5jRM1riLCm1f2BC1aWOQC5trM99X4obO=w531-h240-k-no",
 			"address": {
@@ -2026,7 +2026,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Bip Bip Carrer Nuredduna, 17",
+						"name": "Video BipBip Carrer Nuredduna, 17",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -2042,7 +2042,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 48,
-			"name": "Bip Bip Passeig Mallorca, 43",
+			"name": "BipBip Passeig Mallorca, 43",
 			"telephone": "+34 971 851 134",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipMb99VKJuYEGHL4W04beb6kRWc2eInD7noGYu7v=w408-h306-k-no",
 			"address": {
@@ -2069,7 +2069,7 @@
 				"video": [
 					{
 						"@type": "VideoObject",
-						"name": "Video Bip Bip Passeig Mallorca, 43",
+						"name": "Video BipBip Passeig Mallorca, 43",
 						"contentUrl": "[URL][URL][URL]"
 					}
 				],
@@ -2085,7 +2085,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 49,
-			"name": "Bip Bip Carrer Sant Roc, 55",
+			"name": "BipBip Carrer Sant Roc, 55",
 			"telephone": "+34 971 879 234",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipMb99VKJuYEGHL4W04beb6kRWc2eInD7noGYu7v=w408-h306-k-no",
 			"address": {
@@ -2128,7 +2128,7 @@
 		{
 			"@type": "GroceryStore",
 			"@identifier": 50,
-			"name": "Bip Bip Carrer de Víctor Catalá, 5",
+			"name": "BipBip Carrer de Víctor Catalá, 5",
 			"telephone": "",
 			"image": "https://lh5.googleusercontent.com/p/AF1QipMbzs5skRWJdQRDY0hBPTenBTk0hI4-tipTfbFW=w426-h240-k-no",
 			"address": {
