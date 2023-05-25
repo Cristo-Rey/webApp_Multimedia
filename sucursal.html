@@ -185,7 +185,8 @@
 		<section class ="theme_song">
 			<div class="wrapper">
 				<h3>Lorem ipsum dolor sit amet.</h3>
-				<form action="#">
+				<form action="forms/enviarValoracions.php" method="POST">
+					<input type="hidden" name="sucursal" value="${localStorage.getItem('sucursal')}">
 					<div class="rating">
 						<input type="number" name="rating" hidden>
 						<i class='bx bx-star star' style="--i: 0;"></i>
