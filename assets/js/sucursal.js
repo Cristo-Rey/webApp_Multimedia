@@ -381,6 +381,15 @@ async function loadSucursal() {
                 audio.appendChild(source);
                 audio.setAttribute('controls', '');
 
+                // %%%%%%%%%%%%%%%%% Formulari %%%%%%%%%%%%%%%%%
+                const form = document.getElementById('formulari');
+
+                const input = document.createElement('input');
+                input.setAttribute('type', 'hidden');
+                input.setAttribute('name', 'sucursal');
+                input.setAttribute('value', localStorage.getItem("sucursal"));
+
+                form.appendChild(input);
                 // Salir del bucle cuando se encuentra el elemento buscado
                 break;
             }
