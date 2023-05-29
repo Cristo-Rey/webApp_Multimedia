@@ -485,15 +485,16 @@ async function cercaImatge(nom) {
 }
 
 async function buscarVideo() {
-    var query = localStorage.getItem("franquicia");
-    var apiKey = '${{ secrets.apiYoutube }}';
+    var query = localStorage.getItem("franquicia") + "supermercado";
+    var apiKey = '${{ secrets.ftp_server }}';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + query + '&key=' + apiKey;
 
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            console.log(data);
             var videoId = data.items[0].id.videoId;
-            var playerDiv = document.getElementById('player');
+            var playerDiv = document.getElementById('video-youtube');
             playerDiv.innerHTML = '<iframe width="60%" height="630" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 20%;"></iframe>';
             
         })
