@@ -23,6 +23,11 @@
 						"@type": "AudioObject",
 						"name": "Audio",
 						"contentUrl": "assets/audio/mercadona.mp3"
+					},
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "assets/audio/mercadona.wav"
 					}
 				]
 			}
@@ -48,6 +53,11 @@
 						"@type": "AudioObject",
 						"name": "Audio",
 						"contentUrl": "assets/audio/eroski.mp3"
+					},
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "assets/audio/eroski.wav"
 					}
 				]
 			}
@@ -73,6 +83,11 @@
 						"@type": "AudioObject",
 						"name": "Audio",
 						"contentUrl": "assets/audio/carrefour.mp3"
+					},
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "assets/audio/carrefour.wav"
 					}
 				]
 			}
@@ -98,6 +113,11 @@
 						"@type": "AudioObject",
 						"name": "Audio",
 						"contentUrl": "assets/audio/lidl.mp3"
+					},
+					{
+						"@type": "AudioObject",
+						"name": "Audio",
+						"contentUrl": "assets/audio/lidl.wav"
 					}
 				]
 			}

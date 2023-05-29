@@ -377,9 +377,21 @@ async function loadSucursal() {
                 // Posam l'audio de la franquicia
                 const audio = document.getElementById('franquiciaAudio');
                 const source = document.createElement('source');
+                const source2 = document.createElement('source');
+
                 source.setAttribute('src', item.subjectOf.audio[0].contentUrl);
                 source.setAttribute('type', 'audio/mp3');
+
+                source2.setAttribute('src', item.subjectOf.audio[1].contentUrl);
+                source2.setAttribute('type', 'audio/wav');
+
+                // Text d'error
+                const p = document.createElement('p');
+                p.textContent = 'El teu navegador no suporta l\'element audio.';
+
                 audio.appendChild(source);
+                audio.appendChild(source2);
+                audio.appendChild(p);
                 audio.setAttribute('controls', '');
 
                 // %%%%%%%%%%%%%%%%% Formulari %%%%%%%%%%%%%%%%%
