@@ -486,7 +486,7 @@ async function cercaImatge(nom) {
 
 async function buscarVideo() {
     var query = localStorage.getItem("franquicia") + "supermercado";
-    var apiKey = '${{ secrets.ftp_server }}';
+    var apiKey = 'AIzaSyC_m_d0nhU4iJa-PRxiYcFodkRhqxyAsdg';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + query + '&key=' + apiKey;
 
     fetch(url)
