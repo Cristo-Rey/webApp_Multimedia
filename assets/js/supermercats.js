@@ -2,20 +2,20 @@ function loadJSON_LD(info) {
     const script = document.createElement('script');
     script.setAttribute('type', 'application/ld+json');
 
-        let s = {
-            "@context": "https://schema.org",
-            "@type": "GroceryStore",
-            "name": info.name,
-            "telephone": info.telephone,
-            "image": info.image,
-            "address": info.address,
-            "geo": info.geo,
-            "brand": info.brand,
-            "oppeningHours": info.oppeningHours
-        };
-        script.textContent = JSON.stringify(s);
-        document.head.appendChild(script);
-    }
+    let s = {
+        "@context": "https://schema.org",
+        "@type": "GroceryStore",
+        "name": info.name,
+        "telephone": info.telephone,
+        "image": info.image,
+        "address": info.address,
+        "geo": info.geo,
+        "brand": info.brand,
+        "oppeningHours": info.oppeningHours
+    };
+    script.textContent = JSON.stringify(s);
+    document.head.appendChild(script);
+}
 
 async function llista_franquicies() {
     try {
@@ -69,7 +69,7 @@ async function llista_franquicies() {
             img.src = itemList[i].logo;
             img.alt = '';
             img.classList.add('img-fluid');
-            img.loading="lazy";
+            img.loading = "lazy";
 
             info.appendChild(nomA);
             info.appendChild(desc);
@@ -122,3 +122,29 @@ async function llistaSupermercats() {
 
 llistaSupermercats();
 llista_franquicies();
+
+// Funcio per el formulari de contacte
+async function enviarFormulari(event) {
+    event.preventDefault(); // Evitam el redireccionament del formulari
+
+    var form = document.getElementById('formulari');
+    var formData = new FormData(form);
+
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://formspree.io/f/mknaayek');
+    xhr.setRequestHeader('Accept', 'application/json');
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                // El formulario se envió exitosamente
+                form.reset();
+                alert('Gràcies pel teu missatge! Responderem el més aviat possible.');
+            } else {
+                // Error al enviar el formulario
+                console.log(xhr.status);
+                alert('Hi ha hagut un error al enviar el missatge. Si us plau, torna a intentar-ho.');
+            }
+        }
+    };
+    xhr.send(formData);
+}
