@@ -485,7 +485,7 @@ async function cercaImatge(nom) {
 }
 
 async function buscarVideo() {
-    var query = localStorage.getItem("franquicia") + "supermercado";
+    var query = "supermercado" + localStorage.getItem("franquicia") + "oficial";
     var apiKey = 'AIzaSyC_m_d0nhU4iJa-PRxiYcFodkRhqxyAsdg';
     var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + query + '&key=' + apiKey;
 
