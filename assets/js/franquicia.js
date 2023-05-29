@@ -3,7 +3,7 @@ function loadJSON_LD(info, tipus) {
     script.setAttribute('type', 'application/ld+json');
 
     // Cas franquicia
-    if (tipus==0) {
+    if (tipus == 0) {
         let s = {
             "@context": "https://schema.org",
             "@type": "Brand",
@@ -15,8 +15,8 @@ function loadJSON_LD(info, tipus) {
         script.textContent = JSON.stringify(s);
         document.head.appendChild(script);
     }
-        // Cas comentari
-    else if(tipus==1){
+    // Cas comentari
+    else if (tipus == 1) {
         let s = {
             "@context": "https://schema.org",
             "@type": "Review",
@@ -24,7 +24,7 @@ function loadJSON_LD(info, tipus) {
             "reviewBody": info.reviewBody,
             "itemReviewed": info.itemReviewed,
             "reviewRating": info.reviewRating,
-            "alternateName":info.alternateName
+            "alternateName": info.alternateName
         };
         script.textContent = JSON.stringify(s);
         document.head.appendChild(script);
@@ -52,7 +52,7 @@ async function loadFranquicia() {
             const item = itemList[i];
             // Agregar una condición para buscar el item que coincida con el nombre de la franquicia
             if (item.name === franquicia) {
-                loadJSON_LD(item,0);
+                loadJSON_LD(item, 0);
                 // %%%%%%%%%%%%%%%%% TITULO %%%%%%%%%%%%%%%%%
                 const container = document.querySelector('.barra-gris');
 
@@ -86,7 +86,7 @@ async function loadFranquicia() {
                 const img = document.createElement('img');
 
                 img.src = item.logo;
-                img.loading="lazy";
+                img.loading = "lazy";
                 img.alt = 'Imatge de la franquicia';
                 img.classList.add('img-fluid');
                 div1.appendChild(img);
@@ -305,7 +305,7 @@ async function valoracionsDestacades() {
         for (let i = 0; i < itemList.length; i++) {
             const item = itemList[i];
             if (item.alternateName === localStorage.getItem("franquicia") && Math.random() < 0.5) {
-                loadJSON_LD(item,1);
+                loadJSON_LD(item, 1);
                 hayReviews = true;
                 const swiperSlide = document.createElement('div');
                 swiperSlide.classList.add('swiper-slide');
@@ -402,7 +402,7 @@ async function valoracionsFranquicies() {
             const item = itemList[i];
 
             if (item.alternateName === localStorage.getItem("franquicia")) {
-                loadJSON_LD(item,1);
+                loadJSON_LD(item, 1);
                 hayReviews = true; // Se cambia a true si hay reviews                
                 const swiperSlide = document.createElement('div');
                 swiperSlide.classList.add('swiper-slide');
@@ -482,4 +482,19 @@ async function cercaImatge(nom) {
     catch (error) {
         console.error('Hubo un error.', error);
     }
+}
+
+async function buscarVideo() {
+    var query = localStorage.getItem("franquicia");
+    var apiKey = '${{ secrets.apiYoutube }}';
+    var url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=' + query + '&key=' + apiKey;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            var videoId = data.items[0].id.videoId;
+            var playerDiv = document.getElementById('player');
+            playerDiv.innerHTML = '<iframe width="60%" height="630" src="https://www.youtube.com/embed/' + videoId + '" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-left: 20%;"></iframe>';
+            
+        })
 }
