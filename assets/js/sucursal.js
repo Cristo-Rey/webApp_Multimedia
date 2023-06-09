@@ -84,7 +84,7 @@ async function cercaJSONExterns() {
     var checkbox2 = document.getElementById("checkbox2");
     var checkbox3 = document.getElementById("checkbox3");
 
-
+    // Monuments case
     if (checkbox1.checked) {
         const response = await fetch('/assets/js/JSONs_Externs/Monumentos.json');
         const json = await response.json();
@@ -273,8 +273,8 @@ async function loadSucursal() {
                 const div1 = document.createElement('div');
                 div1.classList.add('col-lg-4', 'text-center', 'order-1', 'order-lg-1');
                 const img = document.createElement('img');
-                
-                img.loading="lazy";
+
+                img.loading = "lazy";
                 img.src = item.image;
                 img.alt = 'Imatge del local';
                 img.classList.add('img-fluid');
